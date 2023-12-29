@@ -6,65 +6,75 @@ import Link from "next/link";
 const CoachesSection = () => {
   return (
     <>
-      <section className="relative lg:before:content-[''] before:absolute lg:before:w-[448px] before:h-[448px] before:-top-20 before:left-0 before:bg-shadow_blue before:blur-[111px] before:opacity-25 before:-translate-x-1/3 before:-z-10 before:rounded-full after:content-[''] after:absolute after:w-[448px] after:h-[448px] after:-bottom-20 after:right-0 after:bg-shadow_blue after:blur-[111px] after:opacity-25 after:translate-x-1/3 after:-z-10 after:rounded-full py-14">
-        <div className="container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto lg:pt-14 relative z-10 lg:mt-14 xl:mt-0">
-          <div className="lg:px-14 lg:pt-14 sm:px-8 px-4 pt-6 sm:bg-playground-unique bg-playground-unique-sm bg-opacity-50 bg-[length:100%_100%] bg-center bg-no-repeat flex flex-col items-center ">
-            <h2
-              className="lg:text-5xl md:text-[40px] sm:text-4xl text-[26px] text-primary font-HelveticaNeueMedium text-center py-2"
+      <div className="relative flex items-center md:mt-10 lg:bg-soccer-expensive-bg bg-no-repeat bg-cover justify-center flex-col lg:flex-row lg:mb-0 md:mb-5 xl:py-20 xl:pb-44">
+        <Image
+          className="absolute -top-20 -left-0 w-[40%] lg:block hidden z-0  h-[120%]"
+          src="/assets/img/png/football_net.png"
+          width={996}
+          height={768}
+          alt="football net"
+        />
+        <div className="container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto">
+          <div className="max-w-[623px] mx-auto lg:mx-0 relative after:content after:absolute lg:after:w-[690px] lg:after:h-[420px] lg:after:bg-[#040F16] after:blur-[55px] after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:z-0">
+            <div
               data-aos="fade-up"
               data-aos-duration="600"
               data-aos-easing="linear"
               data-aos-delay="200"
               data-aos-offset="200"
+              className=" relative z-10"
             >
-              <span className="relative after:content after:absolute after:bottom-[-7px] sm:after:bottom-[-2px] after:left-0 md:after:w-[209px] after:w-[150px] after:h-2 after:bg-blue-underline after:bg-contain after:bg-no-repeat mb-4 lg:leading-[60px] leading-[120%]">
-              Creating Excellence
-              </span> 
-            </h2>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-easing="linear"
-              data-aos-delay="400"
-              data-aos-offset="200"
-            >
-              <p className="font-Segoe text-md opacity-80 text-primary text-center md:pb-3 pb-6 mt-4">
-              Meet our expert coaching team, led by seasoned professionals including Darren John, Brian Blasy, Guillermo Escalera Alonso and Ashley "AJ" Johnson. With decades of experience at various competitive levels, our coaches bring a wealth of knowledge and a dedicated approach to youth soccer development.
-              </p>
-              <div className="flex lg:justify-center justify-center items-center">
-                <Link href="/about-us">
+              <h2 className="font-HelveticaNeueMedium text-primary xl:text-xl lg:text-[43px] md:text-[40px] font-medium mb-4 text-[25px] sm:text-[35px] text-center lg:text-start leading-[120%] xl:leading-[60px] pt-10">
+                <span className="relative after:content after:absolute after:bottom-[-4px] sm:after:bottom-[-2px] after:left-0 md:after:w-[220px] after:w-[120px] after:h-2 after:bg-blue-underline after:bg-contain after:bg-no-repeat">
+                 Creating Excellence
+                </span>
+              </h2>
+              <p className="font-Segoe font-normal text-md text-primary opacity-80 text-center lg:text-start">Introducing our expert coaching team, led by seasoned professionals Darren John, Brian Blasy, and Ashley "AJ" Johnson. Our coaches have years of experience at various competitive levels, and they bring a wealth of knowledge and a dedicated approach to developing youth soccer skills.              </p>
+              <div className="flex lg:justify-start justify-center items-center mt-10">
+                <Link href="/about-coaches">
                   <BlueButton text="Learn more about the coaches" />
                 </Link>
               </div>
             </div>
-            {/* FOOTBALL PLAYER IMAGE */}
-            <div className="opacity-88 mt-5">
-              <Image
-                data-aos="fade-in"
-                data-aos-duration="600"
-                data-aos-easing="linear"
-                data-aos-delay="200"
-                data-aos-offset="200"
-                // className="mb-[1px] lg:max-w-[267px] max-w-[180px] sm:max-w-[220px]"
-                className="mb-[1px] max-w-[290px] sm:max-w-[300px] md:max-w-[450px] lg:max-w-[652px] opacity-1"
-                // src="/assets/img/png/portrait-young.png"
-                src="/assets/img/webp/gen-soccer-player.webp"
-                width={652}
-                height={512}
-                alt={"football palyer"}
-              />
-            </div>
           </div>
         </div>
-        {/* FOOTBALL IMAGE CORNOR*/}
-        <Image
-          className="absolute lg:w-[220px] sm:w-[150px] w-[100px] -bottom-8 right-0 z-0"
-          src="/assets/img/png/unique-football.png"
-          width={220}
-          height={286}
-          alt={"football"}
-        />
-      </section>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-easing="linear"
+          data-aos-delay="200"
+          data-aos-offset="200"
+        >
+
+          <div className="absolute lg:right-10 xl:right-20 2xl:right-32 lg:top-[40%] lg:-translate-y-[50%] xl:w-[600px] xl:h-[600px] w-[300px] sm:w-[450px] lg:w-[500px] hidden lg:inline-block -z-10">
+            <Image
+              className="w-full"
+              src="/assets/img/webp/coaches-on-blue.webp"
+              alt="football"
+              width={700}
+              height={700}
+            />
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-easing="linear"
+          data-aos-delay="200"
+          data-aos-offset="200"
+        >
+          {/* SMALL FOOTBALL CORNOR */}
+          <div className="lg:hidden relative w-full sm:w-[80%] mx-auto mt-5">
+            <Image
+              className="mx-auto"
+              src="/assets/img/webp/coaches-on-blue.webp"
+              alt="football"
+              width={550}
+              height={550}
+            />
+          </div>
+        </div>
+      </div>
     </>
   );
 };

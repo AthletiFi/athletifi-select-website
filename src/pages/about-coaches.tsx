@@ -3,10 +3,10 @@
 // This file renders the "About Us" page.
 // It includes various components to display information about the company.
 
-import Coach2 from '@/components/about_coaches/Coach2';
-import Coach3 from '@/components/about_coaches/Coach3';
-import Coach1 from '@/components/about_coaches/Coach1';
-import Philosophy from '@/components/about_coaches/Philosophy';
+import Coach2 from '@/components/about-coaches/Coach2';
+import Coach3 from '@/components/about-coaches/Coach3';
+import Coach1 from '@/components/about-coaches/Coach1';
+import Philosophy from '@/components/about-coaches/Philosophy';
 import Backtotop from '@/components/common/Backtotop';
 import CommonHero from '@/components/common/CommonHero';
 import Footer from '@/components/common/Footer';

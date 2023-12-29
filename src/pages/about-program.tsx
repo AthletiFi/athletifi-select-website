@@ -3,9 +3,9 @@
 // This file renders the "About Us" page.
 // It includes various components to display information about the company.
 
-import OurMission from '@/components/about_program/OurMission';
-import BeyondSummer from '@/components/about_program/BeyondSummer';
-import SummerSelect from '@/components/about_program/SummerSelect';
+import OurMission from '@/components/about-program/OurMission';
+import BeyondSummer from '@/components/about-program/BeyondSummer';
+import SummerSelect from '@/components/about-program/SummerSelect';
 import Backtotop from '@/components/common/Backtotop';
 import CommonHero from '@/components/common/CommonHero';
 import Footer from '@/components/common/Footer';

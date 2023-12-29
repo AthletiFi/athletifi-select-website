@@ -113,9 +113,9 @@ const Header = () => {
                 <li>
                   <Link
                     onClick={() => setOpen(false)}
-                    href="/about_coaches"
-                    className={`text-md text-white font-normal font-Segoe opacity-70 hover:opacity-100 duration-300 relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto ${
-                      path == "/about_coaches" ? "!opacity-100 " : ""
+                    href="/about-coaches"
+                    className={`text-md text-white font-normal font-Segoe opacity-70 hover:opacity-100 duration-300 relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow-blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto ${
+                      path == "/about-coaches" ? "!opacity-100 " : ""
                     }`}
                   >
                     Coaches
@@ -124,9 +124,9 @@ const Header = () => {
                 <li>
                   <Link
                     onClick={() => setOpen(false)}
-                    href="/about_program"
-                    className={`text-md text-white font-normal font-Segoe opacity-70 hover:opacity-100 duration-300 relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto ${
-                      path == "/about_program" ? "!opacity-100 " : ""
+                    href="/about-program"
+                    className={`text-md text-white font-normal font-Segoe opacity-70 hover:opacity-100 duration-300 relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow-blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto ${
+                      path == "/about-program" ? "!opacity-100 " : ""
                     }`}
                   >
                     Program
@@ -135,9 +135,9 @@ const Header = () => {
                 <li>
                   <Link
                     onClick={() => setOpen(false)}
-                    href="/about_cards"
-                    className={`text-md text-white font-normal font-Segoe opacity-70 hover:opacity-100 duration-300 relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto ${
-                      path == "/about_cards" ? "!opacity-100 " : ""
+                    href="/about-cards"
+                    className={`text-md text-white font-normal font-Segoe opacity-70 hover:opacity-100 duration-300 relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow-blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto ${
+                      path == "/about-cards" ? "!opacity-100 " : ""
                     }`}
                   >
                 Player Cards
@@ -147,14 +147,14 @@ const Header = () => {
                   <Link
                     onClick={() => setOpen(false)}
                     href="/news?page=1"
-                    className={`text-md text-white font-normal font-Segoe opacity-70 hover:opacity-100 duration-300 relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto ${
+                    className={`text-md text-white font-normal font-Segoe opacity-70 hover:opacity-100 duration-300 relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow-blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto ${
                       path == "/news" ? "!opacity-100" : ""
                     }`}
                   >
                     News
                   </Link>
                 </li> */}
-                <li className="social_icons_show sm:mt-7 sm:pb-7 hidden sm:block">
+                <li className="social-icons_show sm:mt-7 sm:pb-7 hidden sm:block">
                   <button
                     onClick={SocialIcon}
                     className={`text-md text-white font-normal font-Segoe opacity-70 hover:opacity-100 duration-300 relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto ${

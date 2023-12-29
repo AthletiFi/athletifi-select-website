@@ -89,8 +89,8 @@ const DigitalCardInfoSection = () => {
               connect with family, friends, and recruiters
             </p>
             <div className="flex lg:justify-center justify-center items-center mt-5">
-                <Link href="/about-us">
-                  <BlueButton text="Learn more about the coaches" />
+                <Link href="/about-cards">
+                  <BlueButton text="Learn more about the Digital Player Cards" />
                 </Link>
               </div>
           </div>

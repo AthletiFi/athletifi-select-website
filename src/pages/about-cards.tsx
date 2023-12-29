@@ -3,9 +3,9 @@
 // This file renders the "About Us" page.
 // It includes various components to display information about the company.
 
-import TrackTriumphs from '@/components/about_cards/TrackTriumphs';
-import SoccerDevelopment from '@/components/about_cards/SoccerDevelopment';
-import PlayerDashboardDevelopment from '@/components/about_cards/PlayerDashboardDevelopment';
+import TrackTriumphs from '@/components/about-cards/TrackTriumphs';
+import SoccerDevelopment from '@/components/about-cards/SoccerDevelopment';
+import PlayerDashboardDevelopment from '@/components/about-cards/PlayerDashboardDevelopment';
 import Backtotop from '@/components/common/Backtotop';
 import CommonHero from '@/components/common/CommonHero';
 import Footer from '@/components/common/Footer';
