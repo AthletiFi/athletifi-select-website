@@ -3,9 +3,9 @@
 // This file renders the "About Us" page.
 // It includes various components to display information about the company.
 
-import OurMission from '@/components/about_coaches/OurMission';
-import WhatWeDo from '@/components/about_coaches/WhatWeDo';
-import WhoweAre from '@/components/about_coaches/WhoweAre';
+import TrackTriumphs from '@/components/about_cards/TrackTriumphs';
+import SoccerDevelopment from '@/components/about_cards/SoccerDevelopment';
+import PlayerDashboardDevelopment from '@/components/about_cards/PlayerDashboardDevelopment';
 import Backtotop from '@/components/common/Backtotop';
 import CommonHero from '@/components/common/CommonHero';
 import Footer from '@/components/common/Footer';
@@ -13,7 +13,7 @@ import Header from '@/components/common/Header';
 import Seo from '@/components/common/Seo';
 import { SEO_CONFIG } from '@/utils/seoConfig';
 
-const AboutUs = () => {
+const AboutCards = () => {
   // SEO
   const hero = {
     heading: 'Player Cards',
@@ -29,9 +29,9 @@ const AboutUs = () => {
           <Header />
           <CommonHero hero={hero} />
         </div>
-        <WhatWeDo />
-        <OurMission />
-        <WhoweAre />
+        <TrackTriumphs />
+       {/* <SoccerDevelopment/> */}
+        <PlayerDashboardDevelopment/>
         <Footer />
         <Backtotop />
       </div>
@@ -39,4 +39,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutCards;

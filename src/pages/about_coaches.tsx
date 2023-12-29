@@ -3,9 +3,10 @@
 // This file renders the "About Us" page.
 // It includes various components to display information about the company.
 
-import OurMission from '@/components/about_coaches/OurMission';
-import WhatWeDo from '@/components/about_coaches/WhatWeDo';
-import WhoweAre from '@/components/about_coaches/WhoweAre';
+import Coach2 from '@/components/about_coaches/Coach2';
+import Coach3 from '@/components/about_coaches/Coach3';
+import Coach1 from '@/components/about_coaches/Coach1';
+import Philosophy from '@/components/about_coaches/Philosophy';
 import Backtotop from '@/components/common/Backtotop';
 import CommonHero from '@/components/common/CommonHero';
 import Footer from '@/components/common/Footer';
@@ -29,9 +30,10 @@ const AboutCoaches = () => {
           <Header />
           <CommonHero hero={hero} />
         </div>
-        <WhatWeDo />
-        <OurMission />
-        <WhoweAre />
+        <Coach1 />
+        <Coach3 />
+        <Coach2 />
+        <Philosophy />
         <Footer />
         <Backtotop />
       </div>
