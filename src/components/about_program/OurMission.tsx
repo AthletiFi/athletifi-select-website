@@ -9,13 +9,13 @@ import Image from "next/image";
 
 const WhoweAre = () => {
   return (
-    <section className="pt-10 pb-16 sm:mb-14 sm:pb-12 lg:mb-20 relative">
+    <section className="pt-10 pb-5 sm:mb-14 sm:pb-12 lg:mb-0 relative">
       <div className="absolute top-0 xl:-top-[70px] -end-[80px]  xl:w-[250px] xl:h-[380px] z-0">
         {/* RIGHT FOOTBALL IMG */}
         <Image
-          className="max-w-[176px] me-0"
-          src="/assets/img/png/football.png"
-          width={176}
+          className="max-w-[300px] me-0"
+          src="/assets/img/png/football_net.png"
+          width={300}
           height={286}
           alt="what we do foot ball image"
         />
@@ -40,27 +40,20 @@ const WhoweAre = () => {
             data-aos-delay="300"
             data-aos-offset="100"
           >
-            <h2 className="font-HelveticaNeueMedium md:text-5xl text-[26px] sm:text-4xl text-[#FDFEFF] font-medium leading-[60px] relative z-20 text-center md:mb-4">
+            <h2 className="p-[15px] font-HelveticaNeueMedium md:text-5xl text-[26px] sm:text-4xl text-[#FDFEFF] font-medium leading-[60px] relative z-20 text-center md:mb-4">
               <span className="relative ">
-                Who we Are
+                Our Mission
                 <span className="absolute -bottom-2 left-0 z-0">
                   <UnderLIneText />
                 </span>
               </span>
             </h2>
             <p className="font-Segoe font-normal text-md leading-7 text-center pb-0.5 text-[#FDFEFF] opacity-80 m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20">
-              Welcome to the future of sports collectibles! We've revolutionized
-              the world of trading cards by integrating dynamic statistics into
-              every card. Now, every goal, pass, and block is updated on the
-              digital trading card within 48 hours after every game.
+            At AthletiFi Select, we aim to provide a competitive environment and a rich cultural experience for young athletes during their break from club soccer. Our mission is to offer exceptional exposure opportunities, both locally and internationally, fostering the development of each player's skills and soccer acumen.
+
               <span className="block pb-2">
                 {" "}
-                But we're not just about collectibles. Every purchase you make
-                directly supports underserved athletes, making club soccer more
-                accessible and empowering dreams to flourish. Join us in this
-                incredible journey to elevate the world of sports collectibles
-                and make a positive impact on the lives of aspiring athletes.
-                The future of sports collectibles starts now!
+                we are committed to providing a competitive and enriching environment for young athletes. Our mission is to offer comprehensive training programs that not only enhance soccer skills but also foster cultural experiences and broad exposure. We believe in nurturing talent during breaks from club soccer, focusing on individual growth, teamwork, and a deeper understanding of the game
               </span>
             </p>
           </div>

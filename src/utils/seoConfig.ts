@@ -1,8 +1,18 @@
 // seoConfig.ts
 
 export const SEO_CONFIG = {
-  aboutUs: {
-    title: "About Us | Athletifi",
+  aboutCoaches: {
+    title: "Coaches | Athletifi",
+    description: "Discover AthletiFi's mission to transform the soccer world with dynamic digital trading cards. Dive into our journey, partnerships, and vision for the future of soccer.",
+    websiteURL: "https://athleti.fi/about-us",
+    image: "/about_us_meta.png",
+  }, aboutProgram: {
+    title: "Program | Athletifi",
+    description: "Discover AthletiFi's mission to transform the soccer world with dynamic digital trading cards. Dive into our journey, partnerships, and vision for the future of soccer.",
+    websiteURL: "https://athleti.fi/about-us",
+    image: "/about_us_meta.png",
+  }, aboutCards: {
+    title: "Player Cards | Athletifi",
     description: "Discover AthletiFi's mission to transform the soccer world with dynamic digital trading cards. Dive into our journey, partnerships, and vision for the future of soccer.",
     websiteURL: "https://athleti.fi/about-us",
     image: "/about_us_meta.png",

@@ -113,9 +113,9 @@ const Header = () => {
                 <li>
                   <Link
                     onClick={() => setOpen(false)}
-                    href="/about-coaches"
+                    href="/about_coaches"
                     className={`text-md text-white font-normal font-Segoe opacity-70 hover:opacity-100 duration-300 relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto ${
-                      path == "/about-coaches" ? "!opacity-100 " : ""
+                      path == "/about_coaches" ? "!opacity-100 " : ""
                     }`}
                   >
                     Coaches
@@ -124,9 +124,9 @@ const Header = () => {
                 <li>
                   <Link
                     onClick={() => setOpen(false)}
-                    href="/about-program"
+                    href="/about_program"
                     className={`text-md text-white font-normal font-Segoe opacity-70 hover:opacity-100 duration-300 relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto ${
-                      path == "/about-program" ? "!opacity-100 " : ""
+                      path == "/about_program" ? "!opacity-100 " : ""
                     }`}
                   >
                     Program
@@ -135,9 +135,9 @@ const Header = () => {
                 <li>
                   <Link
                     onClick={() => setOpen(false)}
-                    href="/about-player-cards"
+                    href="/about_cards"
                     className={`text-md text-white font-normal font-Segoe opacity-70 hover:opacity-100 duration-300 relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto ${
-                      path == "/about-playerCards" ? "!opacity-100 " : ""
+                      path == "/about_cards" ? "!opacity-100 " : ""
                     }`}
                   >
                 Player Cards
