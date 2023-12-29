@@ -8,8 +8,8 @@ export const SEO_CONFIG = {
     image: "/about_us_meta.png",
   },
   home: {
-    title: "Athletifi | The Future of Sports",
-    description: "Experience the future of soccer with AthletiFi's digital player card collections. Collect, follow, and interact with elite youth soccer players in engaging ways. Welcome to the future of sports.",
+    title: "Athletifi | Summer Select 2024",
+    description: " Premier Summer Training and Year-Round Development Programs for U9-U14 Players. Welcome to the future of sports.",
     websiteURL: "https://athleti.fi",
     image: "/lending_meta_img.webp",
   },
