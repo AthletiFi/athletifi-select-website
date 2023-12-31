@@ -4,7 +4,7 @@
 // It includes various components to showcase the features and services offered.
 
 import Image from 'next/image';
-import { Inter } from 'next/font/google';
+// import { Inter } from 'next/font/google';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
 // import LatestNews from "@/components/home/LatestNews"; //Add this back if you want to have the news section
@@ -23,7 +23,7 @@ import { NewsListApiHandler } from '@/components/common/api/ApiUrls';
 import { SEO_CONFIG } from '@/utils/seoConfig';
 
 //Importing the Inter font
-const inter = Inter({ subsets: ['latin'] });
+// const inter = Inter({ subsets: ['latin'] });
 
 interface NewsProps {
   allNewsList: any;
@@ -54,7 +54,7 @@ const Home: React.FC<NewsProps> = (props) => {
   });
 
   return (
-    <>
+    <div className="max-w-[1500px] mx-auto">
       {/* SEO */}
       <Seo pageSEO={SEO_CONFIG.home} />
       {/* PRELOADER is conditionally rendered based on the value of the preloader state variable. */}
@@ -67,9 +67,9 @@ const Home: React.FC<NewsProps> = (props) => {
           </span>
         </div>
       )}
-      <div className='overflow_hidden'>
+      <div className='overflow_hidden'> 
         <div className='hero_homepage_bg min-h-screen bg-no-repeat bg-cover flex flex-col justify-center bg-center'>
-          <Header />
+         <Header />
           <div className='flex lg:items-center lg:flex-row flex-col relative'>
             <HomeTitleSection />
             <Image
@@ -90,7 +90,7 @@ const Home: React.FC<NewsProps> = (props) => {
         <Footer />
         <Backtotop />
       </div>
-    </>
+    </div>
   );
 };
 
