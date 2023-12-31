@@ -14,16 +14,16 @@ const Signup = () => {
   };
 
   return (
-    <>
+    <div className="max-w-[1500px] mx-auto">
       {/* SEO */}
       <Seo pageSEO={SEO_CONFIG.signUp} />
-      <div className="bg-signup-hero-img bg-no-repeat bg-cover overflow-hidden">
+      <div className="bg-signup-hero-img bg-no-repeat  overflow-hidden">
         <Header />
         <CommonHero hero={hero} />
       </div>
       <SignUpForm />
       <Footer />
-    </> 
+    </div> 
   );
 };
 

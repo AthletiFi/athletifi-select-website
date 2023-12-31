@@ -38,7 +38,7 @@ const DigitalCardInfoSection = () => {
     ],
   };
   return (
-    <section className='py-14 relative xl:mt-0 z-[1]'>
+    <section className="mt-5 mb-14 relative lg:before:content-[''] before:absolute lg:before:w-[448px] before:h-[448px] before:-top-20 before:left-0 before:bg-shadow_blue before:blur-[111px] before:opacity-25 before:-translate-x-1/3 before:-z-10 before:rounded-full after:content-[''] after:absolute after:w-[448px] after:h-[448px] after:-bottom-20 after:right-0 after:bg-shadow_blue after:blur-[111px] after:opacity-25 after:translate-x-1/3 after:-z-10 after:rounded-full">
       <div className='absolute sm:-bottom-[40px] lg:-bottom-[80px] bottom-0 start-0 lg:w-[230px] lg:h-[286px] opacity-30'>
         <Image
           className='xl:max-w-[240px] sm:max-w-[140px] max-w-[100px]'
@@ -66,7 +66,7 @@ const DigitalCardInfoSection = () => {
               data-aos-delay='200'
               data-aos-offset='200'
             >
-              <span className='relative after:content after:absolute after:bottom-[-8px] sm:after:bottom-[-4px] after:left-0 md:after:w-[209px] after:w-[150px] after:h-2 after:bg-blue-underline after:bg-contain after:bg-no-repeat'>
+              <span className='relative'>
                 {/* Stats Reimagined. */}
                 Track Progress with Digital Player Cards
               </span>{' '}
@@ -88,16 +88,12 @@ const DigitalCardInfoSection = () => {
               athletes to monitor their development, share highlights, and
               connect with family, friends, and recruiters
             </p>
-            <div className="flex lg:justify-center justify-center items-center mt-5">
-                <Link href="/about-cards">
-                  <BlueButton text="Learn more about the Digital Player Cards" />
-                </Link>
-              </div>
+         
           </div>
           {/* CARD SLIDER SAMLL SCREEN */}
           <Slider
             {...settings}
-            className=" px-5 w-full justify-between items-center pt-5 md:pt-0 max-w-[1000px] mx-auto lg:justify-center relative z-20 before:content-[''] before:absolute before:w-[448px] before:h-[448px] before:-top-20 before:left-1/2 before:bg-shadow_blue before:blur-[111px] before:opacity-25 before:-translate-x-1/2 before:-z-10 before:rounded-full pb-6 sm:pb-0"
+            className=" px-5 w-full justify-between items-center pt-5 md:pt-0 max-w-[1000px] mx-auto lg:justify-center relative z-10 before:content-[''] before:absolute before:w-[448px] before:h-[448px] before:-top-20 before:left-1/2 before:bg-shadow_blue before:blur-[111px] before:opacity-25 before:-translate-x-1/2 before:-z-10 before:rounded-full pb-6 sm:pb-0"
           >
             {/* Left Image */}
             <div
@@ -155,6 +151,11 @@ const DigitalCardInfoSection = () => {
             </div>
           </Slider>
         </div>
+        <div className="flex lg:justify-center justify-center items-center mt-5 z-50">
+                <Link href="/about-cards">
+                  <BlueButton text="Learn more about the Digital Player Cards" />
+                </Link>
+              </div>
       </div>
     </section>
   );

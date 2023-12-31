@@ -72,7 +72,7 @@ const Header = () => {
       <div
         ref={navbarRef}
         id="nav_bar"
-        className={`navbar fixed top-0 black w-full bg-bgnav py-2 z-40 ${
+        className={`max-w-[1500px] mx-auto navbar fixed top-0 black w-full bg-bgnav py-2 z-40 ${
           scrollPosition > 200 ? "slideUp" : "slideDown"
         } ${isVisible ? "slideDown" : "slideUp"}`}
       >
@@ -84,7 +84,7 @@ const Header = () => {
             {/* SAMLL SREEN MENUICONS */}
             <div
               onClick={() => setOpen(!open)}
-              className="flex flex-col sm:hidden bg-transparent border-0 relative z-50 cursor-pointer"
+              className="flex flex-col md:hidden bg-transparent border-0 relative z-50 cursor-pointer"
             >
               <span className="h-[3px] w-[35px] bg-white inline-block rounded-sm"></span>
               <span className="my-2 h-[3px] w-[27px] bg-white inline-block rounded-sm"></span>
@@ -94,11 +94,11 @@ const Header = () => {
               className={
                 open
                   ? "nav_open h-full w-full z-20 fixed top-0 left-0 duration-500 transition-all bg-[#000b13] min-h-screen"
-                  : "sm:relative fixed min-h-screen sm:min-h-full -left-full sm:left-0 duration-500 sm:ml-0 nav_open sm:mt-0 z-40 top-0"
+                  : "md:relative fixed sm:hidden md:block  min-h-screen sm:min-h-full -left-full sm:left-0 duration-500 sm:ml-0 nav_open sm:mt-0 z-40 top-0"
               }
             >
               {/* NAV PAGE LINKS */}
-              <ul className="flex items-center gap-[25px] sm:gap-[40px] flex-col sm:flex-row h-full justify-center ">
+              <ul className="flex items-center gap-[25px] sm:gap-[40px] flex-col md:flex-row h-full justify-center">
                 <li>
                   <Link
                     onClick={() => setOpen(false)}
@@ -154,7 +154,7 @@ const Header = () => {
                     News
                   </Link>
                 </li> */}
-                <li className="social-icons_show sm:mt-7 sm:pb-7 hidden sm:block">
+                <li className="social_icons_show sm:mt-7 sm:pb-7 hidden sm:block">
                   <button
                     onClick={SocialIcon}
                     className={`text-md text-white font-normal font-Segoe opacity-70 hover:opacity-100 duration-300 relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto ${
@@ -238,7 +238,7 @@ const Header = () => {
                       </Link>
                       <Link
                         className="hover:-translate-y-1 transition duration-300  flex items-center"
-                        href="https://www.linkedin.com/company/athletifi/"
+                        href="https://in.linkedin.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -263,7 +263,7 @@ const Header = () => {
                   <Link
                     href="/sign-up"
                     onClick={() => setOpen(false)}
-                    className="pt-[10px] pb-[14px] px-[24px] text-skyblue border border-skyblue font-semibold text-base font-Segoe duration-300 hover:bg-skyblue hover:text-white sm:hidden"
+                    className="pt-[10px] pb-[14px] px-[24px] text-skyblue border border-skyblue font-semibold text-base font-Segoe duration-300 hover:bg-skyblue hover:text-white md:hidden"
                   >
                     Sign up
                   </Link>
@@ -273,7 +273,7 @@ const Header = () => {
             <Link
               href="/sign-up"
               onClick={() => setOpen(false)}
-              className="pt-[10px] pb-[14px] px-[24px] text-skyblue border border-skyblue font-semibold text-base font-Segoe duration-300 hover:bg-skyblue hover:text-white hidden sm:inline-block"
+              className="pt-[10px] pb-[14px] px-[24px] text-skyblue border border-skyblue font-semibold text-base font-Segoe duration-300 hover:bg-skyblue hover:text-white hidden md:inline-block"
             >
               Sign up
             </Link>

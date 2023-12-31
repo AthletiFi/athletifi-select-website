@@ -22,7 +22,7 @@ const AboutProgram = () => {
   };
 
   return (
-    <>
+    <div className="max-w-[1500px] mx-auto">
       <Seo pageSEO={SEO_CONFIG.aboutCoaches} />
       <div className='overflow_hidden'>
         <div className=' bg-about-hero bg-no-repeat bg-cover'>
@@ -35,7 +35,7 @@ const AboutProgram = () => {
         <Footer />
         <Backtotop />
       </div>
-    </>
+    </div>
   );
 };
 

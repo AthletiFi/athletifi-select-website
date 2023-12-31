@@ -54,7 +54,7 @@ const Home: React.FC<NewsProps> = (props) => {
   });
 
   return (
-    <>
+    <div className="max-w-[1500px] mx-auto">
       {/* SEO */}
       <Seo pageSEO={SEO_CONFIG.home} />
       {/* PRELOADER is conditionally rendered based on the value of the preloader state variable. */}
@@ -67,9 +67,9 @@ const Home: React.FC<NewsProps> = (props) => {
           </span>
         </div>
       )}
-      <div className='overflow_hidden'>
+      <div className='overflow_hidden'> 
         <div className='hero_homepage_bg min-h-screen bg-no-repeat bg-cover flex flex-col justify-center bg-center'>
-          <Header />
+         <Header />
           <div className='flex lg:items-center lg:flex-row flex-col relative'>
             <HomeTitleSection />
             <Image
@@ -90,7 +90,7 @@ const Home: React.FC<NewsProps> = (props) => {
         <Footer />
         <Backtotop />
       </div>
-    </>
+    </div>
   );
 };
 
