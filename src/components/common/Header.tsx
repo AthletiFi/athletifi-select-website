@@ -72,7 +72,7 @@ const Header = () => {
       <div
         ref={navbarRef}
         id="nav_bar"
-        className={`max-w-[1500px] mx-auto navbar fixed top-0 black w-full bg-bgnav py-2 z-40 ${
+        className={`max-w-[5560px] mx-auto navbar fixed top-0 black w-full bg-bgnav py-2 z-40 ${
           scrollPosition > 200 ? "slideUp" : "slideDown"
         } ${isVisible ? "slideDown" : "slideUp"}`}
       >

@@ -23,7 +23,7 @@ const AboutCoaches = () => {
   };
 
   return (
-    <div className="max-w-[1500px] mx-auto">
+    <div className="max-w-[5560px] mx-auto">
       <Seo pageSEO={SEO_CONFIG.aboutCoaches} />
       <div className='overflow_hidden'>
         <div className=' bg-about-hero bg-no-repeat bg-cover'>

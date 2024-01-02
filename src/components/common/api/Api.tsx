@@ -21,7 +21,7 @@ export const PostRequestHandler = async (path:any,data:any) =>
 // Path: The specific API endpoint within the Strapi CMS for newsletters.
 // Data: The payload to be sent in the POST request.
   await axiosRequest(
-    "Post",
+    "POST",
     path,
     data
   );

@@ -54,7 +54,7 @@ const Home: React.FC<NewsProps> = (props) => {
   });
 
   return (
-    <div className="max-w-[1500px] mx-auto">
+    <div className="max-w-[5560px] mx-auto">
       {/* SEO */}
       <Seo pageSEO={SEO_CONFIG.home} />
       {/* PRELOADER is conditionally rendered based on the value of the preloader state variable. */}
