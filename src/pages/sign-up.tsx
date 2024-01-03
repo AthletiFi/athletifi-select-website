@@ -8,16 +8,16 @@ import { SEO_CONFIG } from "@/utils/seoConfig";
 const Signup = () => {
   // SEO
   const hero = {
-    heading: "Start Your Digital Soccer Card Collection Journey",
+    heading: "Summer Select: June 11—July 22, 2024",
     title: "Your Title Here",
     subtitle: "Your Subtitle Here",
   };
 
   return (
-    <div className="max-w-[1500px] mx-auto">
+    <div className="max-w-[5560px] mx-auto">
       {/* SEO */}
       <Seo pageSEO={SEO_CONFIG.signUp} />
-      <div className="bg-signup-hero-img bg-no-repeat  overflow-hidden">
+      <div className="bg-signup-hero-img bg-cover  overflow-hidden">
         <Header />
         <CommonHero hero={hero} />
       </div>
