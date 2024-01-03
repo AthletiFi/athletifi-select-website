@@ -8,6 +8,8 @@ import Image from 'next/image';
 import { BlueShodow, UnderLIneText } from '../common/Icon';
 
 const WhatWeDo = () => {
+  const coachImage = "coach-brian"
+
   return (
     <>
       <div className='relative py-6 lg:pt-10 sm:pt-20 pt-14'>
@@ -64,9 +66,9 @@ const WhatWeDo = () => {
                 className='flex justify-center lg:justify-start'
               >
                 <Image
-                  src='/assets/img/webp/what-we-do-nft-img.webp'
-                  width={496}
-                  height={603}
+                  src={`/assets/img/webp/${coachImage}.webp`}
+                  width={1200}
+                  height={1200}
                   alt='what we do sec img'
                 />
               </div>
