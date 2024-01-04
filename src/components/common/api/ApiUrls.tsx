@@ -22,3 +22,9 @@ export const NewsDetailApiHandler=(slug:any)=>{
 export const PostNewsLetterHandler=()=>{
     return `/join-newsletters`;
 }
+
+// POST CREATE API
+// Function to construct the API URL for posting to summer select data in the Strapi CMS.
+export const PostSummerSelectData=()=>{
+    return `/summer-select-signups`;
+}

@@ -13,7 +13,7 @@ export const GetRequestHandler = async (path:any) =>
   );
 
 // NEWSLETTER POST REQUEST HANDLER
-// Function to handle POST requests for newsletters to the Strapi CMS.
+// Function to handle POST requests to the Strapi CMS.
 // Path: The specific API endpoint within the Strapi CMS for newsletters.
 // Data: The payload to be sent in the POST request.
 export const PostRequestHandler = async (path:any,data:any) =>
@@ -21,7 +21,7 @@ export const PostRequestHandler = async (path:any,data:any) =>
 // Path: The specific API endpoint within the Strapi CMS for newsletters.
 // Data: The payload to be sent in the POST request.
   await axiosRequest(
-    "Post",
+    "POST",
     path,
     data
   );

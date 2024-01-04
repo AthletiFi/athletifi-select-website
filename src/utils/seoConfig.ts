@@ -1,15 +1,25 @@
 // seoConfig.ts
 
 export const SEO_CONFIG = {
-  aboutUs: {
-    title: "About Us | Athletifi",
+  aboutCoaches: {
+    title: "Coaches | Athletifi",
+    description: "Discover AthletiFi's mission to transform the soccer world with dynamic digital trading cards. Dive into our journey, partnerships, and vision for the future of soccer.",
+    websiteURL: "https://athleti.fi/about-us",
+    image: "/about_us_meta.png",
+  }, aboutProgram: {
+    title: "Program | Athletifi",
+    description: "Discover AthletiFi's mission to transform the soccer world with dynamic digital trading cards. Dive into our journey, partnerships, and vision for the future of soccer.",
+    websiteURL: "https://athleti.fi/about-us",
+    image: "/about_us_meta.png",
+  }, aboutCards: {
+    title: "Player Cards | Athletifi",
     description: "Discover AthletiFi's mission to transform the soccer world with dynamic digital trading cards. Dive into our journey, partnerships, and vision for the future of soccer.",
     websiteURL: "https://athleti.fi/about-us",
     image: "/about_us_meta.png",
   },
   home: {
-    title: "Athletifi | The Future of Sports",
-    description: "Experience the future of soccer with AthletiFi's digital player card collections. Collect, follow, and interact with elite youth soccer players in engaging ways. Welcome to the future of sports.",
+    title: "Athletifi | Summer Select 2024",
+    description: " Premier Summer Training and Year-Round Development Programs for U9-U14 Players. Welcome to the future of sports.",
     websiteURL: "https://athleti.fi",
     image: "/lending_meta_img.webp",
   },

@@ -1,5 +1,7 @@
 import Axios from "axios";
 // const SERVER_URL = "http://127.0.0.1:1337/api";
+// to test locally
+// const localHost = "http://localhost:1337/api";
 
 
 //The below Server URL is for AthletiFi's Strapi CMS implementation, which is hosted on the vidalco.in domain
@@ -16,6 +18,7 @@ export async function axiosRequest(method:any, url:any, data = null) {
     let response = await Axios({
       method: method,
       url: `${SERVER_URL}${url}`,
+      // url: `${localHost}${url}`,
       data: data,
     });
     // Return the data received from the Strapi CMS.
