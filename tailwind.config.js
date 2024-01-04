@@ -32,6 +32,7 @@ module.exports = {
         darkgray: "#0D171F",
         offwhite: "#B1B5B8",
         blue_linear_gradient: "rgba(255, 255, 255, 0.03)",
+        darkBackGround: "#000b13"
       },
       backgroundImage: {
         "header-bg": "url('/assets/img/webp/header_bg_2.webp')",

@@ -8,9 +8,11 @@ import Image from 'next/image';
 import { BlueShodow, UnderLIneText } from '../common/Icon';
 
 const WhatWeDo = () => {
+  const coachImage = "coach-brian"
+
   return (
     <>
-      <div className='relative py-6 lg:pt-10 sm:pt-20 pt-14'>
+      <div className='relative py-6 lg:pt-10 sm:pt-10 pt-8'>
         {/* SHADOW IMG */}
         <Image
           className='absolute top-[30%] -translate-y-24 end-0'
@@ -31,7 +33,7 @@ const WhatWeDo = () => {
                 data-aos-easing='linear'
                 data-aos-delay='100'
                 data-aos-offset='200'
-                className='flex flex-col justify-center h-full lg:pe-6 xl:p-0 text-center lg:text-start lg:mt-14'
+                className='flex flex-col justify-center h-full lg:pe-6 xl:p-0 text-center lg:text-start '
               >
                 <h2 className='font-HelveticaNeueMedium font-medium text-[26px]  md:text-5xl sm:text-4xl leading-[60px] text-[#FDFEFF] md:mb-4'>
                   <span className='relative'>
@@ -54,7 +56,7 @@ const WhatWeDo = () => {
                 </p>
               </div>
             </div>
-            <div className='lg:w-5/12 w-9/12 sm:w-3/5 mx-auto lg:me-0 mt-8'>
+            <div className='lg:w-5/12 xl:w-[531px] min-[1530px]:w-[40%] w-9/12 sm:w-3/5 mx-auto lg:me-0 mt-8'>
               <div
                 data-aos='fade-up'
                 data-aos-duration='400'
@@ -64,9 +66,9 @@ const WhatWeDo = () => {
                 className='flex justify-center lg:justify-start'
               >
                 <Image
-                  src='/assets/img/webp/what-we-do-nft-img.webp'
-                  width={496}
-                  height={603}
+                  src={`/assets/img/webp/${coachImage}.webp`}
+                  width={1200}
+                  height={1200}
                   alt='what we do sec img'
                 />
               </div>

@@ -114,6 +114,25 @@
   opacity: 1;
 }
 
+/* Style for date input type calendar picker indicator */
+/* Style for date input type */
+input[type='date'] {
+  position: relative;
+}
+
+/* Adding underlay on the right side */
+input[type='date']::before {
+  content: '';
+  position: absolute;
+  right: 0; /* Align to the right side */
+  top: 0;
+  bottom: 0;
+  width: 50px; /* Adjust the width as needed */
+  background: rgba(255, 255, 255, 0.3); /* Light semi-transparent background */
+  z-index: -1; /* Place it under the content */
+}
+
+
 
 /* PRELOADER ANIMATION */
 @keyframes preloader_img {

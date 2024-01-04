@@ -9,7 +9,8 @@ import { UnderLIneText } from '../common/Icon';
 import { CenterBlueShadow } from '../common/Icon';
 
 const OurMission = () => {
-  const playerImageMission = 'stebi-nft-mission';
+  const coachImage = 'coach-darren';
+
   return (
     <section className='sm:py-10 py-8 lg:mt-14 relative'>
       <div className='lg:w-[600px] lg:h-[700px] w-1/4 absolute -end-20 top-10 z-0'>
@@ -35,7 +36,7 @@ const OurMission = () => {
       </span>
       <div className='container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 sm:py-2 z-10 relative'>
         <div className='flex lg:flex-row flex-col-reverse justify-between'>
-          <div className='lg:w-5/12 xl:w-[531px] min-[1530px]:w-[40%] w-9/12 sm:w-3/5 mx-auto lg:ms-0  mt-6 sm:mt-8 lg:mt-0'>
+        <div className='lg:w-5/12 xl:w-[531px] min-[1530px]:w-[40%] w-9/12 sm:w-3/5 mx-auto lg:ms-0  mt-6 sm:mt-8 lg:mt-0'>
             <div
               data-aos='fade-up'
               data-aos-duration='400'
@@ -45,10 +46,10 @@ const OurMission = () => {
               className='flex justify-center lg:justify-start'
             >
               <Image
-                src={`/assets/img/webp/${playerImageMission}.webp`}
-                className='xl:h-[603px] xl:w-[505px] min-[1530px]:w-full'
-                width={505}
-                height={603}
+                src={`/assets/img/webp/${coachImage}.webp`}
+                // className='xl:h-[603px] xl:w-[505px] min-[1530px]:w-full'
+                width={800}
+                height={800}
                 alt='our misssion sec image'
               />
             </div>
