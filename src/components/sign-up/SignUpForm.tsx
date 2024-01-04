@@ -194,7 +194,7 @@ const SignUpForm = () => {
                   <select
                     required
                     value={data.playerGender}
-                    className={`${formInput} bg-darkBackGround` }
+                    className={`${formInput} bg-darkBackGround`}
                     id='playerGender'
                     onChange={(e) =>
                       setData({

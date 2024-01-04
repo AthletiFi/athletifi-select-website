@@ -80,7 +80,7 @@ const OurMission = () => {
                 has helped cultivate the talents of numerous players who went on
                 to play at higher levels. Darren’s approach is player-centric,
                 emphasizing individual skill enhancement within a team
-                framework."
+                framework.
               </p>
             </div>
           </div>
