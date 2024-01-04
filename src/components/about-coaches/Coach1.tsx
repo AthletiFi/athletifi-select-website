@@ -47,7 +47,7 @@ const OurMission = () => {
             >
               <Image
                 src={`/assets/img/webp/${coachImage}.webp`}
-                className='xl:h-[603px] xl:w-[505px] min-[1530px]:w-full'
+                // className='xl:h-[603px] xl:w-[505px] min-[1530px]:w-full'
                 width={1200}
                 height={1200}
                 alt='our misssion sec image'

@@ -194,7 +194,7 @@ const SignUpForm = () => {
                   <select
                     required
                     value={data.playerGender}
-                    className={formInput}
+                    className={`${formInput} bg-darkBackGround` }
                     id='playerGender'
                     onChange={(e) =>
                       setData({
@@ -368,7 +368,7 @@ const SignUpForm = () => {
                     id='state'
                     value={data.state}
                     onChange={(e) => setData({ ...data, state: e.target.value })}
-                    className={formInput}
+                    className={`${formInput} bg-darkBackGround`}
                   >
                     <option value=''>Select State</option>
                     <option value='Pennsylvania'>Pennsylvania</option>
