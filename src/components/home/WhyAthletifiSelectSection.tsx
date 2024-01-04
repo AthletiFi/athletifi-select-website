@@ -48,7 +48,7 @@ const WhyAthletifiSelectSection = () => {
               </p>
               <div className='flex lg:justify-center justify-center items-center m-10'>
                 <Link href='/about-program'>
-                  <BlueButton text='Learn more about the program' />
+                  <BlueButton text='Learn more about Summer Select' />
                 </Link>
               </div>
             </div>
@@ -65,7 +65,7 @@ const WhyAthletifiSelectSection = () => {
                 src='/assets/img/webp/coach-with-players.webp'
                 width={500}
                 height={500}
-                alt={'football palyer'}
+                alt={'football player'}
               />
             </div>
           </div>

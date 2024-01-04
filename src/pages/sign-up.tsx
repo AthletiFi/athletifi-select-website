@@ -8,7 +8,7 @@ import { SEO_CONFIG } from "@/utils/seoConfig";
 const Signup = () => {
   // SEO
   const hero = {
-    heading: "Summer Select: June 11—July 22, 2024",
+    heading: "Register for Summer Select 2024",
     title: "Your Title Here",
     subtitle: "Your Subtitle Here",
   };
