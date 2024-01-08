@@ -53,7 +53,7 @@ const HomeTitleSection
       {/*  IPAD SCREEN IMG */}
       <div className="hidden sm:block lg:hidden w-full">
         <Image
-          className="mx-auto h-[100px] w-[100px] sm:h-[250px] sm:w-[250px] md:h-[350px] md:w-[350px]"
+          className="mx-auto"
           src="/assets/img/webp/hero_female_player_2.webp"
           alt="female-player"
           width={350}
