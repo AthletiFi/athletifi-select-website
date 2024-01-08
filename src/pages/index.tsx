@@ -70,7 +70,7 @@ const Home: React.FC<NewsProps> = (props) => {
       <div className='overflow_hidden'> 
         <div className='hero_homepage_bg min-h-screen bg-no-repeat bg-cover flex flex-col justify-center bg-center'>
          <Header />
-          <div className='flex lg:items-center lg:flex-row flex-col relative pt-24 pb-8 md:pt-32 md:pb-14 lg:py-0'>
+          <div className='flex lg:items-center lg:flex-row flex-col relative'>
             <HomeTitleSection />
             <Image
               className='absolute right-0 hero_grid_position -z-10 hidden lg:block w-[450px] xl:w-[700px]'
