@@ -35,6 +35,7 @@ module.exports = {
         darkBackGround: "#000b13"
       },
       backgroundImage: {
+        'hero-pattern': "url('/assets/img/png/about-hero-center-shadow.png')",
         "header-bg": "url('/assets/img/webp/header_bg_2.webp')",
         "blue-underline": "url('/assets/img/svg/blue-underline.svg')",
         "strategic-advisor": "url('/assets/img/webp/our_strategic_bg.webp')",
