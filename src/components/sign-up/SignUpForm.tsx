@@ -81,7 +81,7 @@ const SignUpForm = () => {
   };
   
   return (
-    <section className="py-8 sm:py-[64px] lg:pt-[100px] xl:pt-[145px] lg:pb-[100px] xl:pb-[139px] relative z-20 before:content-[''] before:absolute before:w-[457px] before:h-[457px] before:top-2 before:-left-40 before:bg-shadow_blue before:blur-[111px] before:opacity-25 before:-z-10 before:rounded-full overflow-hidden">
+    <section className="py-8 sm:pb-[64px] sm:pt-[32px] lg:pt-[0px] xl:pt-[50px] lg:pb-[100px] xl:pb-[139px] relative z-20 overflow-hidden">
       {/* GRID-LINE IMG */}
       <Image
         className='lg:w-[462px] lg:h-[452px] w-40 h-40 lg:top-10 lg:-left-10 absolute -z-20 opacity-40'
@@ -102,12 +102,6 @@ const SignUpForm = () => {
                   </span>
                 </span>
               </h2>
-              <p className='font-Segoe font-normal text-md md:max-w-[365px] text-center lg:text-start text-[#FDFEFF] mx-auto lg:ms-0 leading-[27px] sm:pt-4 md:pt-3'>
-                The <span className='font-bold'>Summer Select '24</span> is our inaugural program for the AthletiFi
-                Select series. It will be the first of many seasonal and
-                specialized training opportunities that focus on individual
-                growth, team dynamics, and strategic understanding of the game.
-              </p>
               <form
                 action='submit'
                 onSubmit={(e) => formHandler(e)}
