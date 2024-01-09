@@ -22,13 +22,13 @@ const WhatWeDo = () => {
       </div>
       {/* SHADOW IMG */}
       <Image
-        className='absolute -top-[250px] end-0 z-0'
+        className='absolute -top-[250px] end-0 -z-10'
         src='/assets/img/png/what-we-do-shadow.png'
         width={448}
         height={448}
         alt='shadow'
       />
-      <span className='absolute top-50 start-0 z-0'>
+      <span className='absolute top-50 start-0 -z-10'>
         <BlueShodow />
       </span>
       <div className='container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 relative'>
