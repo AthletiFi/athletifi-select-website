@@ -38,30 +38,30 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                aria-label="about-us"
+                aria-label="coaches"
                 className="  text-white text-base font-Segoe relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto"
-                href="/about-us"
+                href="/about-coaches"
               >
-                About us
+                Coaches
               </Link>
             </li>
             <li>
               <Link
-                aria-label="news"
+                aria-label="program"
                 className=" text-white text-base font-Segoe relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto"
-                href="/news?page=1"
+                href="/about-program"
               >
-                News
+                Program
               </Link>
             </li>
             <li>
-              <button
-                aria-label="socials"
-                onClick={SocialIcon}
+              <Link
+                aria-label="signup"
                 className=" text-white text-base font-Segoe relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto"
+                href="/sign-up"
               >
-                Socials
-              </button>
+                Sign Up
+              </Link>
             </li>
           </ul>
           <p className=" text-white text-sm font-Segoe opacity-70">
