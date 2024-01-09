@@ -10,10 +10,10 @@ import Image from 'next/image';
 const WhoweAre = () => {
   return (
     <section className='pt-10 pb-16 sm:mb-14 sm:pb-12 lg:mb-20 relative'>
-      <div className='absolute top-0 xl:-top-[70px] -end-[80px]  xl:w-[250px] xl:h-[380px] z-0'>
+      <div className='absolute top-0 xl:-top-[70px] -end-[80px]  xl:w-[250px] xl:h-[380px] -z-10'>
         {/* RIGHT FOOTBALL IMG */}
         <Image
-          className='max-w-[176px] me-0'
+          className='max-w-[176px] me-0 -z-10'
           src='/assets/img/png/football.png'
           width={176}
           height={286}
@@ -22,13 +22,13 @@ const WhoweAre = () => {
       </div>
       {/* SHADOW IMG */}
       <Image
-        className='absolute -top-[250px] end-0 z-0'
+        className='absolute -top-[250px] end-0 -z-10'
         src='/assets/img/png/what-we-do-shadow.png'
         width={448}
         height={448}
         alt='shadow'
       />
-      <span className='absolute top-50 start-0 z-0'>
+      <span className='absolute top-50 start-0 -z-10'>
         <BlueShodow />
       </span>
       <div className='container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 relative'>
@@ -43,7 +43,7 @@ const WhoweAre = () => {
             <h2 className='font-HelveticaNeueMedium md:text-5xl text-[26px] sm:text-4xl text-[#FDFEFF] font-medium leading-[60px] relative z-20 text-center md:mb-4'>
               <span className='relative '>
                 Philosophy
-                <span className='absolute -bottom-2 left-0 z-0'>
+                <span className='absolute -bottom-2 left-0 -z-10'>
                   <UnderLIneText />
                 </span>
               </span>
