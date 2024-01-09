@@ -5,6 +5,7 @@ import { PostRequestHandler } from '../common/api/Api';
 import { PostSummerSelectData } from '../common/api/ApiUrls';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { phone } from 'phone';
 
 // Interface to describe the structure of an API error
 interface ApiError extends Error {
@@ -20,7 +21,7 @@ const SignUpForm = () => {
   const [checked, setChecked] = useState(false);
   const [loading, setLoading] = useState(false);
   const initialState = {
-    email: '',	
+    email: '',
     parentFirstName: '',
     playerFirstName: '',
     currentTeam: '',
@@ -31,18 +32,25 @@ const SignUpForm = () => {
     phoneNumber: '',
     streetAddress: '',
     city: '',
-    zipCode : '',	
+    zipCode: '',
     state: '',
   };
   const [data, setData] = useState(initialState);
 
-  console.log(data)
+  console.log(data);
 
   const formHandler = async (e: any) => {
     e.preventDefault();
+    const phoneNumber = phone(data.phoneNumber);
+    if (!phoneNumber.isValid) {
+      toast.error('Please enter a valid phone number.', {
+        position: 'bottom-left',
+      });
+      return;
+    }
     const formDetails = { data };
     setLoading(true);
-  
+
     if (!checked) {
       toast.error('Please agree to the terms and privacy policy to proceed.', {
         position: 'bottom-left',
@@ -50,25 +58,37 @@ const SignUpForm = () => {
       setLoading(false);
       return;
     }
-  
+
     try {
-      const { response, data } = await PostRequestHandler(PostSummerSelectData(), formDetails);
-  
+      const { response, data } = await PostRequestHandler(
+        PostSummerSelectData(),
+        formDetails
+      );
+
       if (data) {
-        toast('✅ Thanks for registering! You will receive an email with next steps soon.', {
-          position: 'bottom-left',
-        });
+        toast(
+          '✅ Thanks for registering! You will receive an email with next steps soon.',
+          {
+            position: 'bottom-left',
+          }
+        );
         setData(initialState);
       } else if (response.status === 400) {
         // Handling 400 status for unique constraint violation
-        toast.error('The email address you entered is already in use. Please use a different email.', {
-          position: 'bottom-left',
-        });
+        toast.error(
+          'The email address you entered is already in use. Please use a different email.',
+          {
+            position: 'bottom-left',
+          }
+        );
       } else {
         // Handle other no-data response scenarios
-        toast.error('Form submitted, but no response received. Please check your input.', {
-          position: 'bottom-left',
-        });
+        toast.error(
+          'Form submitted, but no response received. Please check your input.',
+          {
+            position: 'bottom-left',
+          }
+        );
       }
     } catch (error: unknown) {
       // Handling other types of errors
@@ -79,7 +99,7 @@ const SignUpForm = () => {
       setLoading(false);
     }
   };
-  
+
   return (
     <section className="py-8 sm:py-[64px] lg:pt-[100px] xl:pt-[145px] lg:pb-[100px] xl:pb-[139px] relative z-20 before:content-[''] before:absolute before:w-[457px] before:h-[457px] before:top-2 before:-left-40 before:bg-shadow_blue before:blur-[111px] before:opacity-25 before:-z-10 before:rounded-full overflow-hidden">
       {/* GRID-LINE IMG */}
@@ -103,10 +123,11 @@ const SignUpForm = () => {
                 </span>
               </h2>
               <p className='font-Segoe font-normal text-md md:max-w-[365px] text-center lg:text-start text-[#FDFEFF] mx-auto lg:ms-0 leading-[27px] sm:pt-4 md:pt-3'>
-                The <span className='font-bold'>Summer Select '24</span> is our inaugural program for the AthletiFi
-                Select series. It will be the first of many seasonal and
-                specialized training opportunities that focus on individual
-                growth, team dynamics, and strategic understanding of the game.
+                The <span className='font-bold'>Summer Select '24</span> is our
+                inaugural program for the AthletiFi Select series. It will be
+                the first of many seasonal and specialized training
+                opportunities that focus on individual growth, team dynamics,
+                and strategic understanding of the game.
               </p>
               <form
                 action='submit'
@@ -119,10 +140,7 @@ const SignUpForm = () => {
                 </h3>
                 <div className='flex flex-col mt-6'>
                   {/* PLAYER NAME INPUT */}
-                  <label
-                    className={formLabel}
-                    htmlFor='playerFirstName'
-                  >
+                  <label className={formLabel} htmlFor='playerFirstName'>
                     Player Name
                   </label>
                   <div className='flex flex-wrap -mx-3'>
@@ -162,10 +180,7 @@ const SignUpForm = () => {
                 </div>
                 <div className='flex flex-col mt-6'>
                   {/* DOB INPUT*/}
-                  <label
-                    className={formLabel}
-                    htmlFor='DOB'
-                  >
+                  <label className={formLabel} htmlFor='DOB'>
                     Player Date of Birth (DOB)
                   </label>
                   <input
@@ -185,10 +200,7 @@ const SignUpForm = () => {
                 </div>
                 <div className='flex flex-col mt-6'>
                   {/* GENDER INPUT */}
-                  <label
-                    className={formLabel}
-                    htmlFor='gender'
-                  >
+                  <label className={formLabel} htmlFor='gender'>
                     Gender
                   </label>
                   <select
@@ -211,10 +223,7 @@ const SignUpForm = () => {
                 </div>
                 <div className='flex flex-col mt-6'>
                   {/* CURRENT TEAM INPUT */}
-                  <label
-                    className={formLabel}
-                    htmlFor='currentTeam'
-                  >
+                  <label className={formLabel} htmlFor='currentTeam'>
                     Current Team (If Any)
                   </label>
                   <input
@@ -247,16 +256,15 @@ const SignUpForm = () => {
                     id='email'
                     placeholder='Email'
                     value={data.email}
-                    onChange={(e) => setData({ ...data, email: e.target.value })}
+                    onChange={(e) =>
+                      setData({ ...data, email: e.target.value })
+                    }
                     className={formInput}
                   />
                 </div>
                 <div className='flex flex-col mt-6'>
                   {/* PARENT NAME INPUT */}
-                  <label
-                    className={formLabel}
-                    htmlFor='parentFirstName'
-                  >
+                  <label className={formLabel} htmlFor='parentFirstName'>
                     Your Name
                   </label>
                   <div className='flex flex-wrap -mx-3'>
@@ -305,7 +313,9 @@ const SignUpForm = () => {
                     id='phoneNumber'
                     placeholder='Phone Number'
                     value={data.phoneNumber}
-                    onChange={(e) => setData({ ...data, phoneNumber: e.target.value })}
+                    onChange={(e) =>
+                      setData({ ...data, phoneNumber: e.target.value })
+                    }
                     className={formInput}
                   />
                 </div>
@@ -321,7 +331,9 @@ const SignUpForm = () => {
                     id='streetAddress'
                     placeholder='Street Address'
                     value={data.streetAddress}
-                    onChange={(e) => setData({ ...data, streetAddress: e.target.value })}
+                    onChange={(e) =>
+                      setData({ ...data, streetAddress: e.target.value })
+                    }
                     className={formInput}
                   />
                 </div>
@@ -353,7 +365,9 @@ const SignUpForm = () => {
                     id='zipCode'
                     placeholder='Zip Code'
                     value={data.zipCode}
-                    onChange={(e) => setData({ ...data, zipCode: e.target.value })}
+                    onChange={(e) =>
+                      setData({ ...data, zipCode: e.target.value })
+                    }
                     className={formInput}
                   />
                 </div>
@@ -367,7 +381,9 @@ const SignUpForm = () => {
                     required
                     id='state'
                     value={data.state}
-                    onChange={(e) => setData({ ...data, state: e.target.value })}
+                    onChange={(e) =>
+                      setData({ ...data, state: e.target.value })
+                    }
                     className={`${formInput} bg-darkBackGround`}
                   >
                     <option value=''>Select State</option>
@@ -482,6 +498,7 @@ export default SignUpForm;
 // const formLabel = {formLabel};
 // const formInput = {formInput};
 
-
-const formLabel = 'font-Segoe font-normal group text-md md:max-w-[365px] text-[#FDFEFF] opacity-80 leading-[27px]';
-const formInput = 'font-Sugoe font-normal input:-webkit-autofill focus:border-[white] autofill:none text-base text-[#FDFEFF] leading-6 py-5 px-4 bg-transparent w-full lg:max-w-[400px] mt-[5px] border border-1 border-[#FFFFFF40] outline-none';
+const formLabel =
+  'font-Segoe font-normal group text-md md:max-w-[365px] text-[#FDFEFF] opacity-80 leading-[27px]';
+const formInput =
+  'font-Sugoe font-normal input:-webkit-autofill focus:border-[white] autofill:none text-base text-[#FDFEFF] leading-6 py-5 px-4 bg-transparent w-full lg:max-w-[400px] mt-[5px] border border-1 border-[#FFFFFF40] outline-none';
