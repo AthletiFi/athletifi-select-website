@@ -49,7 +49,7 @@ const DigitalCardInfoSection = () => {
         />
       </div>
       <Image
-        className='absolute -bottom-[300px] start-0 z-0'
+        className='absolute -bottom-[300px] start-0 -z-10'
         src='/assets/img/png/left-shadow.png'
         width={448}
         height={448}

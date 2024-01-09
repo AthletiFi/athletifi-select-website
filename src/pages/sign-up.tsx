@@ -3,6 +3,7 @@ import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 import Seo from "@/components/common/Seo";
 import SignUpForm from "@/components/sign-up/SignUpForm";
+import Description from "@/components/sign-up/Description"
 import { SEO_CONFIG } from "@/utils/seoConfig";
 
 const Signup = () => {
@@ -21,6 +22,7 @@ const Signup = () => {
         <Header />
         <CommonHero hero={hero} />
       </div>
+      <Description />
       <SignUpForm />
       <Footer />
     </div> 
