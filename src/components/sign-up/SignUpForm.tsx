@@ -76,7 +76,7 @@ const SignUpForm = () => {
       } else if (response.status === 400) {
         // Handling 400 status for unique constraint violation
         toast.error(
-          'The email address you entered is already in use. Please use a different email.',
+          'There was an error submitting your application. If this persists please email us at welcome@athletifiselect.com',
           {
             position: 'bottom-left',
           }
