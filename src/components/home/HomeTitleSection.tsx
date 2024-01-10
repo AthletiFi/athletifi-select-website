@@ -1,4 +1,4 @@
-// HeroHomepage.tsx
+// HomeTitleSection.tsx
 
 // This component renders the hero section on the homepage, which is the top section below the menu with a big image and a call to action.
 
@@ -14,7 +14,7 @@ const HomeTitleSection
  = () => {
   return (
     <>
-      <div className="container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px]">
+      <div className="container home-title-section md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px]">
         <div className="flex items-center flex-col lg:flex-row">
           <div className="max-w-[490px] lg:max-w-[520px] xl:max-w-[608px]">
             <h1 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-[30px] sm:text-[45px] lg:text-[50px] xl:text-xxl font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">

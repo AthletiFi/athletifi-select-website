@@ -28,6 +28,19 @@
   top: 35%;
 }
 
+/* Header adjustments */
+.header-class { /* Replace with your actual header class name */
+  z-index: 10;
+  position: relative;
+}
+
+/* Safari specific adjustment */
+/* This targets Safari 7.1+ */
+_::-webkit-full-page-media, _:future, :root .home-title-section {
+  margin-top: 110px; /* Increased margin for Safari */
+}
+
+
 /* ================================================ MEET OUR STRATEGIC ADVISOR ================================================ */
 .join_now_btn:hover span {
   color: #00c5f4;
