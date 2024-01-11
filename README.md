@@ -1,11 +1,8 @@
 # AthletiFi Website
-This is the repository for the athletifinft.com website.
+This is the repository for the athletifiselect.com website.
 
-Our mission at AthletiFi is to redefine the way soccer fans engage with and support emerging talent in the world of soccer. We do this by creating NFT digital sports trading cards that dynamically display a player's latest performance stats using AI-assisted video recognition technology.
-
-Each card represents a young player from elite soccer academies with whom we've partnered. By acquiring these NFTs, fans can invest in promising young athletes and follow their journey in a unique and engaging way. Additionally, the cards will be usable in an upcoming Web3 game, adding an extra layer of interactivity and fun.
-
-Our project is about more than just soccer and NFTs - it's about building a sustainable ecosystem that benefits players, academies, and communities. AthletiFi employs a revenue-sharing model where proceeds from the platform go directly back to supporting the young players.
+AthletiFi Select is a youth soccer program that provides a competitive environment and a rich cultural experience for young athletes during their break from club soccer. Our mission is to offer exceptional exposure opportunities, both locally and internationally, fostering the development of each player's skills and soccer acumen.
+We are committed to providing a competitive and enriching environment for young athletes. Our mission is to offer comprehensive training programs that not only enhance soccer skills but also foster cultural experiences and broad exposure. We believe in nurturing talent during breaks from club soccer, focusing on individual growth, teamwork, and a deeper understanding of the game.
 
 ## Technology Stack
 
