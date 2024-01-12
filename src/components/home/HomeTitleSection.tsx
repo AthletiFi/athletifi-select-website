@@ -22,7 +22,7 @@ const HomeTitleSection
               Elevate Your Game with AthletiFi Select
             </h1>
             <p className="font-Segoe text-white text-[16px] sm:text-md font-normal mt-4 opacity-80 text-center lg:text-start">
-            Premier Summer Training and Year-Round Development Programs for U9-U14 Players 
+            Premier Summer Training and Year-Round Development Programs for U9-U15 Players 
             </p>
             <h3 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-md font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
               {/* Make club soccer more affordable */}

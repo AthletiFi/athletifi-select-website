@@ -19,7 +19,7 @@ export const SEO_CONFIG = {
   },
   home: {
     title: "Athletifi | Summer Select 2024",
-    description: " Premier Summer Training and Year-Round Development Programs for U9-U14 Players. Welcome to the future of sports.",
+    description: " Premier Summer Training and Year-Round Development Programs for U9-U15 Players. Welcome to the future of sports.",
     websiteURL: "https://athleti.fi",
     image: "/lending_meta_img.webp",
   },
