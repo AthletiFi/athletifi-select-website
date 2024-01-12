@@ -52,7 +52,7 @@ const OurMission = () => {
             </h2>
             <p className='font-Segoe font-normal text-md leading-7 text-start pb-0.5 text-[#FDFEFF] opacity-80 m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20'>
               <span className='block pb-2'>
-                Our flagship Summer Select 2024 program is designed for U9-U14
+                Our flagship Summer Select 2024 program is designed for U9-U15
                 players seeking to elevate their game. This intensive summer
                 training program includes expert coaching, advanced skill
                 development, and participation in prestigious tournaments. We
@@ -61,7 +61,7 @@ const OurMission = () => {
                 fun, engaging activities.
               </span>
               <span className='block pb-2'>
-                <span className='font-bold'>Who: </span>Boys & Girls, Ages U9 - U14 (2010 - 2015 birth
+                <span className='font-bold'>Who: </span>Boys & Girls, Ages U9 - U15 (2009 - 2015 birth
                 years).{' '}
               </span>
               <span className='block pb-2'>

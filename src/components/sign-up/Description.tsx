@@ -30,7 +30,7 @@ const Description = () => {
               <h3 className='text-md font-bold mt-4'>Details:</h3>
               <ul className='list-disc list-inside block pb-2 pl-4'>
                 <li>
-                  Who: Boys & girls, ages U9 - U14 (2010 - 2015 birth years)
+                  Who: Boys & girls, ages U9 - U15 (2009 - 2015 birth years)
                 </li>
                 <li>Where: Conshohocken, PA</li>
                 <li>
