@@ -50,11 +50,9 @@ const WhoweAre = () => {
             </h2>
             <p className="font-Segoe font-normal text-md leading-7 text-center pb-0.5 text-[#FDFEFF] opacity-80 m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20">
             At AthletiFi Select, we aim to provide a competitive environment and a rich cultural experience for young athletes during their break from club soccer. Our mission is to offer exceptional exposure opportunities, both locally and internationally, fostering the development of each player's skills and soccer acumen.
-
-              <span className="block pb-2">
-                {" "}
-                we are committed to providing a competitive and enriching environment for young athletes. Our mission is to offer comprehensive training programs that not only enhance soccer skills but also foster cultural experiences and broad exposure. We believe in nurturing talent during breaks from club soccer, focusing on individual growth, teamwork, and a deeper understanding of the game
-              </span>
+            </p>  
+            <p className="font-Segoe font-normal text-md leading-7 text-center pb-0.5 text-[#FDFEFF] opacity-80 m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20">
+            We are committed to providing a competitive and enriching environment for young athletes. Our mission is to offer comprehensive training programs that not only enhance soccer skills but also foster cultural experiences and broad exposure. We believe in nurturing talent during breaks from club soccer, focusing on individual growth, teamwork, and a deeper understanding of the game.
             </p>
           </div>
         </div>

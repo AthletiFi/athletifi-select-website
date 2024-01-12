@@ -44,11 +44,13 @@ const PlayerDashboardDevelopment = () => {
           >
             <h2 className=' p-[15px] font-HelveticaNeueMedium md:text-5xl text-[26px] sm:text-4xl text-[#FDFEFF] font-medium leading-[30px] relative z-20 text-center md:mb-4'>
               <span className='relative '>
-                Soccer development, visualized and optimized with the AthletiFi
-                player dashboard
+                Soccer Development
                 {/* <span className="absolute -bottom-2 left-0 z-0">
                   <UnderLIneText />
                 </span> */}
+              </span>
+              <span className="lg:px-14 lg:pt-14 sm:px-8 px-4 pt-6 flex flex-col items-center text-primary text-lgxl font-HelveticaNeueRegular" >
+              Visualized with the AthletiFi Dashboard
               </span>
             </h2>
             <p className='font-Segoe font-normal text-md leading-7 text-center pb-0.5 text-[#FDFEFF] opacity-80 m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20'>

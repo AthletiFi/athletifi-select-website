@@ -19,7 +19,7 @@ const WhyAthletifiSelectSection = () => {
               data-aos-offset='200'
             >
               <span className='relative mb-4 lg:leading-[60px] leading-[120%]'>
-                Why Choose AthletiFi Select?
+                A Club-Neutral Summer Program
               </span>
             </h2>
             <div
@@ -29,15 +29,27 @@ const WhyAthletifiSelectSection = () => {
               data-aos-delay='400'
               data-aos-offset='200'
             >
-              <p className='font-Segoe text-md opacity-80 text-primary text-center md:pb-3 pb-6 mt-4'>
-                Choose AthletiFi Select for an unparalleled soccer experience.
-                Work with some of the region's best coaches, and seize the
-                opportunity to be identified for our AthletiFi Team of the Year.
-                This elite team travels to prestigious tournaments across the
-                country and abroad, offering significant exposure and
-                competitive experiences. Plus, when you sign up with us, you
-                gain access to our innovative player dashboard at no additional
-                cost.
+              <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center lg:text-start mt-4'>
+                AthletiFi has teamed up with Eastern Pennsylvania's top coaches to build a brand new club-neutral Summer Select program! AthletiFi Select provides transparent coaching leadership, offers optimal team sizes for more personalized training, and of course, the AthletiFi dashboard so you always have access to the latest stats and video highlights!
+              </p>
+              <h3 className='text-md font-bold mt-4 text-primary'>Details:</h3>
+              <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
+                <li>
+                  <strong>Who:</strong> Boys & girls, ages U9 - U15 (2009 - 2015 birth years)
+                </li>
+                <li><strong>What:</strong> Intensive Training - Two sessions per week for five weeks, totaling 10 skill-enhancing sessions.</li>
+                <li>
+                  <strong>When:</strong> Weeks of 6/10, 6/17, 6/24, 7/8, & 7/15 (Note: off for
+                  July 4 week)
+                </li>
+                <li><strong>Where:</strong> Conshohocken, PA</li>
+                <li>
+                  <strong>Tournaments:</strong> Hershey Summer Classic, Lititz Summer Showcase, EDP Summer Sizzler
+                </li>
+                <li>Early bird pricing: <strong>$450.00</strong></li>
+              </ul>
+              <p className='text-md font-bold mt-4 text-primary'>
+                Early bird pricing ends on January 28!
               </p>
               <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center lg:text-start mt-4'>
                 <span className='font-bold'>The Summer Select '24</span> is our

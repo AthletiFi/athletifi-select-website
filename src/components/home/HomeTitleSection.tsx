@@ -10,8 +10,7 @@ import Home from "@/pages";
 
 
 
-const HomeTitleSection
- = () => {
+const HomeTitleSection = () => {
   return (
     <>
       <div className="container home-title-section md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px]">

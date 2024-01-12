@@ -7,6 +7,7 @@ import React from 'react';
 import Image from 'next/image';
 import { UnderLIneText } from '../common/Icon';
 import { CenterBlueShadow, BlueShodow } from '../common/Icon';
+import Description from '../sign-up/Description';
 
 const OurMission = () => {
   const playerImageMission = 'stebi-nft-mission';
@@ -44,10 +45,13 @@ const OurMission = () => {
           >
             <h2 className=' p-[15px] font-HelveticaNeueMedium md:text-5xl text-[26px] sm:text-4xl text-[#FDFEFF] font-medium leading-[30px] relative z-20 text-center md:mb-4'>
               <span className='relative '>
-                Summer Select:June 11—July 22, 2024
+                Summer Select 2024
                 {/* <span className="absolute -bottom-2 left-0 z-0">
                   <UnderLIneText />
                 </span> */}
+              </span>
+              <span className="lg:px-14 lg:pt-14 sm:px-8 px-4 pt-6 flex flex-col items-center text-primary text-lgxl font-HelveticaNeueRegular" >
+              June 11—July 22, 2024
               </span>
             </h2>
             <p className='font-Segoe font-normal text-md leading-7 text-start pb-0.5 text-[#FDFEFF] opacity-80 m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20'>
@@ -60,27 +64,7 @@ const OurMission = () => {
                 in their soccer journey, with a balance of rigorous training and
                 fun, engaging activities.
               </span>
-              <span className='block pb-2'>
-                <span className='font-bold'>Who: </span>Boys & Girls, Ages U9 - U15 (2009 - 2015 birth
-                years).{' '}
-              </span>
-              <span className='block pb-2'>
-                <span className='font-bold'> What: </span>
-                Intensive Training - Two sessions per week for five weeks,
-                totaling 10 skill-enhancing sessions.
-              </span>
-              <span className='block pb-2'>
-                <span className='font-bold'> Dates: </span>
-                Weeks of 6/10, 6/17, 6/24, 7/8, 7/15 (Note: Off for July 4th
-                break).
-              </span>
-              <span className='block pb-2'>
-                <span className='font-bold'>Cost: </span> $450
-              </span>
-              <span className='block pb-2'>
-                <span className='font-bold'>Tournaments: </span>
-                Hershey Summer Classic, EDP Summer Sizzler.
-              </span>
+              <Description/>
             </p>
           </div>
         </div>
