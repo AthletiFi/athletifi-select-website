@@ -60,6 +60,27 @@ _::-webkit-full-page-media, _:future, :root .home-title-section {
   animation: preloader_img 1.2s ease-in-out infinite alternate;
 }
 
+/* ============================ legal pages ================================= */
+
+.legal-heading {
+  font-weight: bold;
+  margin-top: 2rem; 
+  margin-bottom: 1rem; 
+}
+
+.legal-paragraph {
+  text-align: justify;
+  margin-bottom: 1rem; 
+}
+
+.legal-list {
+  margin-bottom: 1rem;
+  list-style-type: lower-alpha;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+}
+
+
 /* ==============================  Social Icon================================ */
 
 .bg_social_icon {
@@ -96,13 +117,15 @@ _::-webkit-full-page-media, _:future, :root .home-title-section {
 
 /* ============================ sign up ================================= */
 
+/* ============================ sign up ================================= */
+
 .sign_up_checkbox input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 18px;
   height: 18px;
-  border: 2px solid #60666B;
+  border: 2px solid #60666b;
   background: transparent;
   border-radius: 4px;
   outline: none;
@@ -126,6 +149,15 @@ _::-webkit-full-page-media, _:future, :root .home-title-section {
 .sign_up_checkbox input[type="checkbox"]:checked::before {
   opacity: 1;
 }
+
+.sign-up__legal-link {
+  color: #00c5f4;
+}
+
+.sign-up__legal-link:hover {
+  text-decoration: underline;
+}
+
 
 /* Style for date input type calendar picker indicator */
 /* Style for date input type */

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 import { ButtonWhiteArrow, UnderLIneText } from '../common/Icon';
 import { PostRequestHandler } from '../common/api/Api';
@@ -437,17 +438,34 @@ const SignUpForm = () => {
                   </select>
                 </div>
                 {/* CHECKBOX */}
-                <div className='flex items-center gap-2 mt-4 sign_up_checkbox'>
+                <div className="flex items-center gap-2 mt-4 sign_up_checkbox">
                   <input
-                    type='checkbox'
-                    id='Privacy-Policy'
-                    onChange={(event) => setChecked(event.target.checked)}
+                    type="checkbox"
+                    id="Privacy-Policy"
+                    onChange={event => setChecked(event.target.checked)}
                   />
                   <label
-                    htmlFor='Privacy-Policy'
-                    className='font-Segoe font-normal text-md md:max-w-[365px] text-[#FDFEFF] opacity-80 leading-[27px] '
+                    htmlFor="Privacy-Policy"
+                    className="font-Segoe font-normal text-md md:max-w-[365px] text-[#FDFEFF] opacity-80 leading-[27px] "
                   >
-                    I agree to all Terms and Privacy Policy
+                    I agree to the{' '}
+                    <Link
+                      href="/terms-of-use"
+                      className="sign-up__legal-link"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Terms of Use
+                    </Link>{' '}
+                    and{' '}
+                    <Link
+                      href="/privacy-policy"
+                      className="sign-up__legal-link"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Privacy Policy
+                    </Link>
                   </label>
                 </div>
                 {/* SIGN UP BUTTON */}

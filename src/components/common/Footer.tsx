@@ -30,37 +30,20 @@ const Footer = () => {
           <ul className=" flex gap-lg-10 gap-5">
             <li>
               <Link
-                className=" text-white text-base font-Segoe relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto "
-                href="/"
+                className="text-white text-base font-Segoe relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto "
+                aria-label="privacy-policy"
+                href="/privacy-policy"
               >
-                Home
+                Privacy Policy
               </Link>
             </li>
             <li>
               <Link
-                aria-label="coaches"
-                className="  text-white text-base font-Segoe relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto"
-                href="/about-coaches"
+                className="text-white text-base font-Segoe relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto "
+                aria-label="terms-of-use"
+                href="/terms-of-use"
               >
-                Coaches
-              </Link>
-            </li>
-            <li>
-              <Link
-                aria-label="program"
-                className=" text-white text-base font-Segoe relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto"
-                href="/about-program"
-              >
-                Program
-              </Link>
-            </li>
-            <li>
-              <Link
-                aria-label="signup"
-                className=" text-white text-base font-Segoe relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow_blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto"
-                href="/sign-up"
-              >
-                Sign Up
+                Terms of Use
               </Link>
             </li>
           </ul>
@@ -81,7 +64,7 @@ const Footer = () => {
             <Link
               aria-label="facebook"
               className="hover:-translate-y-1 transition duration-300 ease-out"
-              href="https://www.facebook.com/athletifi"
+              href="https://www.facebook.com/profile.php?id=61553263775533"
               target="_blank"
               rel="noopener noreferrer"
             >

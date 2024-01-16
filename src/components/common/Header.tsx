@@ -200,7 +200,7 @@ const Header = () => {
                       </Link>
                       <Link
                         className="hover:-translate-y-1 transition duration-300  flex items-center"
-                        href="https://www.facebook.com/athletifi"
+                        href="https://www.facebook.com/profile.php?id=61553263775533"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
