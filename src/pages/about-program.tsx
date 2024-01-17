@@ -3,9 +3,9 @@
 // This file renders the "About Us" page.
 // It includes various components to display information about the company.
 
-import OurMission from '@/components/about-program/OurMission';
 import BeyondSummer from '@/components/about-program/BeyondSummer';
-import SummerSelect from '@/components/about-program/SummerSelect';
+import SummerSelectDescription from '@/components/about-program/SummerSelect';
+import GoalkeepingSection from '@/components/about-program/Goalkeeping';
 import Backtotop from '@/components/common/Backtotop';
 import CommonHero from '@/components/common/CommonHero';
 import Footer from '@/components/common/Footer';
@@ -16,7 +16,7 @@ import { SEO_CONFIG } from '@/utils/seoConfig';
 const AboutProgram = () => {
   // SEO
   const hero = {
-    heading: 'Program',
+    heading: 'About The Program',
     title: 'Your Title Here',
     subtitle: 'Your Subtitle Here',
   };
@@ -29,8 +29,8 @@ const AboutProgram = () => {
           <Header />
           <CommonHero hero={hero} />
         </div>
-        <OurMission />
-        <SummerSelect />
+        <SummerSelectDescription />
+        <GoalkeepingSection />
         <BeyondSummer />
         <Footer />
         <Backtotop />
