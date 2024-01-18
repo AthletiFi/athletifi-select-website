@@ -8,7 +8,7 @@ import Image from 'next/image';
 import { UnderLIneText } from '../common/Icon';
 import { CenterBlueShadow } from '../common/Icon';
 
-const OurMission = () => {
+const Coach1 = () => {
   const coachImage = 'coach-aj';
 
   return (
@@ -89,4 +89,4 @@ const OurMission = () => {
   );
 };
 
-export default OurMission;
+export default Coach1;
