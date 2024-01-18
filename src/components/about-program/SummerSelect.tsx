@@ -1,20 +1,14 @@
-// OurMission.tsx
-
-// This component renders the "Our Mission" section on the "About Us" page.
-// It provides information about the company's mission and objectives.
-
 import React from 'react';
 import Image from 'next/image';
 import { UnderLIneText } from '../common/Icon';
 import { CenterBlueShadow, BlueShodow } from '../common/Icon';
 import Description from '../sign-up/Description';
 
-const OurMission = () => {
+const SummerSelectDescription = () => {
   const playerImageMission = 'stebi-nft-mission';
   return (
     <section className='pt-5 pb-5 sm:mb-14 sm:pb-12 lg:mb-0 relative'>
       <div className='absolute top-0 xl:-top-[70px] -end-[80px]  xl:w-[250px] xl:h-[380px] z-0'>
-        {/* RIGHT FOOTBALL IMG */}
         <Image
           className='max-w-[300px] me-0'
           src='/assets/img/png/football.png'
@@ -23,7 +17,6 @@ const OurMission = () => {
           alt='what we do foot ball image'
         />
       </div>
-      {/* SHADOW IMG */}
       <Image
         className='absolute -top-[250px] end-0 z-0'
         src='/assets/img/png/what-we-do-shadow.png'
@@ -43,18 +36,23 @@ const OurMission = () => {
             data-aos-delay='300'
             data-aos-offset='100'
           >
-            <h2 className=' p-[15px] font-HelveticaNeueMedium md:text-5xl text-[26px] sm:text-4xl text-[#FDFEFF] font-medium leading-[30px] relative z-20 text-center md:mb-4'>
+            <h2 className='p-[15px] font-HelveticaNeueMedium md:text-5xl text-[26px] sm:text-4xl text-[#FDFEFF] font-medium leading-[30px] relative z-20 text-center md:mb-4'>
               <span className='relative '>
                 Summer Select 2024
-                {/* <span className="absolute -bottom-2 left-0 z-0">
-                  <UnderLIneText />
-                </span> */}
               </span>
-              <span className="lg:px-14 lg:pt-14 sm:px-8 px-4 pt-6 flex flex-col items-center text-primary text-lgxl font-HelveticaNeueRegular" >
-              June 11—July 22, 2024
+              <span className="lg:px-14 lg:pt-14 sm:px-8 px-4 pt-6 flex flex-col items-center text-primary text-lgxl font-HelveticaNeueRegular">
+                June 11—July 22, 2024
               </span>
             </h2>
-            <p className='font-Segoe font-normal text-md leading-7 text-start pb-0.5 text-[#FDFEFF] opacity-80 m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20'>
+            <div className='flex justify-center items-center my-6'>
+              <Image
+                src='/assets/img/webp/soccer-team.webp' 
+                width={640} 
+                height={360} 
+                alt='Summer Select Program'
+              />
+            </div>
+            <p className='font-Segoe font-normal text-md leading-7 text-start pb-0.5 text-[#FDFEFF] opacity-80 m-0 sm:pt-4 lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1200px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20'>
               <span className='block pb-2'>
                 Our flagship Summer Select 2024 program is designed for U9-U15
                 players seeking to elevate their game. This intensive summer
@@ -64,7 +62,7 @@ const OurMission = () => {
                 in their soccer journey, with a balance of rigorous training and
                 fun, engaging activities.
               </span>
-              <Description/>
+              <Description />
             </p>
           </div>
         </div>
@@ -73,4 +71,4 @@ const OurMission = () => {
   );
 };
 
-export default OurMission;
+export default SummerSelectDescription;

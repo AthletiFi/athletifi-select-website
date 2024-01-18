@@ -7,8 +7,8 @@ import React from 'react';
 import Image from 'next/image';
 import { BlueShodow, UnderLIneText } from '../common/Icon';
 
-const Coach2 = () => {
-  const coachImage = "coach-brian"
+const Coach4 = () => {
+  const coachImage = "coach-justin"
 
   return (
     <>
@@ -37,22 +37,14 @@ const Coach2 = () => {
               >
                 <h2 className='font-HelveticaNeueMedium font-medium text-[26px]  md:text-5xl sm:text-4xl leading-[60px] text-[#FDFEFF] md:mb-4'>
                   <span className='relative'>
-                    Brian Blasy
+                    Justin Johnson
                     <span className='absolute -bottom-2 left-0'>
                       <UnderLIneText />
                     </span>
                   </span>
                 </h2>
                 <p className='font-Segoe font-normal text-md md:max-w-[530px] text-[#FDFEFF] mx-auto lg:ms-0 opacity-80 leading-7 sm:pt-4'>
-                  Brian Blasy's diverse background spans playing at Lancaster
-                  University in the United Kingdom and as a kicker/punter in
-                  NCAA Division 1 at Temple University. His coaching credentials
-                  are equally impressive, as he holds a La Liga methodology
-                  expert-level diploma and a USSF license. As the Director and
-                  Co-Owner of Villanova Soccer Academy and a coach at Northeast
-                  High School Soccer, Brian's experience in both playing and
-                  coaching at different levels brings a unique perspective to
-                  the AthletiFi Select program.
+                Justin Johnson is a passionate soccer coach who has been playing for the past 19 years. He played for four years at a semi-professional academy in York, England while pursuing a degree in sports and exercise science. Justin is an assistant coach at The Haverford School, where he emphasizes respect, teamwork, and perseverance and is committed to shaping individuals who excel in character and discipline. He brings a unique blend of expertise, enthusiasm, and a deep love for the game to our coaching team at AthletiFi Select.
                 </p>
               </div>
             </div>
@@ -80,4 +72,4 @@ const Coach2 = () => {
   );
 };
 
-export default Coach2;
+export default Coach4;
