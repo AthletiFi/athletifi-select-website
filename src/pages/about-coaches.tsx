@@ -3,9 +3,10 @@
 // This file renders the "About Us" page.
 // It includes various components to display information about the company.
 
+import Coach1 from '@/components/about-coaches/Coach1';
 import Coach2 from '@/components/about-coaches/Coach2';
 import Coach3 from '@/components/about-coaches/Coach3';
-import Coach1 from '@/components/about-coaches/Coach1';
+import Coach4 from '@/components/about-coaches/Coach4';
 import Philosophy from '@/components/about-coaches/Philosophy';
 import Backtotop from '@/components/common/Backtotop';
 import CommonHero from '@/components/common/CommonHero';
@@ -17,7 +18,7 @@ import { SEO_CONFIG } from '@/utils/seoConfig';
 const AboutCoaches = () => {
   // SEO
   const hero = {
-    heading: 'Coaches',
+    heading: 'About The Coaches',
     title: 'Your Title Here',
     subtitle: 'Your Subtitle Here',
   };
@@ -31,8 +32,9 @@ const AboutCoaches = () => {
           <CommonHero hero={hero} />
         </div>
         <Coach1 />
-        <Coach3 />
         <Coach2 />
+        <Coach3 />
+        <Coach4 />
         <Philosophy />
         <Footer />
         <Backtotop />
