@@ -2,31 +2,31 @@
 
 export const SEO_CONFIG = {
   aboutCoaches: {
-    title: "Coaches | Athletifi",
+    title: "Coaches | AthletiFi",
     description: "Meet the experienced and passionate coaching team behind AthletiFi Summer Select.",
     websiteURL: "https://www.athletifiselect.com/about-coaches",
     image: "/about_coaches_meta.jpg",
   },
   aboutProgram: {
-    title: "Program | Athletifi",
+    title: "Program | AthletiFi",
     description: "Discover the AthletiFi Summer Select Program - improve your soccer skills and become the best player you can be.",
     websiteURL: "https://www.athletifiselect.com/about-program",
     image: "/about_program_meta.jpg",
   },
   aboutCards: {
-    title: "Player Cards | Athletifi",
+    title: "Player Cards | AthletiFi",
     description: "Learn about AthletiFi's' Player Cards. See how we track and showcase player achievements and progress.",
     websiteURL: "https://www.athletifiselect.com/about-cards",
     image: "/player_cards_meta.jpg",
   },
   home: {
-    title: "Athletifi Select",
+    title: "AthletiFi Summer Select 2024",
     description: "Join AthletiFi Select for an unrivaled soccer development experience. High-quality coaching, specialized training, and unique player growth opportunities await.",
     websiteURL: "https://www.athletifiselect.com",
     image: "/about_coaches_meta.png",
   },
   signUp: {
-    title: "Sign up for AthletiFi Select",
+    title: "Sign up for AthletiFi Summer Select",
     description: "Enroll now in the AthletiFi Summer Select Program. Secure a spot for your young athlete in our elite soccer development program.",
     websiteURL: "https://www.athletifiselect.com/sign-up",
     image: "/sign_up_meta.jpg",
