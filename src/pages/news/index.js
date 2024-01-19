@@ -10,10 +10,10 @@ import { SEO_CONFIG } from "@/utils/seoConfig";
 
 // Importing API handlers for fetching news data
 import { GetRequestHandler } from "@/components/common/api/Api";
-import {
-  NewsListApiHandler,
-  NewsListFilterApiHandler,
-} from "@/components/common/api/ApiUrls";
+// import {
+//   NewsListApiHandler,
+//   NewsListFilterApiHandler,
+// } from "@/components/common/api/ApiUrls";
 
 // The main functional component for the News and Insights page
 const NewsPage = ({ newsListData, allNewsList }) => {
@@ -55,28 +55,28 @@ const NewsPage = ({ newsListData, allNewsList }) => {
 };
 
 // Server-side data fetching for the News and Insights page
-export async function getServerSideProps() {
-  try {
-        // Fetching news list and filter data
-    const response = await GetRequestHandler(NewsListApiHandler());
-    const responseFilter = await GetRequestHandler(NewsListFilterApiHandler());
-    const NewsData = responseFilter && responseFilter.data;
+// export async function getServerSideProps() {
+//   try {
+//         // Fetching news list and filter data
+//     const response = await GetRequestHandler(NewsListApiHandler());
+//     const responseFilter = await GetRequestHandler(NewsListFilterApiHandler());
+//     const NewsData = responseFilter && responseFilter.data;
 
-    return {
-      props: {
-        newsListData: NewsData,
-        allNewsList: response,
-      },
-    };
-  } catch (error) {
-    console.error("Error fetching data:", error);
-    return {
-      props: {
-        newsListData: null,
-        allNewsList: null,
-      },
-    };
-  }
-}
+//     return {
+//       props: {
+//         newsListData: NewsData,
+//         allNewsList: response,
+//       },
+//     };
+//   } catch (error) {
+//     console.error("Error fetching data:", error);
+//     return {
+//       props: {
+//         newsListData: null,
+//         allNewsList: null,
+//       },
+//     };
+//   }
+// }
 
 export default NewsPage;
