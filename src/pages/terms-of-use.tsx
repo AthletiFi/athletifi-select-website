@@ -15,7 +15,7 @@ const TermsOfUsePage = () => {
   return (
     <>
       {/* SEO */}
-      <Seo pageSEO={SEO_CONFIG.signUp} />
+      <Seo pageSEO={SEO_CONFIG.home} />
       <div>
         <Header />
         <CommonHero hero={hero} />
