@@ -23,7 +23,7 @@ export const SEO_CONFIG = {
     title: "AthletiFi Summer Select 2024",
     description: "Join AthletiFi Select for an unrivaled soccer development experience. High-quality coaching, specialized training, and unique player growth opportunities await.",
     websiteURL: "https://www.athletifiselect.com",
-    image: "/about_coaches_meta.png",
+    image: "/home_meta.jpg",
   },
   signUp: {
     title: "Sign up for AthletiFi Summer Select",
