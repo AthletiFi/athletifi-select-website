@@ -80,13 +80,9 @@ const DigitalCardInfoSection = () => {
               data-aos-delay='400'
               data-aos-offset='200'
             >
-              Every AthletiFi Select participant receives a personalized Digital
-              Player Card, a cutting-edge tool for tracking and showcasing their
-              soccer journey. These cards not only highlight players' skills and
-              achievements but also serve as dynamic progress reports for
-              parents. The Player Dashboard offers an interactive platform for
-              athletes to monitor their development, share highlights, and
-              connect with family, friends, and recruiters
+              AthletiFi Select offers a personalized Player Card to every participant, highlighting their unique soccer journey. These cards are the ultimate tool for tracking and highlighting skills and achievements. 
+              <br/>
+              Parents also benefit from dynamic progress reports, keeping them up-to-date on their child's development. The Player Dashboard offers an interactive platform to monitor progress, share highlights, and connect with family, friends, and recruiters.
             </p>
          
           </div>

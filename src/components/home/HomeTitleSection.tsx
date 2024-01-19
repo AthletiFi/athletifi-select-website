@@ -17,14 +17,12 @@ const HomeTitleSection = () => {
         <div className="flex items-center flex-col lg:flex-row">
           <div className="max-w-[490px] lg:max-w-[520px] xl:max-w-[608px]">
             <h1 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-[30px] sm:text-[45px] lg:text-[50px] xl:text-xxl font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
-              {/* Make club soccer more affordable */}
-              Elevate Your Game with AthletiFi Select
+              Eastern PA's Elite New Soccer Experience 
             </h1>
             <p className="font-Segoe text-white text-[16px] sm:text-md font-normal mt-4 opacity-80 text-center lg:text-start">
             Premier Summer Training and Year-Round Development Programs for U9-U15 Players 
             </p>
             <h3 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-md font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
-              {/* Make club soccer more affordable */}
               Summer Select: June 11—July 22, 2024
             </h3>
            
