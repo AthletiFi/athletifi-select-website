@@ -17,8 +17,8 @@ const AboutCards = () => {
   // SEO
   const hero = {
     heading: 'Player Cards',
-    title: 'Your Title Here',
-    subtitle: 'Your Subtitle Here',
+    title: 'AthletiFi Player Cards',
+    subtitle: 'The fun and engaging way to follow youth soccer',
   };
 
   return (
