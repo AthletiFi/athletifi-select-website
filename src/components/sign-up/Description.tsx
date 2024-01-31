@@ -21,13 +21,14 @@ const Description = () => {
           Tournaments: Hershey Summer Classic, Lititz Summer
           Showcase, EDP Summer Sizzler
         </li>
-        <li>Early bird pricing: $450.00</li>
+        {/* <li>Early bird pricing: $450.00</li> */}
+        <li>Price: $500.00</li>
       </ul>
-      <p className='mt-4'>
+      {/* <p className='mt-4'>
         <strong>Early bird pricing ends on January 28</strong> (-10%
         discount, a $50 savings). Spots are limited, so sign up today
         below!
-      </p>
+      </p> */}
     </div>
   );
 };

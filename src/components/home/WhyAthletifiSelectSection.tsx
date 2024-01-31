@@ -46,11 +46,11 @@ const WhyAthletifiSelectSection = () => {
                 <li>
                   <strong>Tournaments:</strong> Hershey Summer Classic, Lititz Summer Showcase, EDP Summer Sizzler
                 </li>
-                <li>Early bird pricing: <strong>$450.00</strong></li>
+                <li>Price: <strong>$500.00</strong></li>
               </ul>
-              <p className='text-md font-bold mt-4 text-primary'>
+              {/* <p className='text-md font-bold mt-4 text-primary'>
                 Early bird pricing ends on January 28!
-              </p>
+              </p> */}
               <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center lg:text-start mt-4'>
                 <span className='font-bold'>The Summer Select '24</span> is our
                 inaugural program for the AthletiFi Select series. It will be
