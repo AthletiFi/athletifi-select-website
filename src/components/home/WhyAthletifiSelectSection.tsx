@@ -30,34 +30,38 @@ const WhyAthletifiSelectSection = () => {
               data-aos-offset='200'
             >
               <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center lg:text-start mt-4'>
-                AthletiFi has teamed up with Eastern Pennsylvania's top coaches to build a brand new club-neutral Summer Select program! AthletiFi Select provides transparent coaching leadership, offers optimal team sizes for more personalized training, and of course, the AthletiFi dashboard so you always have access to the latest stats and video highlights!
+              Join AthletiFi Summer Select '24, our elite summer program, meticulously designed to nurture young talents and elevate their soccer skills. Led by Eastern Pennsylvania's finest coaches, AthletiFi Select focuses on individual growth, teamwork, and strategic gameplay, and of course, the AthletiFi dashboard so you always have access to the latest stats and video highlights!
               </p>
               <h3 className='text-md font-bold mt-4 text-primary'>Details:</h3>
               <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
                 <li>
                   <strong>Who:</strong> Boys & girls, ages U9 - U15 (2009 - 2015 birth years)
                 </li>
-                <li><strong>What:</strong> Intensive Training - Two sessions per week for five weeks, totaling 10 skill-enhancing sessions.</li>
+                <li><strong>What:</strong> Intensive Training - Two sessions per week for six weeks, totaling 12 skill-enhancing sessions.</li>
                 <li>
-                  <strong>When:</strong> Weeks of 6/10, 6/17, 6/24, 7/8, & 7/15 (Note: off for
-                  July 4 week)
+                  <strong>When:</strong> 5:30 PM to 7:00 PM on Tuesdays and Thursdays June 11th—July 25th, with a break during Independence week.
                 </li>
-                <li><strong>Where:</strong> Conshohocken, PA</li>
+                <li><strong>Where:</strong> Arcadia University, Jean Lenox West Field, 450 South Easton Road, Glenside, PA</li>
                 <li>
-                  <strong>Tournaments:</strong> Hershey Summer Classic, Lititz Summer Showcase, EDP Summer Sizzler
+                  <strong>Tournaments:</strong> Hershey Summer Classic, EDP Summer Sizzler
                 </li>
-                <li>Early bird pricing: <strong>$450.00</strong></li>
+                <li>Price: <strong>$500.00</strong></li>
               </ul>
               <p className='text-md font-bold mt-4 text-primary'>
-                Early bird pricing ends on January 28!
+                Signing up more than one player? Siblings get a 20% off discount!
               </p>
               <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center lg:text-start mt-4'>
+                Send us an email at 
+                <Link href="mailto:welcome@athletifiselect.com?subject=Just signed up! I'd like the sibling discount please"> welcome@athletifiselect.com </Link>
+                after signing up both siblings and let us know you'd like the discount.
+              </p>
+              {/* <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center lg:text-start mt-4'>
                 <span className='font-bold'>The Summer Select '24</span> is our
                 inaugural program for the AthletiFi Select series. It will be
                 the first of many seasonal and specialized training
                 opportunities that focus on individual growth, team dynamics,
                 and strategic understanding of the game.
-              </p>
+              </p> */}
               <div className='flex lg:justify-center justify-center items-center m-10'>
                 <Link href='/about-program'>
                   <BlueButton text='Learn more about Summer Select' />

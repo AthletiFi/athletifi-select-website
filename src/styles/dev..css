@@ -40,7 +40,11 @@ _::-webkit-full-page-media, _:future, :root .home-title-section {
   margin-top: 110px; /* Increased margin for Safari */
 }
 
-
+@media (max-width: 1024px) {
+  .home-title-section {
+    margin-top: 110px; /* Adjust based on your needs */
+  }
+}
 /* ================================================ MEET OUR STRATEGIC ADVISOR ================================================ */
 .join_now_btn:hover span {
   color: #00c5f4;
