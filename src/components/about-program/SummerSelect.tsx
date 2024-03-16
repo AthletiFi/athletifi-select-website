@@ -41,7 +41,7 @@ const SummerSelectDescription = () => {
                 Summer Select 2024
               </span>
               <span className="lg:px-14 lg:pt-14 sm:px-8 px-4 pt-6 flex flex-col items-center text-primary text-lgxl font-HelveticaNeueRegular">
-                June 11—July 22, 2024
+                June 11—July 25, 2024
               </span>
             </h2>
             <div className='flex justify-center items-center my-6'>
