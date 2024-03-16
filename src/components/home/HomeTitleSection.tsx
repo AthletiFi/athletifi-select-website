@@ -23,7 +23,7 @@ const HomeTitleSection = () => {
             Premier Summer Training and Year-Round Development Programs for U9-U15 Players 
             </p>
             <h3 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-md font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
-              Summer Select: June 11—July 22, 2024
+              Summer Select: June 11—July 25, 2024
             </h3>
            
             {/* CONVERT-INTO-LINK-TAG */}

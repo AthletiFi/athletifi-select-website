@@ -65,7 +65,7 @@ const CoachesSection = () => {
                 src='/assets/img/webp/coaches-on-blue.webp'
                 width={500}
                 height={500}
-                alt={'football palyer'}
+                alt={'AthletiFi Select Coaches'}
               />
             </div>
             <div className='flex justify-center items-center mt-0'>
