@@ -9,9 +9,9 @@ import { SEO_CONFIG } from "@/utils/seoConfig";
 const Signup = () => {
   // SEO
   const hero = {
-    heading: "Register for Summer Select 2024",
-    title: "Your Title Here",
-    subtitle: "Your Subtitle Here",
+    heading: "Now Registering: ❄️ Winter Select ❄️",
+    title: "Join Our Elite Soccer Programs",
+    subtitle: "Develop Your Skills Year-Round",
   };
 
   return (
@@ -32,9 +32,15 @@ const Signup = () => {
               data-aos-delay='300'
               data-aos-offset='100'
             >
-              <p className='font-Segoe font-normal text-md leading-7 text-left pb-0.5 text-[#FDFEFF] m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20 opacity-80'>
-                AthletiFi has teamed up with Eastern Pennsylvania's top coaches to build a brand new club-neutral Summer Select program! AthletiFi Select provides transparent coaching leadership, offers optimal team sizes for more personalized training, and of course, the AthletiFi dashboard so you always have access to the latest stats and video highlights!
+              {/* <p className='font-Segoe font-normal text-md leading-7 text-left pb-0.5 text-[#FDFEFF] m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20 opacity-80'>
+                AthletiFi Select's Winter Program ❄️ offers elite, club-neutral ⚽️ soccer training designed to keep players sharp during the off-season. Led by Eastern Pennsylvania's top coaches 🏅, our program combines focused, small-group training with competitive winter league play 🏆. With optimal team sizes, players receive personalized attention to develop their skills in a structured environment.
               </p>
+              <p className='font-Segoe font-normal text-md leading-7 text-left pb-0.5 text-[#FDFEFF] m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20 opacity-80'>
+                Plus, our innovative AthletiFi dashboard 📊 provides real-time access to player stats and video highlights 🎥, keeping you connected to your progress every step of the way.
+              </p>
+              <p className='font-Segoe font-normal text-md leading-7 text-left pb-0.5 text-[#FDFEFF] m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20 opacity-80'>
+                Stay competitive this winter ❄️ and take your game to the next level! 🚀
+              </p> */}
               <Description />
             </div>
           </div>

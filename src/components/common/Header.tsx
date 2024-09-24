@@ -265,7 +265,7 @@ const Header = () => {
                     onClick={() => setOpen(false)}
                     className="pt-[10px] pb-[14px] px-[24px] text-skyblue border border-skyblue font-semibold text-base font-Segoe duration-300 hover:bg-skyblue hover:text-white md:hidden"
                   >
-                    Sign up for Summer Select
+                    ❄️ Sign up for Winter Select ❄️
                   </Link>
                 </li>
               </ul>
@@ -275,7 +275,7 @@ const Header = () => {
               onClick={() => setOpen(false)}
               className="pt-[10px] pb-[14px] px-[24px] text-skyblue border border-skyblue font-semibold text-base font-Segoe duration-300 hover:bg-skyblue hover:text-white hidden md:inline-block"
             >
-              Sign up for Summer Select
+              Sign up for ❄️ Winter Select ❄️
             </Link>
           </div>
         </div>

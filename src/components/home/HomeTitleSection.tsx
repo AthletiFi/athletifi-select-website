@@ -17,19 +17,25 @@ const HomeTitleSection = () => {
         <div className="flex items-center flex-col lg:flex-row">
           <div className="max-w-[490px] lg:max-w-[520px] xl:max-w-[608px]">
             <h1 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-[30px] sm:text-[45px] lg:text-[50px] xl:text-xxl font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
-              Eastern PA's Elite New Soccer Experience 
+              Eastern PA's Elite Soccer Experiences ⚽️🏆
             </h1>
             <p className="font-Segoe text-white text-[16px] sm:text-md font-normal mt-4 opacity-80 text-center lg:text-start">
-            Premier Summer Training and Year-Round Development Programs for U9-U15 Players 
+              Premier Year-Round Development Programs for U9-U15 Players 
             </p>
+            <br></br>
             <h3 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-md font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
-              Summer Select: June 11—July 25, 2024
+            Registration now open:
             </h3>
-           
+            <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-lg font-large">
+            ❄️ Winter Select 2024 ❄️ 
+            </h4>
+            <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-md font-medium leading-[15px] sm:leading-[25px] md:leading-[30px] lg:leading-[40px]">
+            🗓️ November 13, 2024 - January 4, 2025
+            </h4>
             {/* CONVERT-INTO-LINK-TAG */}
             <div className="flex lg:justify-start justify-center lg:mt-10 mt-7 lg:pb-14 lg:mb-10">
               <Link href="/sign-up">
-                <BlueButton text="Register for Summer 2024" />
+                <BlueButton text="Sign up now!" />
               </Link>
             </div>
           </div>
