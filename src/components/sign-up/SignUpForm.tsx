@@ -490,7 +490,7 @@ const SignUpForm = () => {
             {/* FOOTBALL PLAYER IMAGE */}
             <Image
               className='xl:max-w-[658px] xl:h-[610px] lg:absolute lg:right-0 mt-10 lg:mt-0'
-              src='/assets/img/webp/signup-img.webp'
+              src='/assets/img/webp/signup-biting-medal.webp'
               width={658}
               height={598}
               alt='signUp-image'
