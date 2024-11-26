@@ -4,47 +4,71 @@ import Link from 'next/link';
 const Description = () => {
   return (
     <div className='font-Segoe font-normal text-md leading-7 text-left pb-0.5 text-[#FDFEFF] m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20 opacity-80'>
-      <h3 className='text-md font-HelveticaNeueMedium mt-4'>Winter Select Details:</h3>
+      <h3 className='text-md font-HelveticaNeueMedium mt-4'>Summer Select 2025 Details:</h3>
       <ul className='list-none pl-4 opacity-80 text-primary'>
-        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Who:</span> 👥 Boys & girls, ages U9 - U16 (2009 - 2016 birth years)</li>
-        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">What:</span> 🏋️‍♂️ Intensive Training (1 session/week) + Competitive Play (7-game league + playoffs)</li>
-        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">When:</span> 🗓️ November 13, 2024 - January 2025
-          <ul className='list-none pl-6 mt-1'>
-            <li>Training: Wednesdays, 6:00 PM to 7:30 PM</li>
-            <li>Games: Schedule varies by age group (see below)</li>
-          </ul>
-        </li>
-        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Where:</span> </li>
+        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Who:</span> 👥 Boys & girls, ages U9 - U15 (2010 - 2017 birth years)</li>
+        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">What:</span> 🏋️‍♂️ Comprehensive summer program including:</li>
         <ul className='list-none pl-6 mt-1'>
-            <li>📍 Training sessions: Arcadia University, Glenside, PA</li>
-            <li>📍 Games: YSC Sports, Wayne, PA</li>
-          </ul>
-        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">League:</span> 🏆 YSC Winter League</li>
-        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Price:</span> 💰 $400.00</li>
+          <li>• Intensive training sessions (12 total sessions)</li>
+          <li>• Tournament participation</li>
+          <li>• Performance tracking via AthletiFi Dashboard</li>
+          <li>• Digital player cards for highlights and stats</li>
+        </ul>
+        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">When:</span> 🗓️ June 10 - July 27, 2025</li>
+        <ul className='list-none pl-6 mt-1'>
+          <li>• Training: Tuesdays and Thursdays, 6:00 PM - 7:30 PM</li>
+          <li>• Break week: July 1-5 (Independence Day)</li>
+          <li>• Six weeks total (two sessions per week)</li>
+        </ul>
+        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Where:</span></li>
+        <ul className='list-none pl-6 mt-1'>
+          <li>📍 All training sessions: Arcadia University</li>
+          <li className='pl-4'>Jean Lenox West Field</li>
+          <li className='pl-4'>450 South Easton Road, Glenside, PA 19038</li>
+        </ul>
+        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Tournaments:</span> 🏆</li>
+        <ul className='list-none pl-6 mt-1'>
+          <li>• Hershey Summer Classic: June 14-15, 2025</li>
+          <li>• EDP Summer Sizzler: Dates TBD (typically late July)</li>
+          <li>• Note: Tournament participation is optional</li>
+        </ul>
+        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Program Highlights:</span> ⭐</li>
+        <ul className='list-none pl-6 mt-1'>
+          <li>• Elite coaching from Eastern PA's top coaches</li>
+          <li>• Individual skill development focus</li>
+          <li>• Real game experience through tournaments</li>
+          <li>• Performance tracking via AthletiFi platform</li>
+          <li>• Digital player cards with stats and highlights</li>
+        </ul>
+        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Price:</span> 💰</li>
+        <ul className='list-none pl-6 mt-1'>
+          <li>• Regular Registration: $500</li>
+          <li>• Early Bird Discount: Save $50 (Ends February 1st)</li>
+        </ul>
       </ul>
 
-      <h3 className='text-md font-HelveticaNeueMedium mt-4'>Game Schedule at YSC:</h3>
-      <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 pl-4 opacity-80 text-primary'>
-        <div>
-          <p className='mb-1'>- Boys U8-U11: Saturdays</p>
-          <p className='mb-1'>- Boys U12-U13: Fridays</p>
-          <p className='mb-1'>- Boys U14 and above: Saturdays</p>
-        </div>
-        <div>
-          <p className='mb-1'>- Girls U8-U10: Mondays</p>
-          <p className='mb-1'>- Girls U11: Tuesdays</p>
-          <p className='mb-1'>- Girls U12-U13: Fridays</p>
-          <p className='mb-1'>- Girls U14 and above: Sundays</p>
-        </div>
+      <div className='bg-darkgray p-4 rounded-lg mt-6'>
+        <p className='text-md font-bold text-skyblue'>🌟 Program Success</p>
+        <p className='mt-2'>Building on our incredible 2024 season where AthletiFi Select teams achieved remarkable success, including multiple tournament championships!</p>
       </div>
 
-      <p className='text-md font-HelveticaNeueMedium mt-4 text-primary'>
-        👨‍👩‍👧‍👦 Signing up more than one player? Siblings get a 20% off discount!
+      <p className='text-md font-HelveticaNeueMedium mt-6 text-primary'> 
+        👨‍👩‍👧‍👦 Family Discount: Save an extra 10% on siblings in the same program!
       </p>
-      <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center lg:text-start mt-4'>
-        Send us an email at 
-        <Link href="mailto:welcome@athletifiselect.com?subject=Just signed up! I'd like the sibling discount please"> welcome@athletifiselect.com </Link>
-        after signing up both siblings and let us know you'd like the discount.
+      
+      <p className='font-Segoe font-normal text-md text-primary opacity-80 text-left mt-4'>
+        After signing up both siblings, email us at{' '}
+        <Link href="mailto:welcome@athletifiselect.com?subject=Just signed up! I'd like the sibling discount please">
+          welcome@athletifiselect.com
+        </Link>
+        {' '}to claim your family discount.
+      </p>
+
+      <p className='font-Segoe font-normal text-md text-primary opacity-80 text-left mt-4'>
+        Questions? Email us at{' '}
+        <Link href="mailto:welcome@athletifiselect.com">
+          welcome@athletifiselect.com
+        </Link>
       </p>
     </div>
   );

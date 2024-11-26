@@ -8,58 +8,65 @@ const WhyAthletifiSelectSection = () => {
     <>
       <section className="my-5 relative lg:before:content-[''] before:absolute lg:before:w-[448px] before:h-[448px] before:-top-20 before:left-0 before:bg-shadow_blue before:blur-[111px] before:opacity-25 before:-translate-x-1/3 before:-z-10 before:rounded-full after:content-[''] after:absolute after:w-[448px] after:h-[448px] after:-bottom-20 after:right-0 after:bg-shadow_blue after:blur-[111px] after:opacity-25 after:translate-x-1/3 after:-z-10 after:rounded-full">
         <div className='container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto relative z-10 lg:mt-0 xl:mt-0'>
-          <div className='lg:px-14 lg:pt-14 sm:px-8 px-4 pt-6 sm:bg-playground-unique bg-playground-unique-sm bg-opacity-50 bg-[length:100%_100%] bg-center bg-no-repeat flex flex-col items-center '>
-            <h2
-              className='lg:text-5xl md:text-[40px] sm:text-4xl text-[26px] text-primary font-HelveticaNeueMedium text-center py-2'
+          <div className='lg:px-14 lg:pt-14 sm:px-8 px-4 pt-6 sm:bg-playground-unique bg-playground-unique-sm bg-opacity-50 bg-[length:100%_100%] bg-center bg-no-repeat flex flex-col items-center'>
+            <h2 className='lg:text-5xl md:text-[40px] sm:text-4xl text-[26px] text-primary font-HelveticaNeueMedium text-center py-2'
               data-aos='fade-up'
               data-aos-duration='600'
               data-aos-easing='linear'
               data-aos-delay='200'
-              data-aos-offset='200'
-            >
+              data-aos-offset='200'>
               <span className='relative mb-4 lg:leading-[60px] leading-[120%]'>
-                🌟 Program Highlights 🌟
+                🌟 Summer Select 2025 🌟
               </span>
             </h2>
-            <div
-              data-aos='fade-up'
+
+            <div data-aos='fade-up'
               data-aos-duration='600'
               data-aos-easing='linear'
               data-aos-delay='400'
-              data-aos-offset='200'
-            >
+              data-aos-offset='200'>
+              
               <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center lg:text-start mt-4'>
-                AthletiFi Select offers year-round, club-neutral programs meticulously designed to nurture young talents and elevate their soccer skills in every season. Led by Eastern Pennsylvania's finest coaches, we focus on individual growth, teamwork, and strategic gameplay.
+                Building on the incredible success of our 2024 program, AthletiFi Select returns for Summer 2025! Last year, our teams dominated local tournaments with four championship victories at the EDP Summer Sizzler. Join us this summer to be part of our winning tradition!
               </p>
-              <h3 className='text-md font-bold mt-4 text-primary'>What We Offer:</h3>
+
+              <h3 className='text-md font-bold mt-6 text-primary'>Program Features:</h3>
               <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
-                <li>🏋️‍♂️ Intensive training sessions</li>
-                <li>⚽ Competitive league play (Winter)</li>
-                <li>🏆 Tournament participation (Summer)</li>
-                <li>📈 Year-round development opportunities</li>
+                <li>⚽ Elite coaching from Eastern PA's finest</li>
+                <li>🏋️‍♂️ 12 intensive training sessions</li>
+                <li>🏆 Prestigious tournament participation</li>
+                <li>📊 Performance tracking via AthletiFi Dashboard</li>
+                <li>🎯 Individual skill development focus</li>
               </ul>
-              <h3 className='text-md font-bold mt-4 text-primary'>Program Details:</h3>
+
+              <h3 className='text-md font-bold mt-6 text-primary'>Key Information:</h3>
               <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
-                <li><strong>Who:</strong> 👥 Boys & girls, ages U9 - U16</li>
-                <li><strong>When:</strong> 🗓️ Winter Select: November - January | Summer Select: June - July</li>
-                <li><strong>Where:</strong> 📍 Training: Arcadia University, Glenside, PA | Winter Games: YSC Sports, Wayne, PA</li>
-                <li><strong>Pricing:</strong> 💰 Varies by program (Winter Select: $400, Summer Select: $500)</li>
+                <li><strong>When:</strong> June 10 - July 27 (Tuesdays & Thursdays, 6:00-7:30 PM)</li>
+                <li><strong>Where:</strong> Arcadia University, Glenside</li>
+                <li><strong>Ages:</strong> U9-U15 players (2010-2017 birth years)</li>
+                <li><strong>Tournaments:</strong>
+                  <ul className='list-none pl-6'>
+                    <li>• Hershey Summer Classic (June 14-15)</li>
+                    <li>• EDP Summer Sizzler (July 26-27)</li>
+                  </ul>
+                </li>
               </ul>
-              <p className='text-md font-bold mt-4 text-primary'>
-                👨‍👩‍👧‍👦 Family Discount: 20% off for siblings in the same program
-              </p>
-              <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center lg:text-start mt-4'>
-                Send us an email at 
-                <Link href="mailto:welcome@athletifiselect.com?subject=Just signed up! I'd like the sibling discount please"> welcome@athletifiselect.com </Link>
-                after signing up both siblings and let us know you'd like the discount.
-              </p>
+
+              <h3 className='text-md font-bold mt-6 text-primary'>Investment:</h3>
+              <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
+                <li>💰 Program Fee: $500</li>
+                <li>⚡ Early Bird Discount: Save $50 (ends February 1st)</li>
+                <li>👨‍👩‍👧‍👦 Family Discount: extra 10% off for siblings</li>
+              </ul>
+
               <div className='flex lg:justify-center justify-center items-center m-10'>
                 <Link href='/about-program'>
                   <BlueButton text='Learn More About Our Programs' />
                 </Link>
               </div>
             </div>
-            {/* FOOTBALL PLAYER IMAGE */}
+
+            {/* PLAYER IMAGE */}
             <div className='opacity-88 mb-5'>
               <Image
                 data-aos='fade-in'
@@ -67,7 +74,6 @@ const WhyAthletifiSelectSection = () => {
                 data-aos-easing='linear'
                 data-aos-delay='200'
                 data-aos-offset='200'
-                // className="mb-[1px] lg:max-w-[267px] max-w-[180px] sm:max-w-[220px]"
                 className='mb-[1px] max-w-[290px] sm:max-w-[300px] md:max-w-[450px] lg:max-w-[652px] opacity-1'
                 src='/assets/img/webp/coach-with-players.webp'
                 width={500}
@@ -77,6 +83,7 @@ const WhyAthletifiSelectSection = () => {
             </div>
           </div>
         </div>
+
         {/* FOOTBALL IMAGE CORNER */}
         <Image
           className='absolute lg:w-[220px] sm:w-[150px] w-[100px] -bottom-8 right-0 z-0'
