@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import TournamentSection from './TournamentSection';
 
 const Description = () => {
   return (
@@ -27,11 +28,9 @@ const Description = () => {
           <li className='pl-4'>450 South Easton Road, Glenside, PA 19038</li>
         </ul>
         <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Tournaments:</span> 🏆</li>
-        <ul className='list-none pl-6 mt-1'>
-          <li>• Hershey Summer Classic: June 14-15, 2025</li>
-          <li>• EDP Summer Sizzler: Dates TBD (typically late July)</li>
-          <li>• Note: Tournament participation is optional</li>
-        </ul>
+        <div className='pl-6 mt-2 mb-4'>
+          <TournamentSection />
+        </div>
         <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Program Highlights:</span> ⭐</li>
         <ul className='list-none pl-6 mt-1'>
           <li>• Elite coaching from Eastern PA's top coaches</li>
@@ -40,36 +39,26 @@ const Description = () => {
           <li>• Performance tracking via AthletiFi platform</li>
           <li>• Digital player cards with stats and highlights</li>
         </ul>
-        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Price:</span> 💰</li>
+        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Price and Discounts:</span> 💰</li>
         <ul className='list-none pl-6 mt-1'>
-          <li>• Regular Registration: $500</li>
-          <li>• Early Bird Discount: Save $50 (Ends February 1st)</li>
+          <li>💸 Regular Registration: $500</li>
+          <li>🐦 Early Bird Discount: Save $50 (Ends February 1st)</li>
+          <li>👨‍👩‍👧‍👦 Family Discount: extra 10% off for siblings</li>
         </ul>
       </ul>
+      <p className='font-Segoe font-normal text-md text-primary opacity-80 text-left mt-4'>
+      ⚠️ To claim the family discount, email us at{' '}
+        <Link href="mailto:welcome@athletifiselect.com?subject=Just signed up! I'd like the sibling discount please">
+          welcome@athletifiselect.com
+        </Link>
+        {' '} after signing up and list the names of each child.
+      </p>
 
       <div className='bg-darkgray p-4 rounded-lg mt-6'>
         <p className='text-md font-bold text-skyblue'>🌟 Program Success</p>
         <p className='mt-2'>Building on our incredible 2024 season where AthletiFi Select teams achieved remarkable success, including multiple tournament championships!</p>
       </div>
 
-      <p className='text-md font-HelveticaNeueMedium mt-6 text-primary'> 
-        👨‍👩‍👧‍👦 Family Discount: Save an extra 10% on siblings in the same program!
-      </p>
-      
-      <p className='font-Segoe font-normal text-md text-primary opacity-80 text-left mt-4'>
-        After signing up both siblings, email us at{' '}
-        <Link href="mailto:welcome@athletifiselect.com?subject=Just signed up! I'd like the sibling discount please">
-          welcome@athletifiselect.com
-        </Link>
-        {' '}to claim your family discount.
-      </p>
-
-      <p className='font-Segoe font-normal text-md text-primary opacity-80 text-left mt-4'>
-        Questions? Email us at{' '}
-        <Link href="mailto:welcome@athletifiselect.com">
-          welcome@athletifiselect.com
-        </Link>
-      </p>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import BlueButton from '../common/BlueButton';
 import Link from 'next/link';
+import TournamentSection from '../sign-up/TournamentSection';
 
 const WhyAthletifiSelectSection = () => {
   return (
@@ -24,9 +25,10 @@ const WhyAthletifiSelectSection = () => {
               data-aos-duration='600'
               data-aos-easing='linear'
               data-aos-delay='400'
-              data-aos-offset='200'>
+              data-aos-offset='200'
+              className='lg:max-w-[900px] mx-auto'>
               
-              <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center lg:text-start mt-4'>
+              <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center mt-4 mb-6'>
                 Building on the incredible success of our 2024 program, AthletiFi Select returns for Summer 2025! Last year, our teams dominated local tournaments with four championship victories at the EDP Summer Sizzler. Join us this summer to be part of our winning tradition!
               </p>
 
@@ -39,27 +41,27 @@ const WhyAthletifiSelectSection = () => {
                 <li>🎯 Individual skill development focus</li>
               </ul>
 
-              <h3 className='text-md font-bold mt-6 text-primary'>Key Information:</h3>
+              <h3 className='text-md font-bold mt-6 text-primary'>Training Schedule</h3>
               <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
-                <li><strong>When:</strong> June 10 - July 27 (Tuesdays & Thursdays, 6:00-7:30 PM)</li>
-                <li><strong>Where:</strong> Arcadia University, Glenside</li>
-                <li><strong>Ages:</strong> U9-U15 players (2010-2017 birth years)</li>
-                <li><strong>Tournaments:</strong>
-                  <ul className='list-none pl-6'>
-                    <li>• Hershey Summer Classic (June 14-15)</li>
-                    <li>• EDP Summer Sizzler (July 26-27)</li>
-                  </ul>
-                </li>
+                <li>📅 <strong>Dates:</strong> June 10 - July 27, 2025</li>
+                <li>⏰ <strong>Times:</strong> Tuesdays & Thursdays, 6:00-7:30 PM</li>
+                <li>📍 <strong>Location:</strong> Arcadia University, Glenside, PA</li>
+                <li>👥 <strong>Ages:</strong> U9-U15 players (2010-2017 birth years)</li>
               </ul>
 
-              <h3 className='text-md font-bold mt-6 text-primary'>Investment:</h3>
+              <h3 className='text-md font-bold mt-6 text-primary'>Tournament Schedule</h3>
+              <div className='pl-4 mb-6 text-primary'>
+                <TournamentSection />
+              </div>
+
+              <h3 className='text-md font-bold mt-6 text-primary'>Price and Discounts:</h3>
               <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
                 <li>💰 Program Fee: $500</li>
                 <li>⚡ Early Bird Discount: Save $50 (ends February 1st)</li>
                 <li>👨‍👩‍👧‍👦 Family Discount: extra 10% off for siblings</li>
               </ul>
 
-              <div className='flex lg:justify-center justify-center items-center m-10'>
+              <div className='flex justify-center items-center mt-10'>
                 <Link href='/about-program'>
                   <BlueButton text='Learn More About Our Programs' />
                 </Link>
@@ -67,7 +69,7 @@ const WhyAthletifiSelectSection = () => {
             </div>
 
             {/* PLAYER IMAGE */}
-            <div className='opacity-88 mb-5'>
+            <div className='opacity-88 mt-12 mb-5'>
               <Image
                 data-aos='fade-in'
                 data-aos-duration='600'
