@@ -6,9 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import BlueButton from "../common/BlueButton";
-import Home from "@/pages";
-
-
 
 const HomeTitleSection = () => {
   return (
@@ -20,28 +17,31 @@ const HomeTitleSection = () => {
               Eastern PA's Elite Soccer Experiences ⚽️🏆
             </h1>
             <p className="font-Segoe text-white text-[16px] sm:text-md font-normal mt-4 opacity-80 text-center lg:text-start">
-              Premier Year-Round Development Programs for U9-U15 Players 
+              Premier Summer Development Program for U9-U15 Players
             </p>
             <br></br>
             <h3 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-md font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
-            Registration now open:
+              Registration now open:
             </h3>
             <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-lg font-large">
-            ❄️ Winter Select 2024 ❄️ 
+              🌞 Summer Select 2025 🌞
             </h4>
             <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-md font-medium leading-[15px] sm:leading-[25px] md:leading-[30px] lg:leading-[40px]">
-            🗓️ November 13, 2024 - January 4, 2025
+              🗓️ June 10 - July 27, 2025
             </h4>
-            {/* CONVERT-INTO-LINK-TAG */}
+            <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-md font-medium leading-[15px] sm:leading-[25px] md:leading-[30px] lg:leading-[40px]">
+              ⚡️ Early Bird Discount Available! ⚡️
+            </h4>
             <div className="flex lg:justify-start justify-center lg:mt-10 mt-7 lg:pb-14 lg:mb-10">
               <Link href="/sign-up">
-                <BlueButton text="Sign up now!" />
+                <BlueButton text="Sign up for Summer Select!" />
               </Link>
             </div>
           </div>
         </div>
       </div>
-      {/*  LAPTOP AND MOBILE SCREEN IMG */}
+
+      {/* LAPTOP AND MOBILE SCREEN IMG */}
       <div className="pt-6 sm:pt-10 lg:pt-0">
         <div className="sm:absolute right-0 top-[65%] md:-translate-y-1/2 max-w-[400px] sm:max-w-[500px] xl:max-w-[600px] sm:hidden lg:inline-block ms-auto">
           <Image
@@ -53,7 +53,8 @@ const HomeTitleSection = () => {
           />
         </div>
       </div>
-      {/*  IPAD SCREEN IMG */}
+
+      {/* IPAD SCREEN IMG */}
       <div className="hidden sm:block lg:hidden w-full">
         <Image
           className="mx-auto"
@@ -66,6 +67,5 @@ const HomeTitleSection = () => {
     </>
   );
 };
-
 
 export default HomeTitleSection;
