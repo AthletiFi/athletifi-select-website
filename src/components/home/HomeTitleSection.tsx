@@ -14,23 +14,27 @@ const HomeTitleSection = () => {
         <div className="flex items-center flex-col lg:flex-row">
           <div className="max-w-[490px] lg:max-w-[520px] xl:max-w-[608px]">
             <h1 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-[30px] sm:text-[45px] lg:text-[50px] xl:text-xxl font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
-              Eastern PA's Elite Soccer Experiences ⚽️🏆
+            ⚽️🏆
+            </h1>
+            <h1 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-[30px] sm:text-[45px] lg:text-[50px] xl:text-xxl font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
+              Eastern PA's Elite Soccer Experience 
             </h1>
             <p className="font-Segoe text-white text-[16px] sm:text-md font-normal mt-4 opacity-80 text-center lg:text-start">
               Premier Summer Development Program for U9-U15 Players
             </p>
             <br></br>
             <h3 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-md font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
-              Registration now open:
+              🌞 Registration now open 🌞 
             </h3>
             <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-lg font-large">
-              🌞 Summer Select 2025 🌞
+              Summer Select 2025
             </h4>
             <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-md font-medium leading-[15px] sm:leading-[25px] md:leading-[30px] lg:leading-[40px]">
               🗓️ June 10 - July 27, 2025
             </h4>
-            <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-md font-medium leading-[15px] sm:leading-[25px] md:leading-[30px] lg:leading-[40px]">
-              ⚡️ Early Bird Discount Available! ⚡️
+            <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-md font-medium leading-[15px] sm:leading-[25px] md:leading-[30px] lg:leading-[40px] mt-4">
+            {/* <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-md font-medium leading-[15px] sm:leading-[25px] md:leading-[30px] lg:leading-[40px]"> */}
+              ⚡️ Early Bird Discount Available!
             </h4>
             <div className="flex lg:justify-start justify-center lg:mt-10 mt-7 lg:pb-14 lg:mb-10">
               <Link href="/sign-up">
