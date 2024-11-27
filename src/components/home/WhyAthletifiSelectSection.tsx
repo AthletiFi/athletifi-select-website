@@ -17,7 +17,7 @@ const WhyAthletifiSelectSection = () => {
               data-aos-delay='200'
               data-aos-offset='200'>
               <span className='relative mb-4 lg:leading-[60px] leading-[120%]'>
-                🌟 Summer Select 2025 🌟
+                🌟 Summer Select '25🌟
               </span>
             </h2>
 
@@ -44,19 +44,20 @@ const WhyAthletifiSelectSection = () => {
               <h3 className='text-md font-bold mt-6 text-primary'>Training Schedule</h3>
               <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
                 <li>📅 <strong>Dates:</strong> June 10 - July 27, 2025</li>
-                <li>⏰ <strong>Times:</strong> Tuesdays & Thursdays, 6:00-7:30 PM</li>
+                {/* <li>⏰ <strong>Times:</strong> Tuesdays & Thursdays, 6:00-7:30 PM</li> */}
+                <li>⏰ <strong>Times:</strong> Tuesdays & Thursdays</li>
                 <li>📍 <strong>Location:</strong> Arcadia University, Glenside, PA</li>
                 <li>👥 <strong>Ages:</strong> U9-U15 players (2010-2017 birth years)</li>
               </ul>
 
               <h3 className='text-md font-bold mt-6 text-primary'>Tournament Schedule</h3>
               <div className='pl-4 mb-6 text-primary'>
-                <TournamentSection />
+                {/* <TournamentSection /> */}
               </div>
 
               <h3 className='text-md font-bold mt-6 text-primary'>Price and Discounts:</h3>
               <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
-                <li>💰 Program Fee: $500</li>
+                <li>💰 Program Fee: $499</li>
                 <li>⚡ Early Bird Discount: Save $50 (ends February 1st)</li>
                 <li>👨‍👩‍👧‍👦 Family Discount: extra 10% off for siblings</li>
               </ul>

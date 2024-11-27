@@ -17,7 +17,8 @@ const Description = () => {
         </ul>
         <li className='mb-2'>- <span className="font-HelveticaNeueMedium">When:</span> 🗓️ June 10 - July 27, 2025</li>
         <ul className='list-none pl-6 mt-1'>
-          <li>• Training: Tuesdays and Thursdays, 6:00 PM - 7:30 PM</li>
+          {/* <li>• Training: Tuesdays and Thursdays, 6:00 PM—7:30 PM</li> */}
+          <li>• Training: Tuesdays and Thursdays</li>
           <li>• Break week: July 1-5 (Independence Day)</li>
           <li>• Six weeks total (two sessions per week)</li>
         </ul>
@@ -29,7 +30,7 @@ const Description = () => {
         </ul>
         <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Tournaments:</span> 🏆</li>
         <div className='pl-6 mt-2 mb-4'>
-          <TournamentSection />
+          {/* <TournamentSection /> */}
         </div>
         <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Program Highlights:</span> ⭐</li>
         <ul className='list-none pl-6 mt-1'>
@@ -41,7 +42,7 @@ const Description = () => {
         </ul>
         <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Price and Discounts:</span> 💰</li>
         <ul className='list-none pl-6 mt-1'>
-          <li>💸 Regular Registration: $500</li>
+          <li>💸 Regular Registration: $499</li>
           <li>🐦 Early Bird Discount: Save $50 (Ends February 1st)</li>
           <li>👨‍👩‍👧‍👦 Family Discount: extra 10% off for siblings</li>
         </ul>
