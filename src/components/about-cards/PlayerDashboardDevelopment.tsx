@@ -39,7 +39,7 @@ const PlayerDashboardDevelopment = () => {
           {/* Image */}
           <div className="flex justify-center items-center py-6">
             <Image
-              src="/assets/img/webp/dashboard-mockup.webp"
+              src="/assets/img/webp/platform-screenshot.webp"
               width={800}
               height={800}
               alt="Dashboard"

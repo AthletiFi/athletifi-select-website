@@ -41,7 +41,7 @@ module.exports = {
         "strategic-advisor": "url('/assets/img/webp/our_strategic_bg.webp')",
         "playground-unique": "url('/assets/img/webp/Unique-section-bg.webp')",
         "stats-reimagined": "url('/assets/img/svg/bg_stats_reimagined.svg')",
-        "about-hero": "url('/assets/img/webp/about-hero-img.webp')",
+        "about-hero": "url('/assets/img/webp/about-hero-darren.webp')",
         "new-hero-img": "url('/assets/img/webp/news-hero-img.webp')",
         "playground-unique-sm":
           "url('/assets/img/webp/sm_Unique-section-bg.webp')",

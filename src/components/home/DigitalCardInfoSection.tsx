@@ -5,11 +5,12 @@ import BlueButton from "../common/BlueButton";
 import Link from "next/link";
 
 const DigitalCardInfoSection = () => {
-  // const playerImageCenter = "jude-nft-img";
-  // const playerImageRight = "colin-nft-img";
-  const playerImageCenter = 'jose-nft-img';
-  const playerImageRight = 'stebi-nft-img';
-  const playerImageLeft = 'anderson-nft-img-new';
+  // const playerImageCenter = 'jose-nft-img';
+  // const playerImageRight = 'stebi-nft-img';
+  // const playerImageLeft = 'anderson-nft-img-new';
+  const playerImageCenter = 'player-image-center';
+  const playerImageRight = 'player-image-right';
+  const playerImageLeft = 'player-image-left';
 
   // SLIDER
   const settings = {
