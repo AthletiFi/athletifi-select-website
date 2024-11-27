@@ -7,6 +7,7 @@ import { PostSummerSelectData } from '../common/api/ApiUrls';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { phone } from 'phone';
+import RegistrationModal from '../common/RegistrationModal';
 
 // Interface to describe the structure of an API error
 interface ApiError extends Error {
@@ -21,6 +22,7 @@ const SignUpForm = () => {
   // CUSTOM INPUT-CHECK
   const [checked, setChecked] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
   const initialState = {
     email: '',
     parentFirstName: '',
@@ -67,13 +69,17 @@ const SignUpForm = () => {
       );
 
       if (data) {
-        toast(
-          '✅ Thanks for registering! You will receive an email with next steps soon.',
-          {
-            position: 'bottom-left',
-          }
-        );
+        // The old banner:
+        // toast(
+        //   '✅ Thanks for registering! You will receive an email with next steps soon.',
+        //   {
+        //     position: 'bottom-left',
+        //   }
+        // );
+        // setData(initialState);
+        // New banner (Added Thanksgiving 2024):
         setData(initialState);
+        setShowSuccessModal(true);
       } else if (response.status === 400) {
         // Handling 400 status for unique constraint violation
         toast.error(
@@ -498,6 +504,7 @@ const SignUpForm = () => {
           </div>
         </div>
       </div>
+      {showSuccessModal && <RegistrationModal setShowModal={setShowSuccessModal} />}
       <ToastContainer theme='dark' />
     </section>
   );
