@@ -29,7 +29,7 @@ const WhyAthletifiSelectSection = () => {
               className='lg:max-w-[900px] mx-auto'>
               
               <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center mt-4 mb-6'>
-                Building on the incredible success of our 2024 program, AthletiFi Select returns for Summer 2025! Last year, our teams dominated local tournaments with four championship victories at the EDP Summer Sizzler. Join us this summer to be part of our winning tradition!
+                Building on the incredible success of our 2024 program, AthletiFi Select returns for Summer 2025! Last year, our teams dominated local tournaments with four championship victories at the EDP Summer Sizzler and one at the Hershey Summer Classic. Join us this summer to be part of our winning tradition!
               </p>
 
               <h3 className='text-md font-bold mt-6 text-primary'>Program Features:</h3>
