@@ -59,7 +59,7 @@ const SummerSelectDescription = () => {
                 Building on our incredible 2024 success, where multiple AthletiFi Select teams clinched tournament championships, we're excited to present our Summer Select 2025 program. This comprehensive summer program combines elite coaching, intensive training, and competitive tournament play to help young athletes reach their full potential.
               </span>
               <span className='block pb-2'>
-                Our program is meticulously designed for U9-U15 players seeking to elevate their game. With two training sessions per week and participation in prestigious tournaments, we provide the perfect blend of skill development and competitive experience. Our coaches follow the La Liga methodology, emphasizing technical skills, tactical awareness, and game intelligence.
+                Our program is meticulously designed for U9-U17 players seeking to elevate their game. With two training sessions per week and participation in prestigious tournaments, we provide the perfect blend of skill development and competitive experience. Our coaches follow the La Liga methodology, emphasizing technical skills, tactical awareness, and game intelligence.
               </span>
               <span className='block pb-2'>
                 Summer 2024 saw extraordinary success with four teams winning championships at the EDP Summer Sizzler. Join us in 2025 to be part of our winning tradition and take your game to the next level! Early bird registration is now open - secure your spot today.

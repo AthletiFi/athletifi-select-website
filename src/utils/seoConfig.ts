@@ -9,7 +9,7 @@ export const SEO_CONFIG = {
   },
   aboutProgram: {
     title: "About AthletiFi Select | Premier Youth Soccer Program",
-    description: "Discover AthletiFi Select's Summer 2025 Program - elite training, tournament competition, and comprehensive player development for U9-U15 players.",
+    description: "Discover AthletiFi Select's Summer 2025 Program - elite training, tournament competition, and comprehensive player development for U9-U17 players.",
     websiteURL: "https://athletifiselect.com/about-program",
     image: "https://athletifiselect.com/about_program_meta.jpg",
     canonical: "https://athletifiselect.com/about-program",
@@ -30,7 +30,7 @@ export const SEO_CONFIG = {
   },
   signUp: {
     title: "Register for Summer Select 2025 | AthletiFi Select",
-    description: "Secure your spot in AthletiFi Select's Summer 2025 program. Elite training, tournament competition, and player development for U9-U15 athletes.",
+    description: "Secure your spot in AthletiFi Select's Summer 2025 program. Elite training, tournament competition, and player development for U9-U17 athletes.",
     websiteURL: "https://athletifiselect.com/sign-up",
     image: "https://athletifiselect.com/sign_up_meta.jpg",
     canonical: "https://athletifiselect.com/sign-up",

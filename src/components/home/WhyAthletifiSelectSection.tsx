@@ -48,7 +48,7 @@ const WhyAthletifiSelectSection = () => {
                 {/* <li>⏰ <strong>Times:</strong> Tuesdays & Thursdays, 6:00-7:30 PM</li> */}
                 <li>⏰ <strong>Times:</strong> Tuesdays & Thursdays</li>
                 <li>📍 <strong>Location:</strong> Arcadia University, Glenside, PA</li>
-                <li>👥 <strong>Ages:</strong> U9-U15 players (2010-2017 birth years)</li>
+                <li>👥 <strong>Ages:</strong> U9-U17 players (2010-2017 birth years)</li>
               </ul>
 
               <h3 className='text-md font-bold mt-6 text-primary'>Tournament Schedule</h3>
