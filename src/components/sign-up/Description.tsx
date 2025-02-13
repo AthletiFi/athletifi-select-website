@@ -68,11 +68,10 @@ const Description = () => {
           </li>
         </ul>
       </ul>
-
-      <div className='bg-darkgray p-4 rounded-lg mt-6'>
+      {/* <div className='bg-darkgray p-4 rounded-lg mt-6'>
         <p className='text-md font-bold text-skyblue'>🏆 Program Success 🏆</p>
         <p className='mt-2'>Building on our incredible 2024 season where AthletiFi Select teams achieved remarkable success, with all teams winning a tournament championship!</p>
-      </div>
+      </div> */}
     </div>
   );
 };

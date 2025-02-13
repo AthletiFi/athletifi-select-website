@@ -14,12 +14,12 @@ const Signup = () => {
 
   // Determine the sub-heading based on the current date
   const subHeading = currentDate < targetDate 
-    ? "Early Bird Price Ends March 1st!" 
+    ? "Register Now! 🌞 Early Bird Price Ends March 1st" 
     : undefined;
 
   // SEO
   const hero = {
-    heading: "Sign up for ☀️ Summer Select ☀️",
+    heading: "Sign-up for Summer Select 2025",
     subHeading: subHeading,
     title: "Join Our Elite Summer Soccer Program",
     subtitle: "Elite Training & Tournament Competition",
@@ -43,6 +43,28 @@ const Signup = () => {
               data-aos-delay='300'
               data-aos-offset='100'
             >
+              {/* Instructions Section */}
+              <div className='bg-darkgray p-4 rounded-lg shadow-md mb-6 font-Segoe font-normal text-md leading-7 text-left pb-0.5 text-[#FDFEFF] m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20 opacity-80'>
+                <p className='text-md font-bold text-skyblue'>🏆 Getting started is easy 🏆</p>
+                <div className='mt-2'>
+                  <p className='mb-2 text-primary'>
+                    1️⃣ Fill out this form to register your interest - no payment required yet ✍️
+                  </p>
+                  <p className='mb-2 text-primary'>
+                    2️⃣ We'll process your registration shortly ⚡
+                  </p>
+                  <p className='mb-2 text-primary'>
+                    3️⃣ We'll then email you a secure payment link to complete enrollment 🌟
+                  </p>
+                </div>
+                <p className='mt-2 mb-4 text-primary'>
+                  Questions? 📧 Email us at{' '}
+                  <a href="mailto:welcome@athletifiselect.com" className='text-skyblue hover:underline'>
+                    welcome@athletifiselect.com
+                  </a>
+                  {' '} - we're here to help!
+                </p>
+              </div>
               <Description />
             </div>
           </div>
