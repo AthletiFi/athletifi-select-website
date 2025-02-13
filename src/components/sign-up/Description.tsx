@@ -3,6 +3,14 @@ import Link from 'next/link';
 import TournamentSection from './TournamentSection';
 
 const Description = () => {
+  // Get the current date
+  const currentDate = new Date();
+  // Define the target date
+  const targetDate = new Date('March 1, 2025');
+
+  // Determine whether to show the early bird discount
+  const showEarlyBirdDiscount = currentDate < targetDate;
+
   return (
     <div className='font-Segoe font-normal text-md leading-7 text-left pb-0.5 text-[#FDFEFF] m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20 opacity-80'>
       <h3 className='text-md font-HelveticaNeueMedium mt-4'>Summer Select 2025 Details:</h3>
@@ -44,27 +52,27 @@ const Description = () => {
         </ul> */}
         <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Price and Discounts:</span> 💰</li>
         <ul className='list-none pl-6 mt-1'>
-          <li>💸 Regular Registration: $499</li>
-          <li>🐦 Early Bird Discount: Save $50 (Ends February 1st)</li>
+          <li>💸 Registration Fee: $499</li>
+          {showEarlyBirdDiscount && (
+            <li>🐦 Early Bird Discount: Save $50 (Ends March 1st)</li>
+          )}
           <li>👨‍👩‍👧‍👦 Family Discount: extra 10% off for siblings</li>
           <li>
             <p className='font-Segoe font-normal text-sm text-primary opacity-80 text-left mt-4'>
-        To claim the family discount, email us at{' '}
-          <Link href="mailto:welcome@athletifiselect.com?subject=Just signed up! I'd like the sibling discount please">
-            welcome@athletifiselect.com
-          </Link>
-          {' '} after signing up and list the names of each child.
-        </p>
+              To claim the family discount, email us at{' '}
+              <Link href="mailto:welcome@athletifiselect.com?subject=Just signed up! I'd like the sibling discount please">
+                welcome@athletifiselect.com
+              </Link>
+              {' '} after signing up and list the names of each child.
+            </p>
           </li>
         </ul>
       </ul>
-
 
       <div className='bg-darkgray p-4 rounded-lg mt-6'>
         <p className='text-md font-bold text-skyblue'>🏆 Program Success 🏆</p>
         <p className='mt-2'>Building on our incredible 2024 season where AthletiFi Select teams achieved remarkable success, with all teams winning a tournament championship!</p>
       </div>
-
     </div>
   );
 };

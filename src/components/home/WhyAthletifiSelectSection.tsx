@@ -5,6 +5,14 @@ import Link from 'next/link';
 import TournamentSection from '../sign-up/TournamentSection';
 
 const WhyAthletifiSelectSection = () => {
+  // Get the current date
+  const currentDate = new Date();
+  // Define the target date
+  const targetDate = new Date('March 1, 2025');
+
+  // Determine whether to show the early bird discount
+  const showEarlyBirdDiscount = currentDate < targetDate;
+
   return (
     <>
       <section className="my-5 relative lg:before:content-[''] before:absolute lg:before:w-[448px] before:h-[448px] before:-top-20 before:left-0 before:bg-shadow_blue before:blur-[111px] before:opacity-25 before:-translate-x-1/3 before:-z-10 before:rounded-full after:content-[''] after:absolute after:w-[448px] after:h-[448px] after:-bottom-20 after:right-0 after:bg-shadow_blue after:blur-[111px] after:opacity-25 after:translate-x-1/3 after:-z-10 after:rounded-full">
@@ -60,7 +68,9 @@ const WhyAthletifiSelectSection = () => {
               <h3 className='text-md font-bold mt-6 text-primary'>Price and Discounts:</h3>
               <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
                 <li>💰 Program Fee: $499</li>
-                <li>⚡ Early Bird Discount: Save $50 (ends February 1st)</li>
+                {showEarlyBirdDiscount && (
+                  <li>⚡ Early Bird Discount: Save $50 (ends March 1st)</li>
+                )}
                 <li>👨‍👩‍👧‍👦 Family Discount: extra 10% off for siblings</li>
               </ul>
 
