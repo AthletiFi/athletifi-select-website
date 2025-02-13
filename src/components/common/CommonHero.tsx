@@ -1,3 +1,5 @@
+// CommonHero.tsx
+
 import Image from "next/image";
 import React from "react";
 
@@ -6,6 +8,7 @@ interface HeroProps {
   title: string;
   subtitle: string;
   heading: string;
+  subHeading?: string; // Add subHeading to the interface
 }
 
 const CommonHero: React.FC<{ hero: HeroProps }> = ({ hero }) => {
@@ -42,9 +45,20 @@ const CommonHero: React.FC<{ hero: HeroProps }> = ({ hero }) => {
               data-aos-easing="linear"
               data-aos-offset="100"
               className="font-HelveticaNeueMedium font-medium text-[30px] sm:text-[45px] lg:text-[50px] xl:text-xxl text-white sm:leading-[66px] text-center leading-[110%]"
-            > 
+            >
               {hero.heading}
             </h2>
+            {hero.subHeading && (
+              <h3
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-easing="linear"
+                data-aos-offset="150"
+                className="mt-4 font-HelveticaNeueMedium font-medium text-[20px] sm:text-[30px] lg:text-[35px] xl:text-xl text-white sm:leading-[45px] text-center leading-[110%]"
+              >
+                {hero.subHeading}
+              </h3>
+            )}
           </div>
         </div>
       </section>
