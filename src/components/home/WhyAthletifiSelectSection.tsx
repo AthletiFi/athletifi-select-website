@@ -52,9 +52,7 @@ const WhyAthletifiSelectSection = () => {
               <h3 className='text-md font-bold mt-6 text-primary'>Training Schedule</h3>
               <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
                 <li>📅 <strong>Dates:</strong> June 10 - July 27, 2025</li>
-                {/* UNCOMMENT BELOW */}
-                {/* <li>⏰ <strong>Times:</strong> Tuesdays & Thursdays, 6:00-7:30 PM</li> */}
-                <li>⏰ <strong>Times:</strong> Tuesdays & Thursdays</li>
+                <li>⏰ <strong>Times:</strong> Tuesdays & Thursdays, 6:00-7:30 PM</li>
                 <li>📍 <strong>Location:</strong> Arcadia University, Glenside, PA</li>
                 <li>👥 <strong>Ages:</strong> U9-U17 players (2008-2017 birth years)</li>
               </ul>
