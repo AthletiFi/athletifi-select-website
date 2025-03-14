@@ -62,7 +62,7 @@ const WhyAthletifiSelectSection = () => {
               <h3 className='text-md font-bold mt-6 text-primary'>Tournament Schedule</h3>
               <div className='pl-4 mb-6 text-primary'>
                 {/* UNCOMMENT BELOW */}
-                {/* <TournamentSection /> */}
+                <TournamentSection />
               </div>
 
               <h3 className='text-md font-bold mt-6 text-primary'>Price and Discounts:</h3>
