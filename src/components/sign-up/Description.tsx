@@ -18,18 +18,18 @@ const Description = () => {
         <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Who:</span> 👥 Boys & girls, ages U9 - U17 (2008 - 2017 birth years)</li>
         <li className='mb-2'>- <span className="font-HelveticaNeueMedium">What:</span> 🏋️‍♂️ Comprehensive summer program including:</li>
         <ul className='list-none pl-6 mt-1'>
-          <li>• Intensive training sessions</li>
-          <li>• Tournament participation</li>
-          <li>• Highlights and stats on the AthletiFi Platform</li>
-          <li>• Commemorative player cards for</li>
+          <li>⚽︎ Intensive training sessions</li>
+          <li>⚽︎ Tournament participation</li>
+          <li>⚽︎ Highlights and stats on the AthletiFi Platform</li>
+          <li>⚽︎ Commemorative player cards</li>
         </ul>
         <li className='mb-2'>- <span className="font-HelveticaNeueMedium">When:</span> 🗓️ June 10 - July 27, 2025</li>
         <ul className='list-none pl-6 mt-1'>
           {/* UNCOMMENT BELOW */}
           {/* <li>• Training: Tuesdays and Thursdays, 6:00 PM—7:30 PM</li> */}
-          <li>• Training: Tuesdays and Thursdays</li>
+          <li>⚽︎ Training: Tuesdays and Thursdays</li>
           {/* <li>• Break week: July 1-5 (Independence Day)</li> */}
-          <li>• 12 sessions total (two sessions per week)</li>
+          <li>⚽︎ 12 sessions total (two sessions per week)</li>
         </ul>
         <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Where:</span></li>
         <ul className='list-none pl-6 mt-1'>
