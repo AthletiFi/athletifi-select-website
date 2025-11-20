@@ -86,11 +86,21 @@ const Home: React.FC<NewsProps> = (props) => {
 export async function getServerSideProps() {
   try {
     const response = await GetRequestHandler(NewsListApiHandler());
+
+    if (!response) {
+       return {
+        props: {
+          allNewsList: null,
+        },
+      };
+    }
+    
     return {
       props: {
         allNewsList: response,
       },
     };
+    
   } catch (error) {
     console.error('Error fetching data:', error);
     return {

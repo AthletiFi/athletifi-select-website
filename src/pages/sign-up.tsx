@@ -3,24 +3,26 @@ import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 import Seo from "@/components/common/Seo";
 import SignUpForm from "@/components/sign-up/SignUpForm";
-import Description from "@/components/sign-up/Description";
+// import Description from "@/components/sign-up/Description";
 import { SEO_CONFIG } from "@/utils/seoConfig";
 
 const Signup = () => {
-  // Get the current date
-  const currentDate = new Date();
-  // Define the target date
-  const targetDate = new Date('March 1, 2025');
+  /* 
+    // Get the current date
+    const currentDate = new Date();
+    // Define the target date
+    const targetDate = new Date('March 1, 2025');
 
-  // Determine the sub-heading based on the current date
-  const subHeading = currentDate < targetDate 
-    ? "Register Now! 🌞 Early Bird Price Ends March 1st" 
-    : undefined;
+    // Determine the sub-heading based on the current date
+    const subHeading = currentDate < targetDate 
+      ? "Register Now! 🌞 Early Bird Price Ends March 1st" 
+      : undefined;  
+  */
 
   // SEO
   const hero = {
-    heading: "Sign-up for Summer Select 2025",
-    subHeading: subHeading,
+    heading: "Stay Updated",
+    subHeading: "Join the AthletiFi & Pleyr Community",
     title: "Join Our Elite Summer Soccer Program",
     subtitle: "Elite Training & Tournament Competition",
   };
@@ -45,17 +47,18 @@ const Signup = () => {
             >
               {/* Instructions Section */}
               <div className='bg-darkgray p-4 rounded-lg shadow-md mb-6 font-Segoe font-normal text-md leading-7 text-left pb-0.5 text-[#FDFEFF] m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20 opacity-80'>
-                <p className='text-md font-bold text-skyblue'>🏆 Getting started is easy 🏆</p>
+                <p className='text-md font-bold text-skyblue'>🏆 Be the First to Know 🏆</p>
                 <div className='mt-2'>
                   <p className='mb-2 text-primary'>
-                    1️⃣ Fill out this form to register your interest - no payment required yet ✍️
+                    While the 2025 season has concluded, we are actively planning the future of AthletiFi Select.
                   </p>
                   <p className='mb-2 text-primary'>
-                    2️⃣ We'll process your registration shortly ⚡
+                    Fill out the form below to:
                   </p>
-                  <p className='mb-2 text-primary'>
-                    3️⃣ We'll then email you a secure payment link to complete enrollment 🌟
-                  </p>
+                  <ul className="list-disc pl-5 mb-4">
+                    <li>Get notified about Summer 2026 tryouts and program details</li>
+                    <li>Get access to year-round clinic opportunities</li>
+                  </ul>
                 </div>
                 <p className='mt-2 mb-4 text-primary'>
                   Questions? 📧 Email us at{' '}
@@ -65,7 +68,9 @@ const Signup = () => {
                   {' '} - we're here to help!
                 </p>
               </div>
-              <Description />
+              {/* Description component removed as it contained specific 2025 logistics 
+                <Description />  
+              */}
             </div>
           </div>
         </div>

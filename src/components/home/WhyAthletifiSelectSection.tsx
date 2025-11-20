@@ -2,16 +2,19 @@ import React from 'react';
 import Image from 'next/image';
 import BlueButton from '../common/BlueButton';
 import Link from 'next/link';
-import TournamentSection from '../sign-up/TournamentSection';
+// import TournamentSection from '../sign-up/TournamentSection';
 
 const WhyAthletifiSelectSection = () => {
-  // Get the current date
-  const currentDate = new Date();
-  // Define the target date
-  const targetDate = new Date('March 1, 2025');
+  /*
+    // Get the current date
+    const currentDate = new Date();
+    
+    // Define the target date
+    const targetDate = new Date('March 1, 2025');
 
-  // Determine whether to show the early bird discount
-  const showEarlyBirdDiscount = currentDate < targetDate;
+    // Determine whether to show the early bird discount
+    const showEarlyBirdDiscount = currentDate < targetDate;
+  */
 
   return (
     <>
@@ -25,7 +28,7 @@ const WhyAthletifiSelectSection = () => {
               data-aos-delay='200'
               data-aos-offset='200'>
               <span className='relative mb-4 lg:leading-[60px] leading-[120%]'>
-                🌟 Summer Select '25🌟
+                🌟 A Legacy of Excellence 🌟
               </span>
             </h2>
 
@@ -37,44 +40,24 @@ const WhyAthletifiSelectSection = () => {
               className='lg:max-w-[900px] mx-auto'>
               
               <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center mt-4 mb-6'>
-                Building on the incredible success of our 2024 program, AthletiFi Select returns for Summer 2025! Last year, our teams dominated local tournaments with four championship victories at the EDP Summer Sizzler and one at the Hershey Summer Classic. Join us this summer to be part of our winning tradition!
+                The AthletiFi Select program has established itself as a premier development ground in the Philadelphia Metro area. Across the 2024 and 2025 seasons, our teams secured multiple championships at the EDP Summer Sizzler and Hershey Summer Classic, proving the effectiveness of our Spanish methodology and data-driven approach.
               </p>
 
-              <h3 className='text-md font-bold mt-6 text-primary'>Program Features:</h3>
+              <h3 className='text-md font-bold mt-6 text-primary'>Program Achievements:</h3>
               <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
+                <li>🏆 100% Medal Rate in 2025 Tournaments</li>
+                <li>📊 Launchpad for the Pleyr Video Platform</li>
                 <li>⚽ Elite coaching from Eastern PA's finest</li>
-                <li>🏋️‍♂️ 12 intensive training sessions</li>
-                <li>🏆 Prestigious tournament participation</li>
-                <li>📊 Performance tracking via AthletiFi Dashboard</li>
-                <li>🎯 Individual skill development focus</li>
+                <li>📈 Proven development for U9-U15 players</li>
               </ul>
 
-              <h3 className='text-md font-bold mt-6 text-primary'>Training Schedule</h3>
-              <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
-                <li>📅 <strong>Dates:</strong> June 10 - July 27, 2025</li>
-                <li>⏰ <strong>Times:</strong> Tuesdays & Thursdays, 6:00-7:30 PM</li>
-                <li>📍 <strong>Location:</strong> Arcadia University, Glenside, PA</li>
-                <li>👥 <strong>Ages:</strong> U9-U17 players (2008-2017 birth years)</li>
-              </ul>
+              <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center mt-10 mb-2'>
+                <em>Plans for the 2026 season are currently in development. Join our mailing list to be the first to know about future training opportunities and Pleyr platform updates.</em>
+              </p>
 
-              <h3 className='text-md font-bold mt-6 text-primary'>Tournament Schedule</h3>
-              <div className='pl-4 mb-6 text-primary'>
-                {/* UNCOMMENT BELOW */}
-                <TournamentSection />
-              </div>
-
-              <h3 className='text-md font-bold mt-6 text-primary'>Price and Discounts:</h3>
-              <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
-                <li>💰 Program Fee: $499</li>
-                {showEarlyBirdDiscount && (
-                  <li>⚡ Early Bird Discount: Save $50 (ends March 1st)</li>
-                )}
-                <li>👨‍👩‍👧‍👦 Family Discount: extra 10% off for siblings</li>
-              </ul>
-
-              <div className='flex justify-center items-center mt-10'>
-                <Link href='/about-program'>
-                  <BlueButton text='Learn More About Our Programs' />
+              <div className='flex justify-center items-center mt-6'>
+                <Link href='/sign-up'>
+                  <BlueButton text='Join the Waitlist' />
                 </Link>
               </div>
             </div>

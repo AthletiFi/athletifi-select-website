@@ -14,6 +14,11 @@ interface NewsProps {
 
 const LatestNews: React.FC<NewsProps> = (props) => {
   const { allNewsList } = props;
+  
+  if (!allNewsList || !allNewsList.data) {
+    return null; // Or return a <p>Loading failed</p> or empty fragment <></>
+  }
+
   const DataArray = allNewsList.data;
   const itemsPerPage = 3;
   const [currentPage, setCurrentPage] = useState(

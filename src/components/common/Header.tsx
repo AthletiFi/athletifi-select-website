@@ -260,9 +260,9 @@ const Header = () => {
                     href="/sign-up"
                     onClick={() => setOpen(false)}
                     className="pt-[10px] pb-[14px] px-[24px] text-skyblue border border-skyblue font-semibold text-base font-Segoe duration-300 hover:bg-skyblue hover:text-white md:hidden"
-                    aria-label="Sign Up for Summer Select"
+                    aria-label="Join Waitlist"
                   >
-                    Sign up for ☀️ Summer Select ☀️
+                    Join 2026 Waitlist
                   </Link>
                 </li>
               </ul>
@@ -273,9 +273,9 @@ const Header = () => {
               href="/sign-up"
               onClick={() => setOpen(false)}
               className="pt-[10px] pb-[14px] px-[24px] text-skyblue border border-skyblue font-semibold text-base font-Segoe duration-300 hover:bg-skyblue hover:text-white hidden md:inline-block"
-              aria-label="Sign Up for Summer Select"
+              aria-label="Join Waitlist"
             >
-              Sign up for ☀️ Summer Select ☀️ 
+              Join 2026 Waitlist
             </Link>
           </div>
         </div>

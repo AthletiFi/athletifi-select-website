@@ -1,0 +1,396 @@
+diff --git a/src/components/common/Header.tsx b/src/components/common/Header.tsx
+index 635bf7c..d6b6ab4 100644
+--- a/src/components/common/Header.tsx
++++ b/src/components/common/Header.tsx
+@@ -260,9 +260,9 @@ const Header = () => {
+                     href="/sign-up"
+                     onClick={() => setOpen(false)}
+                     className="pt-[10px] pb-[14px] px-[24px] text-skyblue border border-skyblue font-semibold text-base font-Segoe duration-300 hover:bg-skyblue hover:text-white md:hidden"
+-                    aria-label="Sign Up for Summer Select"
++                    aria-label="Join Waitlist"
+                   >
+-                    Sign up for ☀️ Summer Select ☀️
++                    Join 2026 Waitlist
+                   </Link>
+                 </li>
+               </ul>
+@@ -273,9 +273,9 @@ const Header = () => {
+               href="/sign-up"
+               onClick={() => setOpen(false)}
+               className="pt-[10px] pb-[14px] px-[24px] text-skyblue border border-skyblue font-semibold text-base font-Segoe duration-300 hover:bg-skyblue hover:text-white hidden md:inline-block"
+-              aria-label="Sign Up for Summer Select"
++              aria-label="Join Waitlist"
+             >
+-              Sign up for ☀️ Summer Select ☀️ 
++              Join 2026 Waitlist
+             </Link>
+           </div>
+         </div>
+diff --git a/src/components/common/api/ApiHelper.tsx b/src/components/common/api/ApiHelper.tsx
+index 09286de..cafd789 100644
+--- a/src/components/common/api/ApiHelper.tsx
++++ b/src/components/common/api/ApiHelper.tsx
+@@ -24,7 +24,7 @@ export async function axiosRequest(method:any, url:any, data = null) {
+     // Return the data received from the Strapi CMS.
+     return await response.data;
+   } catch (error) {
+-    // Handle any errors that occur during the API request.
+-    return error;
++    console.error("API Request Error:", error);
++    return null;
+   }
+ }
+diff --git a/src/components/home/DigitalCardInfoSection.tsx b/src/components/home/DigitalCardInfoSection.tsx
+index c8f0776..2bcc6b2 100644
+--- a/src/components/home/DigitalCardInfoSection.tsx
++++ b/src/components/home/DigitalCardInfoSection.tsx
+@@ -38,6 +38,7 @@ const DigitalCardInfoSection = () => {
+       },
+     ],
+   };
++
+   return (
+     <section className="mt-5 mb-14 relative lg:before:content-[''] before:absolute lg:before:w-[448px] before:h-[448px] before:-top-20 before:left-0 before:bg-shadow_blue before:blur-[111px] before:opacity-25 before:-translate-x-1/3 before:-z-10 before:rounded-full after:content-[''] after:absolute after:w-[448px] after:h-[448px] after:-bottom-20 after:right-0 after:bg-shadow_blue after:blur-[111px] after:opacity-25 after:translate-x-1/3 after:-z-10 after:rounded-full">
+       <div className='absolute sm:-bottom-[40px] lg:-bottom-[80px] bottom-0 start-0 lg:w-[230px] lg:h-[286px] opacity-30'>
+@@ -57,7 +58,7 @@ const DigitalCardInfoSection = () => {
+         alt='shadow'
+       />
+       <div className='container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto relative z-10'>
+-        <div className="blue_linear_gradient relative after:absolute flex justify-center flex-col items-center  after:contents-[''] after:inset-0 after:p-[1px] after:rounded-[30px] rounded-[30px]">
++        <div className="blue_linear_gradient relative after:absolute flex justify-center flex-col items-center after:contents-[''] after:inset-0 after:p-[1px] after:rounded-[30px] rounded-[30px]">
+           <div className='mb-4'>
+             <h2
+               className='lg:text-5xl md:text-[40px] sm:text-4xl text-[24px] text-primary font-medium font-HelveticaNeueMedium relative z-20 max-w-[670px] mx-auto text-center md:pt-[24px] pt-6 px-3 md:px-0 lg:pt-[56px] sm:leading-[45px] md:!leading-[60px]'
+@@ -68,10 +69,8 @@ const DigitalCardInfoSection = () => {
+               data-aos-offset='200'
+             >
+               <span className='relative'>
+-                {/* Stats Reimagined. */}
+-                Track Progress with Digital Player Cards
+-              </span>{' '}
+-              {/* Exposure elevated. */}
++                Powered by Pleyr
++              </span>
+             </h2>
+             <p
+               className='font-Segoe font-normal text-md text-center text-[#FDFEFF] leading-7 px-4 md:px-0 max-w-[700px] lg:max-w-[769px] mx-auto md:mt-4 mt-2 relative z-20'
+@@ -81,9 +80,8 @@ const DigitalCardInfoSection = () => {
+               data-aos-delay='400'
+               data-aos-offset='200'
+             >
+-              AthletiFi Select offers a personalized Player Card to every participant, highlighting their unique soccer journey. These cards are the ultimate tool for tracking and highlighting skills and achievements. 
+-              <br/>
+-              Parents also benefit from dynamic progress reports, keeping them up-to-date on their child's development. The Player Dashboard offers an interactive platform to monitor progress, share highlights, and connect with family, friends, and recruiters.
++              AthletiFi Select was the testing ground for <strong>Pleyr</strong>, our new gamified video platform. 
++              Players get access to the <strong>Team Video Vault</strong>, allowing them to clip their own highlights, build their digital player card, and unlock rewards through our gamified engagement streaks.
+             </p>
+          
+           </div>
+@@ -149,10 +147,10 @@ const DigitalCardInfoSection = () => {
+           </Slider>
+         </div>
+         <div className="flex lg:justify-center justify-center items-center mt-5 z-50">
+-                <Link href="/about-cards">
+-                  <BlueButton text="Learn more about the Digital Player Cards" />
+-                </Link>
+-              </div>
++          <Link href="/about-cards">
++            <BlueButton text="See the Tech behind the Team" />
++          </Link>
++        </div>
+       </div>
+     </section>
+   );
+diff --git a/src/components/home/HomeTitleSection.tsx b/src/components/home/HomeTitleSection.tsx
+index bd2d3b1..e29de3b 100644
+--- a/src/components/home/HomeTitleSection.tsx
++++ b/src/components/home/HomeTitleSection.tsx
+@@ -13,38 +13,31 @@ const HomeTitleSection = () => {
+       <div className="container home-title-section md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px]">
+         <div className="flex items-center flex-col lg:flex-row">
+           <div className="max-w-[490px] lg:max-w-[520px] xl:max-w-[608px]">
+-            <h1 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-[30px] sm:text-[45px] lg:text-[50px] xl:text-xxl font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
+-            🥅
+-            </h1>
+-            <h1 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-[30px] sm:text-[45px] lg:text-[50px] xl:text-xxl font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
+-            ⚽️
+-            </h1>
++            {/* Emojis kept for continuity */}
+             <h1 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-[30px] sm:text-[45px] lg:text-[50px] xl:text-xxl font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
+             🏆
+             </h1>
+             <h1 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-[30px] sm:text-[45px] lg:text-[50px] xl:text-xxl font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
+-              Eastern PA's Elite Soccer Experience 
++              A Championship Season
+             </h1>
+             <p className="font-Segoe text-white text-[16px] sm:text-md font-normal mt-4 opacity-80 text-center lg:text-start">
+-              Premier Summer Development Program for U9-U17 Players
++              The 2025 Summer Select season has concluded. We are proud of our players' development and our 100% tournament medal rate.
+             </p>
+             <br></br>
+-            <h3 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-md font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px]">
+-              🌞 Registration now open 🌞 
++            
++            <h3 className="font-HelveticaNeueMedium text-white text-center lg:text-start text-md font-medium leading-[35px] sm:leading-[45px] md:leading-[50px] lg:leading-[66px] text-skyblue">
++              🚀 Introducing Pleyr
+             </h3>
+             <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-lg font-large">
+-              Summer Select 2025
+-            </h4>
+-            <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-md font-medium leading-[15px] sm:leading-[25px] md:leading-[30px] lg:leading-[40px]">
+-              🗓️ June 10 - July 27, 2025
++              The Future of Youth Sports Highlights
+             </h4>
+-            <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-md font-medium leading-[15px] sm:leading-[25px] md:leading-[30px] lg:leading-[40px] mt-4">
+-            {/* <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-md font-medium leading-[15px] sm:leading-[25px] md:leading-[30px] lg:leading-[40px]"> */}
+-              ⚡️ Early Bird Discount Available!
++            <h4 className="font-HelveticaNeueMedium text-white text-center opacity-85 lg:text-start text-md font-medium leading-[15px] sm:leading-[25px] md:leading-[30px] lg:leading-[40px] mt-2">
++              Our program powered the development of the Team Video Vault.
+             </h4>
+-            <div className="flex lg:justify-start justify-center lg:mt-10 mt-7 lg:pb-14 lg:mb-10">
++            
++            <div className="flex lg:justify-start justify-center lg:mt-10 mt-7 lg:pb-14 lg:mb-10 gap-4">
+               <Link href="/sign-up">
+-                <BlueButton text="Sign up for Summer Select!" />
++                <BlueButton text="Join Waitlist for 2026" />
+               </Link>
+             </div>
+           </div>
+diff --git a/src/components/home/LatestNews.tsx b/src/components/home/LatestNews.tsx
+index 05d0b4f..4bbef7f 100644
+--- a/src/components/home/LatestNews.tsx
++++ b/src/components/home/LatestNews.tsx
+@@ -14,6 +14,11 @@ interface NewsProps {
+ 
+ const LatestNews: React.FC<NewsProps> = (props) => {
+   const { allNewsList } = props;
++  
++  if (!allNewsList || !allNewsList.data) {
++    return null; // Or return a <p>Loading failed</p> or empty fragment <></>
++  }
++
+   const DataArray = allNewsList.data;
+   const itemsPerPage = 3;
+   const [currentPage, setCurrentPage] = useState(
+diff --git a/src/components/home/WhyAthletifiSelectSection.tsx b/src/components/home/WhyAthletifiSelectSection.tsx
+index bf569f5..9287685 100644
+--- a/src/components/home/WhyAthletifiSelectSection.tsx
++++ b/src/components/home/WhyAthletifiSelectSection.tsx
+@@ -2,16 +2,19 @@ import React from 'react';
+ import Image from 'next/image';
+ import BlueButton from '../common/BlueButton';
+ import Link from 'next/link';
+-import TournamentSection from '../sign-up/TournamentSection';
++// import TournamentSection from '../sign-up/TournamentSection';
+ 
+ const WhyAthletifiSelectSection = () => {
+-  // Get the current date
+-  const currentDate = new Date();
+-  // Define the target date
+-  const targetDate = new Date('March 1, 2025');
++  /*
++    // Get the current date
++    const currentDate = new Date();
++    
++    // Define the target date
++    const targetDate = new Date('March 1, 2025');
+ 
+-  // Determine whether to show the early bird discount
+-  const showEarlyBirdDiscount = currentDate < targetDate;
++    // Determine whether to show the early bird discount
++    const showEarlyBirdDiscount = currentDate < targetDate;
++  */
+ 
+   return (
+     <>
+@@ -25,7 +28,7 @@ const WhyAthletifiSelectSection = () => {
+               data-aos-delay='200'
+               data-aos-offset='200'>
+               <span className='relative mb-4 lg:leading-[60px] leading-[120%]'>
+-                🌟 Summer Select '25🌟
++                🌟 A Legacy of Excellence 🌟
+               </span>
+             </h2>
+ 
+@@ -37,44 +40,24 @@ const WhyAthletifiSelectSection = () => {
+               className='lg:max-w-[900px] mx-auto'>
+               
+               <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center mt-4 mb-6'>
+-                Building on the incredible success of our 2024 program, AthletiFi Select returns for Summer 2025! Last year, our teams dominated local tournaments with four championship victories at the EDP Summer Sizzler and one at the Hershey Summer Classic. Join us this summer to be part of our winning tradition!
++                The AthletiFi Select program has established itself as a premier development ground in the Philadelphia Metro area. Across the 2024 and 2025 seasons, our teams secured multiple championships at the EDP Summer Sizzler and Hershey Summer Classic, proving the effectiveness of our Spanish methodology and data-driven approach.
+               </p>
+ 
+-              <h3 className='text-md font-bold mt-6 text-primary'>Program Features:</h3>
++              <h3 className='text-md font-bold mt-6 text-primary'>Program Achievements:</h3>
+               <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
++                <li>🏆 100% Medal Rate in 2025 Tournaments</li>
++                <li>📊 Launchpad for the Pleyr Video Platform</li>
+                 <li>⚽ Elite coaching from Eastern PA's finest</li>
+-                <li>🏋️‍♂️ 12 intensive training sessions</li>
+-                <li>🏆 Prestigious tournament participation</li>
+-                <li>📊 Performance tracking via AthletiFi Dashboard</li>
+-                <li>🎯 Individual skill development focus</li>
++                <li>📈 Proven development for U9-U15 players</li>
+               </ul>
+ 
+-              <h3 className='text-md font-bold mt-6 text-primary'>Training Schedule</h3>
+-              <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
+-                <li>📅 <strong>Dates:</strong> June 10 - July 27, 2025</li>
+-                <li>⏰ <strong>Times:</strong> Tuesdays & Thursdays, 6:00-7:30 PM</li>
+-                <li>📍 <strong>Location:</strong> Arcadia University, Glenside, PA</li>
+-                <li>👥 <strong>Ages:</strong> U9-U17 players (2008-2017 birth years)</li>
+-              </ul>
+-
+-              <h3 className='text-md font-bold mt-6 text-primary'>Tournament Schedule</h3>
+-              <div className='pl-4 mb-6 text-primary'>
+-                {/* UNCOMMENT BELOW */}
+-                <TournamentSection />
+-              </div>
+-
+-              <h3 className='text-md font-bold mt-6 text-primary'>Price and Discounts:</h3>
+-              <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
+-                <li>💰 Program Fee: $499</li>
+-                {showEarlyBirdDiscount && (
+-                  <li>⚡ Early Bird Discount: Save $50 (ends March 1st)</li>
+-                )}
+-                <li>👨‍👩‍👧‍👦 Family Discount: extra 10% off for siblings</li>
+-              </ul>
++              <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center mt-10 mb-2'>
++                <em>Plans for the 2026 season are currently in development. Join our mailing list to be the first to know about future training opportunities and Pleyr platform updates.</em>
++              </p>
+ 
+-              <div className='flex justify-center items-center mt-10'>
+-                <Link href='/about-program'>
+-                  <BlueButton text='Learn More About Our Programs' />
++              <div className='flex justify-center items-center mt-6'>
++                <Link href='/sign-up'>
++                  <BlueButton text='Join the Waitlist' />
+                 </Link>
+               </div>
+             </div>
+diff --git a/src/components/sign-up/SignUpForm.tsx b/src/components/sign-up/SignUpForm.tsx
+index 7f6ffce..cd1713a 100644
+--- a/src/components/sign-up/SignUpForm.tsx
++++ b/src/components/sign-up/SignUpForm.tsx
+@@ -123,7 +123,7 @@ const SignUpForm = () => {
+             <div className='flex flex-col items-center lg:items-start'>
+               <h2 className='font-HelveticaNeueMedium font-medium text-[24px] md:text-5xl sm:text-4xl leading-[60px] text-[#FDFEFF] md:mb-3'>
+                 <span className='relative'>
+-                  Registration Form
++                  Interest & Waitlist Form
+                   <span className='absolute -bottom-3 left-0'>
+                     <UnderLIneText />
+                   </span>
+@@ -482,7 +482,7 @@ const SignUpForm = () => {
+                       checked ? ' bg-skyblue' : ''
+                     }`}
+                   >
+-                    {loading ? 'Loading...' : ' Sign Up'}
++                    {loading ? 'Loading...' : 'Join Waitlist'} 
+ 
+                     <span className='group-hover:translate-x-3 transition duration-300 ease-out'>
+                       <ButtonWhiteArrow />
+diff --git a/src/pages/index.tsx b/src/pages/index.tsx
+index 573ba3f..ee3079c 100644
+--- a/src/pages/index.tsx
++++ b/src/pages/index.tsx
+@@ -86,11 +86,21 @@ const Home: React.FC<NewsProps> = (props) => {
+ export async function getServerSideProps() {
+   try {
+     const response = await GetRequestHandler(NewsListApiHandler());
++
++    if (!response) {
++       return {
++        props: {
++          allNewsList: null,
++        },
++      };
++    }
++    
+     return {
+       props: {
+         allNewsList: response,
+       },
+     };
++    
+   } catch (error) {
+     console.error('Error fetching data:', error);
+     return {
+diff --git a/src/pages/sign-up.tsx b/src/pages/sign-up.tsx
+index 16682fc..fa466e0 100644
+--- a/src/pages/sign-up.tsx
++++ b/src/pages/sign-up.tsx
+@@ -3,24 +3,26 @@ import Footer from "@/components/common/Footer";
+ import Header from "@/components/common/Header";
+ import Seo from "@/components/common/Seo";
+ import SignUpForm from "@/components/sign-up/SignUpForm";
+-import Description from "@/components/sign-up/Description";
++// import Description from "@/components/sign-up/Description";
+ import { SEO_CONFIG } from "@/utils/seoConfig";
+ 
+ const Signup = () => {
+-  // Get the current date
+-  const currentDate = new Date();
+-  // Define the target date
+-  const targetDate = new Date('March 1, 2025');
++  /* 
++    // Get the current date
++    const currentDate = new Date();
++    // Define the target date
++    const targetDate = new Date('March 1, 2025');
+ 
+-  // Determine the sub-heading based on the current date
+-  const subHeading = currentDate < targetDate 
+-    ? "Register Now! 🌞 Early Bird Price Ends March 1st" 
+-    : undefined;
++    // Determine the sub-heading based on the current date
++    const subHeading = currentDate < targetDate 
++      ? "Register Now! 🌞 Early Bird Price Ends March 1st" 
++      : undefined;  
++  */
+ 
+   // SEO
+   const hero = {
+-    heading: "Sign-up for Summer Select 2025",
+-    subHeading: subHeading,
++    heading: "Stay Updated",
++    subHeading: "Join the AthletiFi & Pleyr Community",
+     title: "Join Our Elite Summer Soccer Program",
+     subtitle: "Elite Training & Tournament Competition",
+   };
+@@ -45,17 +47,18 @@ const Signup = () => {
+             >
+               {/* Instructions Section */}
+               <div className='bg-darkgray p-4 rounded-lg shadow-md mb-6 font-Segoe font-normal text-md leading-7 text-left pb-0.5 text-[#FDFEFF] m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20 opacity-80'>
+-                <p className='text-md font-bold text-skyblue'>🏆 Getting started is easy 🏆</p>
++                <p className='text-md font-bold text-skyblue'>🏆 Be the First to Know 🏆</p>
+                 <div className='mt-2'>
+                   <p className='mb-2 text-primary'>
+-                    1️⃣ Fill out this form to register your interest - no payment required yet ✍️
++                    While the 2025 season has concluded, we are actively planning the future of AthletiFi Select.
+                   </p>
+                   <p className='mb-2 text-primary'>
+-                    2️⃣ We'll process your registration shortly ⚡
+-                  </p>
+-                  <p className='mb-2 text-primary'>
+-                    3️⃣ We'll then email you a secure payment link to complete enrollment 🌟
++                    Fill out the form below to:
+                   </p>
++                  <ul className="list-disc pl-5 mb-4">
++                    <li>Get notified about Summer 2026 tryouts and program details</li>
++                    <li>Get access to year-round clinic opportunities</li>
++                  </ul>
+                 </div>
+                 <p className='mt-2 mb-4 text-primary'>
+                   Questions? 📧 Email us at{' '}
+@@ -65,7 +68,9 @@ const Signup = () => {
+                   {' '} - we're here to help!
+                 </p>
+               </div>
+-              <Description />
++              {/* Description component removed as it contained specific 2025 logistics 
++                <Description />  
++              */}
+             </div>
+           </div>
+         </div>

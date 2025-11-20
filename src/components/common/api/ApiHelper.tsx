@@ -24,7 +24,7 @@ export async function axiosRequest(method:any, url:any, data = null) {
     // Return the data received from the Strapi CMS.
     return await response.data;
   } catch (error) {
-    // Handle any errors that occur during the API request.
-    return error;
+    console.error("API Request Error:", error);
+    return null;
   }
 }
