@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { BlueShodow } from '../common/Icon';
+import { BlueShodow, PleyrLogo } from '../common/Icon';
 
 const TrackTriumphs = () => {
   return (
@@ -29,10 +29,15 @@ const TrackTriumphs = () => {
       <div className='container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 relative'>
         <div className="blue_linear_gradient bg-blue_linear_gradient after:absolute relative lg:py-16 py-5 md:py-10 sm:mt-6 z-0  after:contents-[''] after:inset-0 after:p-[1px] after:rounded-[30px] rounded-[30px]">
           
+          {/* Pleyr Logo Above Title */}
+          <div className="flex justify-center relative z-20 mb-4">
+             <PleyrLogo mode="responsive" className="w-48 sm:w-64 opacity-100" />
+          </div>
+
           {/* Title */}
           <h2 className='p-[15px] font-HelveticaNeueMedium md:text-5xl text-[26px] sm:text-4xl text-[#FDFEFF] font-medium leading-[30px] relative z-20 text-center md:mb-8'>
             <span className='relative '>
-              Digital Player Cards: Now on Pleyr
+              Create your Pleyr Card™ on Pleyr
             </span>
           </h2>
 
@@ -56,7 +61,7 @@ const TrackTriumphs = () => {
             {/* Image */}
             <div className="md:w-1/2 flex justify-center items-center p-3">
               <Image
-                src="/assets/img/webp/player-card-7.webp" 
+                src="/assets/img/webp/website_landing_page_graphic.webp" 
                 width={350}
                 height={350}
                 alt="Digital Player Card"

@@ -43,7 +43,7 @@ const Footer = () => {
             </li>
           </ul>
           <p className=" text-white text-sm font-Segoe opacity-70">
-            @{year} Athletifi
+            @{year} AthletiFi Select
           </p>
           {/* SOCIAL-ICON */}
           <div className="flex gap-4">

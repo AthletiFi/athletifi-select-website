@@ -6,7 +6,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import BlueButton from "../common/BlueButton";
-import { PleyrLogo } from "../common/Icon";
+import { PleyrLogo, ArrowButton } from "../common/Icon";
+// TODO: Import the dark Pleyr logo SVG here
+import PleyrLogoDark from "../../../public/assets/img/svg/pleyr-logo-dark.svg"
+
 
 const HomeTitleSection = () => {
   return (
@@ -32,29 +35,31 @@ const HomeTitleSection = () => {
               </Link>
             </div>
 
-            {/* Pleyr Promotion Box - Moved from Sign Up Page */}
-            <div className='bg-darkgray p-6 rounded-[20px] border border-[#ffffff10] shadow-lg lg:mr-10 relative z-20'>
-              <div className="flex justify-center lg:justify-start mb-4">
-                <PleyrLogo className="w-32 h-auto" mode="responsive" />
-              </div>
-              <h3 className='text-xl font-HelveticaNeueMedium text-skyblue mb-2 text-center lg:text-left'>
-                What's Next? 🚀
-              </h3>
-              <p className='font-Segoe text-base text-primary opacity-90 mb-4 leading-6 text-center lg:text-left'>
-                As we explore what's next, we invite you to experience Pleyr: our new social platform built for youth athletes 
-              </p>
-              
-              <div className="flex justify-center lg:justify-start">
-                <Link href="https://pleyr.com" target="_blank" rel="noopener noreferrer">
-                  <button className='bg-skyblue text-white px-6 py-2 rounded font-semibold 
-                                   hover:bg-black hover:border hover:border-skyblue border border-transparent
-                                   transition duration-300 flex items-center gap-2 text-sm'>
-                    Explore Pleyr Platform
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </button>
-                </Link>
+            {/* Pleyr Promotion Box - Restyled to match homepage */}
+            <div className="blue_linear_gradient bg-blue_linear_gradient after:absolute relative py-6 px-6 lg:mr-10 z-20 after:contents-[''] after:inset-0 after:p-[1px] after:rounded-[20px] rounded-[20px]">
+              <div className="relative z-20">
+                <div className="flex justify-center lg:justify-start mb-4">
+                  <PleyrLogo className="w-32 h-auto" mode="responsive" />
+                </div>
+                <h3 className='text-md font-HelveticaNeueMedium font-medium text-white mb-3 text-center lg:text-left'>
+                  What's Next? 🚀
+                </h3>
+                <p className='font-Segoe text-[16px] sm:text-md font-normal text-white opacity-80 mb-5 leading-7 text-center lg:text-left'>
+                  As we explore what's next, we invite you to experience Pleyr: our new social platform built for youth athletes 
+                </p>
+                
+                <div className="flex justify-center lg:justify-start">
+                  <Link href="https://pleyr.com" target="_blank" rel="noopener noreferrer">
+                    <span className="sm:px-[24px] px-4 sm:py-[14.5px] py-2 flex bg-[#E5E7EB] text-base font-semibold text-black font-Segoe leading-6 gap-[6px] group border-2 border-skyblue hover:bg-skyblue hover:text-black transition duration-300 ease-in-out cursor-pointer items-center">
+                      Explore{' '}
+                      <Image src={PleyrLogoDark} alt="Pleyr" width={60} height={20} className="inline-block" />
+                      {' '}Platform
+                      <span className="group-hover:translate-x-3 transition duration-300 ease-out">
+                        <ArrowButton />
+                      </span>
+                    </span>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

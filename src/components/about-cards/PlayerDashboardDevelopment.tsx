@@ -37,35 +37,37 @@ const PlayerDashboardDevelopment = () => {
           {/* Title */}
           <h2 className="p-[15px] pt-2 font-HelveticaNeueMedium md:text-5xl text-[26px] sm:text-4xl text-[#FDFEFF] font-medium leading-[30px] relative z-20 text-center md:mb-4">
             <span className="relative ">Now Available to Everyone</span>
-            <span className="lg:px-14 lg:pt-6 sm:px-8 px-4 pt-4 flex flex-col items-center text-primary text-lgxl font-HelveticaNeueRegular">
-              Build Your Digital Soccer Portfolio
-            </span>
+            <div className="flex lg:justify-center justify-center lg:mt-10 mt-7 lg:pb-5 lg:mb-0 relative z-20">
+              <Link
+                href="https://pleyr.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BlueButton text="Create My Pleyr Card Now" />
+              </Link>
+            </div>
           </h2>
 
           {/* Image */}
           <div className="flex justify-center items-center py-6">
             <Image
-              src="/assets/img/webp/platform-screenshot.webp"
-              width={800}
-              height={800}
+              src="/assets/img/svg/app-promo-img.svg"
+              width={500}
+              height={500}
               alt="Pleyr Platform"
             />
           </div>
-
+          <h2 className="p-[15px] pt-2 font-HelveticaNeueMedium md:text-5xl text-[26px] sm:text-4xl text-[#FDFEFF] font-medium leading-[30px] relative z-20 text-center md:mb-4">
+            <span className="lg:px-14 lg:pt-6 sm:px-8 px-4 pt-4 flex flex-col items-center text-primary text-lgxl font-HelveticaNeueRegular">
+              Build Your Digital Soccer Portfolio
+            </span>
+          </h2>
           {/* Text Content */}
           <p className="font-Segoe font-normal text-md leading-7 text-center pb-0.5 text-[#FDFEFF] opacity-80 m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20">
             Pleyr brings the Summer Select experience to all youth athletes. Create custom cards, unlock new designs through achievements, and build your digital soccer portfolio to share with friends, family, and recruiters.
           </p>
           
-          <div className="flex lg:justify-center justify-center lg:mt-10 mt-7 lg:pb-5 lg:mb-0 relative z-20">
-            <Link
-              href="https://pleyr.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <BlueButton text="Create Your Player Card on Pleyr" />
-            </Link>
-          </div>
+          
         </div>
       </div>
     </section>

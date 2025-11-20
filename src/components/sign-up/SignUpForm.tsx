@@ -123,7 +123,7 @@ const SignUpForm = () => {
             <div className='flex flex-col items-center lg:items-start'>
               <h2 className='font-HelveticaNeueMedium font-medium text-[24px] md:text-5xl sm:text-4xl leading-[60px] text-[#FDFEFF] md:mb-3'>
                 <span className='relative'>
-                  Interest & Waitlist Form
+                  Join the waitlist
                   <span className='absolute -bottom-3 left-0'>
                     <UnderLIneText />
                   </span>
