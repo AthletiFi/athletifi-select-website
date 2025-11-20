@@ -17,8 +17,8 @@ const AboutProgram = () => {
   // SEO
   const hero = {
     heading: 'About The Program',
-    title: 'Your Title Here',
-    subtitle: 'Your Subtitle Here',
+    title: 'Elite Development',
+    subtitle: 'Technical Training & Tactical Intelligence',
   };
 
   return (

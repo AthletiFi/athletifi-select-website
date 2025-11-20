@@ -5,6 +5,9 @@ import Seo from "@/components/common/Seo";
 import SignUpForm from "@/components/sign-up/SignUpForm";
 // import Description from "@/components/sign-up/Description";
 import { SEO_CONFIG } from "@/utils/seoConfig";
+import Link from "next/link";
+import BlueButton from "@/components/common/BlueButton";
+import { PleyrLogo } from "@/components/common/Icon";
 
 const Signup = () => {
   /* 
@@ -31,51 +34,73 @@ const Signup = () => {
     <div className="max-w-[5560px] mx-auto">
       {/* SEO */}
       <Seo pageSEO={SEO_CONFIG.signUp} />
+      
       <div className="bg-signup-hero-img bg-cover overflow-hidden">
         <Header />
         <CommonHero hero={hero} />
       </div>
-      <section className='pt-2 pb-2 sm:mb-5 sm:pb-5 lg:mb-0 relative bg-hero-pattern bg-cover bg-center'>
-        <div className='container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 relative'>
-          <div className=' relative pb-5 pt-2 lg:pb-16 md:pb-10 sm:mt-6 z-0'>
-            <div
-              data-aos='fade-up'
-              data-aos-duration='400'
-              data-aos-easing='ease-in-sine'
-              data-aos-delay='300'
-              data-aos-offset='100'
-            >
-              {/* Instructions Section */}
-              <div className='bg-darkgray p-4 rounded-lg shadow-md mb-6 font-Segoe font-normal text-md leading-7 text-left pb-0.5 text-[#FDFEFF] m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20 opacity-80'>
-                <p className='text-md font-bold text-skyblue'>🏆 Be the First to Know 🏆</p>
-                <div className='mt-2'>
-                  <p className='mb-2 text-primary'>
-                    While the 2025 season has concluded, we are actively planning the future of AthletiFi Select.
-                  </p>
-                  <p className='mb-2 text-primary'>
-                    Fill out the form below to:
-                  </p>
-                  <ul className="list-disc pl-5 mb-4">
-                    <li>Get notified about Summer 2026 tryouts and program details</li>
-                    <li>Get access to year-round clinic opportunities</li>
-                  </ul>
-                </div>
-                <p className='mt-2 mb-4 text-primary'>
-                  Questions? 📧 Email us at{' '}
-                  <a href="mailto:welcome@athletifiselect.com" className='text-skyblue hover:underline'>
-                    welcome@athletifiselect.com
-                  </a>
-                  {' '} - we're here to help!
-                </p>
+
+      {/* Narrative Section */}
+      <section className='pt-12 pb-2 relative bg-hero-pattern bg-cover bg-center'>
+        <div className='container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3'>
+          <div className='max-w-[900px] mx-auto text-center'>
+            
+            {/* Retrospective */}
+            <h2 className='font-HelveticaNeueMedium text-[28px] md:text-4xl text-primary mb-6'>
+              Thank You for an Incredible 2024 & 2025
+            </h2>
+            <p className='font-Segoe text-lg text-primary opacity-80 mb-10 leading-8'>
+              Over the past two summers, AthletiFi Select brought together 100+ families 
+              and achieved unprecedented success—with 4 out of 5 teams winning championships 
+              at the EDP Summer Sizzler and multiple victories at Hershey Summer Classic.
+            </p>
+
+            {/* Pleyr Promotion Box */}
+            <div className='bg-darkgray p-8 rounded-[30px] border border-[#ffffff10] mb-12 shadow-lg'>
+              <div className="flex justify-center mb-6">
+                <PleyrLogo className="w-48 h-auto" mode="responsive" />
               </div>
-              {/* Description component removed as it contained specific 2025 logistics 
-                <Description />  
-              */}
+              <h3 className='text-2xl font-HelveticaNeueMedium text-skyblue mb-4'>
+                What's Next? 🚀
+              </h3>
+              <p className='font-Segoe text-md text-primary opacity-90 mb-6 leading-7 max-w-[700px] mx-auto'>
+                While we explore the future of our summer program, we're excited to 
+                introduce you to <strong>Pleyr</strong>—the gamified video platform we've been building 
+                to help every young athlete own their soccer journey.
+              </p>
+              
+              <div className="flex justify-center">
+                <Link href="https://pleyr.com" target="_blank" rel="noopener noreferrer">
+                  <button className='bg-skyblue text-white px-8 py-3 rounded font-semibold 
+                                   hover:bg-black hover:border hover:border-skyblue border border-transparent
+                                   transition duration-300 flex items-center gap-2'>
+                    Explore Pleyr Platform
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </button>
+                </Link>
+              </div>
             </div>
+
+            {/* Transition to Form */}
+            <div className='text-left lg:text-center mb-4'>
+              <h3 className='text-xl font-HelveticaNeueMedium text-primary mb-2'>
+                Stay Connected
+              </h3>
+              <p className='text-md text-primary opacity-80 mb-4'>
+                Want to be first to know about future programs, year-round clinics, 
+                or opportunities with our coaching staff? Fill out the interest form below.
+              </p>
+            </div>
+
           </div>
         </div>
       </section>
+
+      {/* Functional Form Component */}
       <SignUpForm />
+      
       <Footer />
     </div>
   );

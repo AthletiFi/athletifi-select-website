@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { UnderLIneText, BlueShodow } from '../common/Icon';
+import { BlueShodow } from '../common/Icon';
 
 const TrackTriumphs = () => {
   return (
@@ -30,9 +30,9 @@ const TrackTriumphs = () => {
         <div className="blue_linear_gradient bg-blue_linear_gradient after:absolute relative lg:py-16 py-5 md:py-10 sm:mt-6 z-0  after:contents-[''] after:inset-0 after:p-[1px] after:rounded-[30px] rounded-[30px]">
           
           {/* Title */}
-          <h2 className='p-[15px] font-HelveticaNeueMedium md:text-5xl text-[26px] sm:text-4xl text-[#FDFEFF] font-medium leading-[30px] relative z-20 text-center md:mb-4'>
+          <h2 className='p-[15px] font-HelveticaNeueMedium md:text-5xl text-[26px] sm:text-4xl text-[#FDFEFF] font-medium leading-[30px] relative z-20 text-center md:mb-8'>
             <span className='relative '>
-              A new way to follow your soccer star
+              Digital Player Cards: Now on Pleyr
             </span>
           </h2>
 
@@ -41,12 +41,15 @@ const TrackTriumphs = () => {
             
             {/* Text Content */}
             <div className="md:w-1/2 md:pr-6 md:pl-10 p-3">
-              {/* Paragraphs */}
-              <p className='font-Segoe font-normal text-md leading-7 text-center pb-0.5 text-[#FDFEFF] opacity-80 m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20'>
-                Step into the future of youth soccer engagement with AthletiFi's innovative player cards. These aren't just any collectible cards; they're your all-access pass to the dynamic world of a young athlete's soccer journey. 
+              <p className='font-Segoe font-normal text-md leading-7 text-center md:text-left pb-4 text-[#FDFEFF] opacity-80 m-0 relative z-20'>
+                The digital player cards that made Summer Select special are now available to all youth athletes through Pleyr. Create your card, track your progress, and share your journey.
               </p>
-              <p className='font-Segoe font-normal text-md leading-7 text-center pb-0.5 text-[#FDFEFF] opacity-80 m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20'>
-                Each card is adorned with the player's image and essential details, and transforms into a gateway when paired with our groundbreaking AthletiFi Dashboard. By scanning the unique QR code on each card, fans, family, and coaches are instantly connected to a real-time, interactive realm of comprehensive player analytics and performance insights. 
+              
+              <h3 className='text-xl font-HelveticaNeueMedium text-skyblue mt-6 mb-2 text-center md:text-left relative z-20'>
+                What Started at Summer Select
+              </h3>
+              <p className='font-Segoe font-normal text-md leading-7 text-center md:text-left pb-0.5 text-[#FDFEFF] opacity-80 m-0 relative z-20'>
+                Every Summer Select player received a personalized digital card showcasing their stats, achievements, and highlights. These cards became collectible among teammates and a source of pride for players, turning every game into a moment to remember.
               </p>
             </div>
 
@@ -56,7 +59,7 @@ const TrackTriumphs = () => {
                 src="/assets/img/webp/player-card-7.webp" 
                 width={350}
                 height={350}
-                alt="Mission"
+                alt="Digital Player Card"
               />
             </div>
           </div>

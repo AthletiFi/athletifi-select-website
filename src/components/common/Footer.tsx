@@ -1,24 +1,19 @@
 // This component renders the footer of the website.
 // It includes copyright information and footer links.
 
-import React, { useState, useEffect } from "react";
-import {
-  CancelIcon,
-  FacebookIcon,
-  InstaIcon,
-  LinkedInIcon,
-  TiktokIcon,
-  TwitterIcon,
-} from "./Icon";
+import React from "react";
+import { InstaIcon } from "./Icon";
 import Link from "next/link";
-import SocialPopUp from "./SocialPopUp";
+// import SocialPopUp from "./SocialPopUp";
 
 const Footer = () => {
-  // SOCIAL-ICON POPUP
-  const [socialIcon, setSocialIcon] = useState(true);
-  const SocialIcon = () => {
-    setSocialIcon(!socialIcon);
-  };
+  /*
+    // SOCIAL-ICON POPUP
+    const [socialIcon, setSocialIcon] = useState(true);
+    const SocialIcon = () => {
+      setSocialIcon(!socialIcon);
+    };
+  */
   
   const today = new Date();
   const year = today.getFullYear();
@@ -53,6 +48,16 @@ const Footer = () => {
           {/* SOCIAL-ICON */}
           <div className="flex gap-4">
             <Link
+              aria-label="instagram"
+              className="hover:-translate-y-1 transition duration-300 ease-out"
+              href="https://www.instagram.com/pleyr_official/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstaIcon />
+            </Link>
+            {/* 
+            <Link
               aria-label="Tik-Tok"
               className="hover:-translate-y-1 transition duration-300 ease-out"
               href="https://www.tiktok.com/@athletifi"
@@ -79,24 +84,7 @@ const Footer = () => {
             >
               <TwitterIcon />
             </Link>
-            <Link
-              aria-label="instagram"
-              className="hover:-translate-y-1 transition duration-300 ease-out"
-              href="https://www.instagram.com/athletifi/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <InstaIcon />
-            </Link>
-            <Link
-              aria-label="linkedin"
-              className="hover:-translate-y-1 transition duration-300 ease-out"
-              href="https://www.linkedin.com/company/athletifi/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <LinkedInIcon />
-            </Link>
+            */}
           </div>
         </div>
    

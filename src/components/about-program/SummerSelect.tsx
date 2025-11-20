@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import { UnderLIneText } from '../common/Icon';
-import { CenterBlueShadow, BlueShodow } from '../common/Icon';
-import Description from '../sign-up/Description';
+import { BlueShodow } from '../common/Icon';
+import Link from 'next/link';
+import BlueButton from '../common/BlueButton';
 
 const SummerSelectDescription = () => {
   return (
@@ -38,10 +38,10 @@ const SummerSelectDescription = () => {
           >
             <h2 className='p-[15px] font-HelveticaNeueMedium md:text-5xl text-[26px] sm:text-4xl text-[#FDFEFF] font-medium leading-[30px] relative z-20 text-center md:mb-4'>
               <span className='relative'>
-                Summer Select 2025
+                The AthletiFi Select Experience
               </span>
               <span className="lg:px-14 lg:pt-14 sm:px-8 px-4 pt-6 flex flex-col items-center text-primary text-lgxl font-HelveticaNeueRegular">
-                June 10—July 27, 2025
+                Celebrating Our Championship Seasons
               </span>
             </h2>
 
@@ -55,19 +55,28 @@ const SummerSelectDescription = () => {
             </div>
 
             <p className='font-Segoe font-normal text-md leading-7 text-start pb-0.5 text-[#FDFEFF] opacity-80 m-0 sm:pt-4 lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1200px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20'>
-              <span className='block pb-2'>
-                Building on our incredible 2024 success, where multiple AthletiFi Select teams clinched tournament championships, we're excited to present our Summer Select 2025 program. This comprehensive summer program combines elite coaching, intensive training, and competitive tournament play to help young athletes reach their full potential.
+              <span className='block pb-4'>
+                Over the 2024 and 2025 seasons, we brought together over 100 families and elite coaches to create a unique development environment. Our program combines intensive training with the Spanish methodology—emphasizing technical skills, short passing, positional play, and game intelligence.
               </span>
-              <span className='block pb-2'>
-                Our program is meticulously designed for U9-U17 players seeking to elevate their game. With two training sessions per week and participation in prestigious tournaments, we provide the perfect blend of skill development and competitive experience. Our coaches follow the La Liga methodology, emphasizing technical skills, tactical awareness, and game intelligence.
+              <span className='block pb-4'>
+                <strong>A Proven Track Record:</strong> The results speak for themselves. Our teams secured victories at the prestigious Hershey Summer Classic and the EDP Summer Sizzler, demonstrating that our development model translates directly to on-field success.
               </span>
-              <span className='block pb-2'>
-                Summer 2024 saw extraordinary success with four teams winning championships at the EDP Summer Sizzler. Join us in 2025 to be part of our winning tradition and take your game to the next level! Early bird registration is now open - secure your spot today.
+              <span className='block pb-4'>
+                <strong>Technology Integration:</strong> Every player in our program is a pioneer. They are the first to use the <strong>AthletiFi Player Cards</strong> and the <strong>Pleyr</strong> video platform, allowing them to track their journey and own their highlights like pros.
               </span>
             </p>
 
-            <div className='mt-8'>
-              <Description />
+            <div className="flex flex-col items-center justify-center mt-10 gap-4">
+              <h3 className="text-xl font-HelveticaNeueMedium text-skyblue text-center">
+                Interested in Future Seasons?
+              </h3>
+              <p className="text-white opacity-80 text-center max-w-[600px]">
+                We are currently planning for the 2026 season and year-round clinic opportunities. 
+                Join our waitlist to be notified as soon as registration opens.
+              </p>
+              <Link href='/sign-up'>
+                <BlueButton text='Join the Waitlist' />
+              </Link>
             </div>
           </div>
         </div>
