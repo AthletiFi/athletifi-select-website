@@ -50,7 +50,7 @@ const Footer = () => {
             <Link
               aria-label="instagram"
               className="hover:-translate-y-1 transition duration-300 ease-out"
-              href="https://www.instagram.com/pleyr_official/"
+              href="https://www.instagram.com/athletifi.select/"
               target="_blank"
               rel="noopener noreferrer"
             >

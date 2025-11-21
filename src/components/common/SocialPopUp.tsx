@@ -51,7 +51,7 @@ const SocialPopUp = () => {
           </Link>
           <Link
             className="hover:-translate-y-1 transition duration-300  flex items-center"
-            href="https://www.instagram.com/athletifi/"
+            href="https://www.instagram.com/athletifi.select/"
             target="_blank"
             rel="noopener noreferrer"
           >
