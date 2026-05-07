@@ -108,7 +108,7 @@ const Header = () => {
                       path == "/about-coaches" ? "!opacity-100 " : ""
                     }`}
                   >
-                    Coaches
+                    Meet the Staff
                   </Link>
                 </li>
 
@@ -121,7 +121,7 @@ const Header = () => {
                       path == "/about-program" ? "!opacity-100 " : ""
                     }`}
                   >
-                    Program
+                    About the Program
                   </Link>
                 </li>
 

@@ -8,6 +8,7 @@ import Coach2 from '@/components/about-coaches/Coach2';
 import Coach3 from '@/components/about-coaches/Coach3';
 import Coach4 from '@/components/about-coaches/Coach4';
 import Philosophy from '@/components/about-coaches/Philosophy';
+import ProgramDirector from '@/components/about-coaches/ProgramDirector';
 import Backtotop from '@/components/common/Backtotop';
 import CommonHero from '@/components/common/CommonHero';
 import Footer from '@/components/common/Footer';
@@ -18,7 +19,7 @@ import { SEO_CONFIG } from '@/utils/seoConfig';
 const AboutCoaches = () => {
   // SEO
   const hero = {
-    heading: 'About The Coaches',
+    heading: 'Meet the Staff',
     title: 'Elite Coaching Staff',
     subtitle: 'Developing the Next Generation',
   };
@@ -43,6 +44,7 @@ const AboutCoaches = () => {
           </p>
         </div>
 
+        <ProgramDirector />
         <Coach1 />
         <Coach2 />
         <Coach3 />
