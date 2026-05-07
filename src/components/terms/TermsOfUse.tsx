@@ -10,8 +10,8 @@ const TermsOfUse = () => {
 
         <h2 className="legal-heading">1. Acceptance of Terms</h2>
         <p className="legal-paragraph">
-          By accessing or using AthletiFi&apos;s digital sports platform,
-          website, or mobile application (collectively, &quot;Services&quot;),
+          By accessing or using AthletiFi&apos;s website, club communications,
+          or soccer program services (collectively, &quot;Services&quot;),
           you agree to be bound by these Terms of Use (&quot;Terms&quot;). If
           you do not agree to all of these Terms, do not use our Services.
         </p>

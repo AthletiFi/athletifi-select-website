@@ -6,63 +6,65 @@ const Description = () => {
   // Get the current date
   const currentDate = new Date();
   // Define the target date
-  const targetDate = new Date('March 1, 2025');
+  const targetDate = new Date('August 1, 2026');
 
   // Determine whether to show the early bird discount
   const showEarlyBirdDiscount = currentDate < targetDate;
 
   return (
     <div className='font-Segoe font-normal text-md leading-7 text-left pb-0.5 text-[#FDFEFF] m-0 sm:pt-4 lg:max-w-[769px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20 opacity-80'>
-      <h3 className='text-md font-HelveticaNeueMedium mt-4'>Summer Select 2025 Details:</h3>
+      <h3 className='text-md font-HelveticaNeueMedium mt-4'>Fall 2026 Program Details:</h3>
       <ul className='list-none pl-4 opacity-80 text-primary'>
-        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Who:</span> 👥 Boys & girls, ages U9 - U17 (2008 - 2017 birth years)</li>
-        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">What:</span> 🏋️‍♂️ Comprehensive summer program including:</li>
+        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Who:</span> 👥 Boys & girls, ages U10 - U16</li>
+        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">What:</span> 🏋️‍♂️ Competitive fall program including:</li>
         <ul className='list-none pl-6 mt-1'>
-          <li>⚽︎ Intensive training sessions twice weekly</li>
+          <li>⚽︎ Structured training sessions</li>
           <li>⚽︎ Tournament participation</li>
-          <li>⚽︎ Highlights and stats on the AthletiFi Platform</li>
-          <li>⚽︎ Commemorative player cards</li>
+          <li>⚽︎ Video review and individual skill development</li>
+          <li>⚽︎ Competitive match preparation</li>
         </ul>
-        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">When:</span> 🗓️ June 10 - July 27, 2025</li>
+        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">When:</span> 🗓️ Fall 2026 season kicks off the last week of August 2026</li>
         <ul className='list-none pl-6 mt-1'>
           {/* UNCOMMENT BELOW */}
-          <li>⚽︎ Training: Tuesdays and Thursdays, 6:00 PM—7:30 PM</li>
+          <li>⚽︎ Tryout schedules and training times are shared directly with interested families</li>
           {/* <li>• Break week: July 1-5 (Independence Day)</li> */}
-          <li>⚽︎ 12 sessions total (two sessions per week)</li>
+          <li>⚽︎ Limited roster spots are available by age group</li>
         </ul>
-        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Where:</span></li>
-        <ul className='list-none pl-6 mt-1'>
-          <li>📍 All training sessions: Arcadia University</li>
-          {/* <li className='pl-4'>Jean Lenox West Field</li> */}
-          <li className='pl-4'>450 South Easton Road, Glenside, PA</li>
-        </ul>
-        {/* UNCOMMENT BELOW */}
-        {/* <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Tournaments:</span> 🏆</li> */}
-        <div className='pl-6 mt-2 mb-4'>
-          {/* <TournamentSection /> */}
-        </div>
+        <li className='bg-darkgray p-5 rounded-[20px] mt-4 mb-4 border border-[#ffffff10]'>
+          <p className="font-HelveticaNeueMedium text-skyblue">📍 Location for Tryouts & Training</p>
+          <p className='mt-2 text-primary'>
+            Arcadia University, 450 South Easton Road, Glenside, PA 19038
+          </p>
+          <p className='mt-2 text-sm opacity-80'>
+            Both tryouts and regular training sessions are held at this location.
+          </p>
+        </li>
+        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Tournaments:</span> 🏆</li>
+        <li className='pl-6 mt-2 mb-4'>
+          <TournamentSection />
+        </li>
         {/* <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Program Highlights:</span> ⭐</li>
         <ul className='list-none pl-6 mt-1'>
           <li>• Elite coaching from Eastern PA's top coaches</li>
           <li>• Individual skill development focus</li>
           <li>• Real game experience through tournaments</li>
-          <li>• Performance tracking via AthletiFi platform</li>
-          <li>• Digital player cards with stats and highlights</li>
+          <li>• Video review and tactical feedback</li>
+          <li>• Year-round training resources</li>
         </ul> */}
-        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Price and Discounts:</span> 💰</li>
+        <li className='mb-2'>- <span className="font-HelveticaNeueMedium">Tryout Inquiries:</span> 💬</li>
         <ul className='list-none pl-6 mt-1'>
-          <li>💸 Registration Fee: $499</li>
+          <li>💸 Reach out for roster availability and next steps</li>
           {showEarlyBirdDiscount && (
-            <li>🐦 Early Bird Discount: Save $50 (Ends March 1st)</li>
+            <li>🐦 Early inquiries are encouraged while age-group spots remain open</li>
           )}
-          <li>👨‍👩‍👧‍👦 Family Discount: extra 10% off for siblings</li>
+          <li>👨‍👩‍👧‍👦 Families with multiple players are welcome to inquire together</li>
           <li>
             <p className='font-Segoe font-normal text-sm text-primary opacity-80 text-left mt-4'>
-              To claim the family discount, email us at{' '}
-              <Link href="mailto:welcome@athletifiselect.com?subject=Just signed up! I'd like the sibling discount please">
+              For tryout questions, email us at{' '}
+              <Link href="mailto:welcome@athletifiselect.com?subject=Fall 2026 Tryout Inquiry">
                 welcome@athletifiselect.com
               </Link>
-              {' '} after signing up and list the names of each child.
+              .
             </p>
           </li>
         </ul>

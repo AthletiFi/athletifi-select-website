@@ -125,19 +125,6 @@ const Header = () => {
                   </Link>
                 </li>
 
-                <li>
-                  <Link
-                    onClick={() => setOpen(false)}
-                    href="/about-cards"
-                    aria-label="Player Cards Information"
-                    className={`text-md text-white font-normal font-Segoe opacity-70 hover:opacity-100 duration-300 relative after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[2px] after:-bottom-1 after:right-0 after:bg-shadow-blue after:rounded-md after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:right-auto ${
-                      path == "/about-cards" ? "!opacity-100 " : ""
-                    }`}
-                  >
-                    Player Cards
-                  </Link>
-                </li>
-
                 {/* Social Icons Menu Item 
                   <li className="social_icons_show sm:mt-7 sm:pb-7 hidden sm:block">
                     <button
@@ -252,9 +239,9 @@ const Header = () => {
                     href="/sign-up"
                     onClick={() => setOpen(false)}
                     className="pt-[10px] pb-[14px] px-[24px] text-skyblue border border-skyblue font-semibold text-base font-Segoe duration-300 hover:bg-skyblue hover:text-white md:hidden"
-                    aria-label="Join Waitlist"
+                    aria-label="Request Tryout Information"
                   >
-                    Join 2026 Waitlist
+                    Request Tryout Info
                   </Link>
                 </li>
               </ul>
@@ -265,9 +252,9 @@ const Header = () => {
               href="/sign-up"
               onClick={() => setOpen(false)}
               className="pt-[10px] pb-[14px] px-[24px] text-skyblue border border-skyblue font-semibold text-base font-Segoe duration-300 hover:bg-skyblue hover:text-white hidden md:inline-block"
-              aria-label="Join Waitlist"
+              aria-label="Request Tryout Information"
             >
-              Join 2026 Waitlist
+              Request Tryout Info
             </Link>
           </div>
         </div>

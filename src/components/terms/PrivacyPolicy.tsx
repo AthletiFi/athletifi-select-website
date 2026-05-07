@@ -11,10 +11,10 @@ const PrivacyPolicy = () => {
         <h2 className="legal-heading">1. Introduction</h2>
         <p className="legal-paragraph">
           Welcome to AthletiFi. We are committed to protecting the privacy of
-          all individuals who interact with our services. This Privacy Policy
+          all individuals who interact with our club. This Privacy Policy
           outlines how we collect, use, disclose, and safeguard your information
-          when you visit our website, use our mobile app, or engage with our
-          digital sports trading card platform.
+          when you visit our website, submit an inquiry, or participate in our
+          soccer programs.
         </p>
 
         <h2 className="legal-heading">2. Information Collection</h2>
@@ -22,17 +22,17 @@ const PrivacyPolicy = () => {
           <li>
             <strong>Personal Information:</strong> We may collect personal
             information such as your name, email address, and contact details
-            when you register on our platform or subscribe to our services.
+            when you submit an inquiry or register for club programs.
           </li>
           <li>
             <strong>Player Information:</strong> For players featured in our
-            digital cards, we collect performance data, photographs, and other
-            relevant sports-related information.
+            programs, we may collect age group, team history, photographs, and
+            other relevant soccer-related information.
           </li>
           <li>
             <strong>Usage Data:</strong> We collect information on how our
             services are accessed and used, including but not limited to,
-            clickstream data and interactions with our platform.
+            clickstream data and interactions with our website.
           </li>
         </ul>
 
@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
         <ul className="legal-list">
           <li>Provide, maintain, and improve our services.</li>
           <li>Communicate with you about your account or our services.</li>
-          <li>Develop new products and services.</li>
+          <li>Develop new training programs and club services.</li>
           <li>Personalize your experience.</li>
           <li>Comply with legal obligations.</li>
         </ul>

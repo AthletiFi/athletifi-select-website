@@ -8,9 +8,9 @@ import { SEO_CONFIG } from "@/utils/seoConfig";
 const Signup = () => {
   // SEO
   const hero = {
-    heading: "Summer Select Waitlist",
-    title: "Summer Select 2026 Interest Form",
-    subtitle: "Express Your Interest in Our Elite Program",
+    heading: "Fall 2026 Tryouts",
+    title: "Tryouts Are Underway",
+    subtitle: "Limited roster spots for a competitive fall season at Arcadia University",
   };
 
   return (
@@ -31,12 +31,12 @@ const Signup = () => {
             {/* Transition to Form */}
             <div className='text-left lg:text-center mb-4'>
               <h3 className='text-xl font-HelveticaNeueMedium text-primary mb-2'>
-                Planning for Summer 2026
+                Fall 2026 Season Tryout Inquiries
               </h3>
               <p className='text-md text-primary opacity-80 mb-4'>
-                We're currently developing plans for the 2026 season, along with potential 
-                year-round clinic opportunities. Join our waitlist to be among the first to 
-                know when registration opens.
+                AthletiFi Select is currently running tryouts for the upcoming Fall 2026 season,
+                which kicks off the last week of August 2026. Spots are limited in this selective
+                program, and interested families should reach out directly for tryout schedule and availability.
               </p>
             </div>
 

@@ -7,7 +7,6 @@ import { PostSummerSelectData } from '../common/api/ApiUrls';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { phone } from 'phone';
-import RegistrationModal from '../common/RegistrationModal';
 
 // Interface to describe the structure of an API error
 interface ApiError extends Error {
@@ -22,25 +21,15 @@ const SignUpForm = () => {
   // CUSTOM INPUT-CHECK
   const [checked, setChecked] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [showSuccessModal, setShowSuccessModal] = useState(false);
   const initialState = {
     email: '',
-    parentFirstName: '',
+    parentName: '',
     playerFirstName: '',
-    currentTeam: '',
     playerLastName: '',
-    parentLastName: '',
-    playerDOB: '',
-    playerGender: '',
+    playerAgeGroup: '',
     phoneNumber: '',
-    streetAddress: '',
-    city: '',
-    zipCode: '',
-    state: '',
   };
   const [data, setData] = useState(initialState);
-
-  console.log(data);
 
   const formHandler = async (e: any) => {
     e.preventDefault();
@@ -69,17 +58,14 @@ const SignUpForm = () => {
       );
 
       if (data) {
-        // The old banner:
-        // toast(
-        //   '✅ Thanks for registering! You will receive an email with next steps soon.',
-        //   {
-        //     position: 'bottom-left',
-        //   }
-        // );
-        // setData(initialState);
-        // New banner (Added Thanksgiving 2024):
+        toast.success(
+          'Thanks for your interest! One of our coaches will reach out shortly with tryout details.',
+          {
+            position: 'bottom-left',
+          }
+        );
         setData(initialState);
-        setShowSuccessModal(true);
+        setChecked(false);
       } else if (response.status === 400) {
         // Handling 400 status for unique constraint violation
         toast.error(
@@ -123,7 +109,7 @@ const SignUpForm = () => {
             <div className='flex flex-col items-center lg:items-start'>
               <h2 className='font-HelveticaNeueMedium font-medium text-[24px] md:text-5xl sm:text-4xl leading-[60px] text-[#FDFEFF] md:mb-3'>
                 <span className='relative'>
-                  Join the waitlist
+                  Request Tryout Information
                   <span className='absolute -bottom-3 left-0'>
                     <UnderLIneText />
                   </span>
@@ -179,70 +165,35 @@ const SignUpForm = () => {
                   </div>
                 </div>
                 <div className='flex flex-col mt-6'>
-                  {/* DOB INPUT*/}
-                  <label className={formLabel} htmlFor='DOB'>
-                    Player Date of Birth (DOB)
-                  </label>
-                  <input
-                    required
-                    value={data.playerDOB}
-                    type='date'
-                    placeholder='Date of Birth'
-                    className={formInput}
-                    id='DOB'
-                    onChange={(e) =>
-                      setData({
-                        ...data,
-                        playerDOB: e.target.value,
-                      })
-                    }
-                  />
-                </div>
-                <div className='flex flex-col mt-6'>
-                  {/* GENDER INPUT */}
-                  <label className={formLabel} htmlFor='gender'>
-                    Gender
+                  {/* AGE GROUP INPUT */}
+                  <label className={formLabel} htmlFor='playerAgeGroup'>
+                    Player Age Group
                   </label>
                   <select
                     required
-                    value={data.playerGender}
+                    value={data.playerAgeGroup}
                     className={`${formInput} bg-darkBackGround`}
-                    id='playerGender'
+                    id='playerAgeGroup'
                     onChange={(e) =>
                       setData({
                         ...data,
-                        playerGender: e.target.value,
+                        playerAgeGroup: e.target.value,
                       })
                     }
                   >
-                    <option value=''>Select Gender</option>
-                    <option value='Male'>Male</option>
-                    <option value='Female'>Female</option>
-                    {/* <option value='Prefer not to say'>Prefer not to say</option> */}
+                    <option value=''>Select Age Group</option>
+                    <option value='U10'>U10</option>
+                    <option value='U11'>U11</option>
+                    <option value='U12'>U12</option>
+                    <option value='U13'>U13</option>
+                    <option value='U14'>U14</option>
+                    <option value='U15'>U15</option>
+                    <option value='U16'>U16</option>
                   </select>
-                </div>
-                <div className='flex flex-col mt-6'>
-                  {/* CURRENT TEAM INPUT */}
-                  <label className={formLabel} htmlFor='currentTeam'>
-                    Current Team (If Any)
-                  </label>
-                  <input
-                    value={data.currentTeam}
-                    type='text'
-                    placeholder='Team (optional)'
-                    className={formInput}
-                    id='currentTeam'
-                    onChange={(e) =>
-                      setData({
-                        ...data,
-                        currentTeam: e.target.value,
-                      })
-                    }
-                  />
                 </div>
                 {/* Your Information Sub-header */}
                 <h3 className='font-HelveticaNeueMedium text-2xl text-[#FDFEFF] mt-10'>
-                  Parent Information
+                  Parent/Guardian Information
                 </h3>
                 {/* Parent Information Form Fields */}
                 <div className='flex flex-col mt-6'>
@@ -264,43 +215,23 @@ const SignUpForm = () => {
                 </div>
                 <div className='flex flex-col mt-6'>
                   {/* PARENT NAME INPUT */}
-                  <label className={formLabel} htmlFor='parentFirstName'>
-                    Your Name
+                  <label className={formLabel} htmlFor='parentName'>
+                    Parent/Guardian Name
                   </label>
-                  <div className='flex flex-wrap -mx-3'>
-                    <div className='w-full md:w-1/2 px-3 mb-6 md:mb-0'>
-                      <input
-                        required
-                        value={data.parentFirstName}
-                        type='text'
-                        placeholder='First Name'
-                        className={formInput}
-                        id='parentFirstname'
-                        onChange={(e) =>
-                          setData({
-                            ...data,
-                            parentFirstName: e.target.value,
-                          })
-                        }
-                      />
-                    </div>
-                    <div className='w-full md:w-1/2 px-3'>
-                      <input
-                        required
-                        value={data.parentLastName}
-                        type='text'
-                        placeholder='Last Name'
-                        className={formInput}
-                        id='parentLastname'
-                        onChange={(e) =>
-                          setData({
-                            ...data,
-                            parentLastName: e.target.value,
-                          })
-                        }
-                      />
-                    </div>
-                  </div>
+                  <input
+                    required
+                    value={data.parentName}
+                    type='text'
+                    placeholder='Parent/Guardian Name'
+                    className={formInput}
+                    id='parentName'
+                    onChange={(e) =>
+                      setData({
+                        ...data,
+                        parentName: e.target.value,
+                      })
+                    }
+                  />
                 </div>
 
                 {/* Phone Number */}
@@ -309,6 +240,7 @@ const SignUpForm = () => {
                     Phone Number
                   </label>
                   <input
+                    required
                     type='tel'
                     id='phoneNumber'
                     placeholder='Phone Number'
@@ -320,134 +252,12 @@ const SignUpForm = () => {
                   />
                 </div>
 
-                {/* Street Address */}
-                <div className='flex flex-col mt-6'>
-                  <label htmlFor='streetAddress' className={formLabel}>
-                    Street Address
-                  </label>
-                  <input
-                    required
-                    type='text'
-                    id='streetAddress'
-                    placeholder='Street Address'
-                    value={data.streetAddress}
-                    onChange={(e) =>
-                      setData({ ...data, streetAddress: e.target.value })
-                    }
-                    className={formInput}
-                  />
-                </div>
-
-                {/* City */}
-                <div className='flex flex-col mt-6'>
-                  <label htmlFor='city' className={formLabel}>
-                    City
-                  </label>
-                  <input
-                    required
-                    type='text'
-                    id='city'
-                    placeholder='City'
-                    value={data.city}
-                    onChange={(e) => setData({ ...data, city: e.target.value })}
-                    className={formInput}
-                  />
-                </div>
-
-                {/* Zip Code */}
-                <div className='flex flex-col mt-6'>
-                  <label htmlFor='zipCode' className={formLabel}>
-                    Zip Code
-                  </label>
-                  <input
-                    required
-                    type='text'
-                    id='zipCode'
-                    placeholder='Zip Code'
-                    value={data.zipCode}
-                    onChange={(e) =>
-                      setData({ ...data, zipCode: e.target.value })
-                    }
-                    className={formInput}
-                  />
-                </div>
-
-                {/* State Dropdown */}
-                <div className='flex flex-col mt-6'>
-                  <label htmlFor='state' className={formLabel}>
-                    State
-                  </label>
-                  <select
-                    required
-                    id='state'
-                    value={data.state}
-                    onChange={(e) =>
-                      setData({ ...data, state: e.target.value })
-                    }
-                    className={`${formInput} bg-darkBackGround`}
-                  >
-                    <option value=''>Select State</option>
-                    <option value='Pennsylvania'>Pennsylvania</option>
-                    <option value='New Jersey'>New Jersey</option>
-                    <option value='Delaware'>Delaware</option>
-                    <option value='New York'>New York</option>
-                    <option value='Alabama'>Alabama</option>
-                    <option value='Alaska'>Alaska</option>
-                    <option value='Arizona'>Arizona</option>
-                    <option value='Arkansas'>Arkansas</option>
-                    <option value='California'>California</option>
-                    <option value='Colorado'>Colorado</option>
-                    <option value='Connecticut'>Connecticut</option>
-                    <option value='Delaware'>Delaware</option>
-                    <option value='Florida'>Florida</option>
-                    <option value='Georgia'>Georgia</option>
-                    <option value='Hawaii'>Hawaii</option>
-                    <option value='Idaho'>Idaho</option>
-                    <option value='Illinois'>Illinois</option>
-                    <option value='Indiana'>Indiana</option>
-                    <option value='Iowa'>Iowa</option>
-                    <option value='Kansas'>Kansas</option>
-                    <option value='Kentucky'>Kentucky</option>
-                    <option value='Louisiana'>Louisiana</option>
-                    <option value='Maine'>Maine</option>
-                    <option value='Maryland'>Maryland</option>
-                    <option value='Massachusetts'>Massachusetts</option>
-                    <option value='Michigan'>Michigan</option>
-                    <option value='Minnesota'>Minnesota</option>
-                    <option value='Mississippi'>Mississippi</option>
-                    <option value='Missouri'>Missouri</option>
-                    <option value='Montana'>Montana</option>
-                    <option value='Nebraska'>Nebraska</option>
-                    <option value='Nevada'>Nevada</option>
-                    <option value='New Hampshire'>New Hampshire</option>
-                    <option value='New Jersey'>New Jersey</option>
-                    <option value='New Mexico'>New Mexico</option>
-                    <option value='New York'>New York</option>
-                    <option value='North Carolina'>North Carolina</option>
-                    <option value='North Dakota'>North Dakota</option>
-                    <option value='Ohio'>Ohio</option>
-                    <option value='Oklahoma'>Oklahoma</option>
-                    <option value='Oregon'>Oregon</option>
-                    <option value='Pennsylvania'>Pennsylvania</option>
-                    <option value='Rhode Island'>Rhode Island</option>
-                    <option value='South Carolina'>South Carolina</option>
-                    <option value='South Dakota'>South Dakota</option>
-                    <option value='Tennessee'>Tennessee</option>
-                    <option value='Texas'>Texas</option>
-                    <option value='Utah'>Utah</option>
-                    <option value='Vermont'>Vermont</option>
-                    <option value='Virginia'>Virginia</option>
-                    <option value='Washington'>Washington</option>
-                    <option value='West Virginia'>West Virginia</option>
-                    <option value='Wisconsin'>Wisconsin</option>
-                    <option value='Wyoming'>Wyoming</option>
-                  </select>
-                </div>
                 {/* CHECKBOX */}
                 <div className="flex items-center gap-2 mt-4 sign_up_checkbox">
                   <input
                     type="checkbox"
                     id="Privacy-Policy"
+                    checked={checked}
                     onChange={event => setChecked(event.target.checked)}
                   />
                   <label
@@ -482,7 +292,7 @@ const SignUpForm = () => {
                       checked ? ' bg-skyblue' : ''
                     }`}
                   >
-                    {loading ? 'Loading...' : 'Join Waitlist'} 
+                    {loading ? 'Loading...' : 'Request Tryout Information'}
 
                     <span className='group-hover:translate-x-3 transition duration-300 ease-out'>
                       <ButtonWhiteArrow />
@@ -504,7 +314,6 @@ const SignUpForm = () => {
           </div>
         </div>
       </div>
-      {showSuccessModal && <RegistrationModal setShowModal={setShowSuccessModal} />}
       <ToastContainer theme='dark' />
     </section>
   );

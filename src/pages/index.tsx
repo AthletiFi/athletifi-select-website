@@ -4,7 +4,6 @@
 import Image from 'next/image';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
-import DigitalCardInfoSection from '@/components/home/DigitalCardInfoSection';
 import WhyAthletifiSelectSection from '@/components/home/WhyAthletifiSelectSection';
 import CoachesSection from '@/components/home/CoachesSection';
 import HomeTitleSection from '@/components/home/HomeTitleSection';
@@ -74,7 +73,6 @@ const Home: React.FC<NewsProps> = (props) => {
 
         <WhyAthletifiSelectSection />
         <CoachesSection />
-        <DigitalCardInfoSection />
 
         <Footer />
         <Backtotop />

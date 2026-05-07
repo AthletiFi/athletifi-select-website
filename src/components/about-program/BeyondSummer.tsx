@@ -56,7 +56,9 @@ const WhatWeDo = () => {
               opportunities, each designed to cater to the evolving needs of
               young athletes. Our year-round initiatives aim to continuously
               engage and challenge players, ensuring consistent development and
-              exposure to diverse soccer experiences
+              exposure to diverse soccer experiences, with the club's Arcadia
+              University facility available to support players beyond the main
+              season.
             </p>
           </div>
         </div>

@@ -42,9 +42,14 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          <p className=" text-white text-sm font-Segoe opacity-70">
-            @{year} AthletiFi Select
-          </p>
+          <div className="text-center">
+            <p className=" text-white text-sm font-Segoe opacity-70">
+              @{year} AthletiFi Select
+            </p>
+            <p className=" text-white text-sm font-Segoe opacity-70">
+              Arcadia University, 450 S Easton Rd, Glenside, PA 19038
+            </p>
+          </div>
           {/* SOCIAL-ICON */}
           <div className="flex gap-4">
             <Link

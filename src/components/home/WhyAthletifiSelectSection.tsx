@@ -46,18 +46,18 @@ const WhyAthletifiSelectSection = () => {
               <h3 className='text-md font-bold mt-6 text-primary'>Program Achievements:</h3>
               <ul className='list-disc list-inside block pb-2 pl-4 opacity-80 text-primary'>
                 <li>🏆 100% Medal Rate in 2025 Tournaments</li>
-                <li>📊 Launchpad for the Pleyr Video Platform</li>
+                <li>🏟️ Dedicated Facility – Our teams train on Arcadia University's turf, giving players a professional, consistent environment year-round.</li>
                 <li>⚽ Elite coaching from Eastern PA's finest</li>
                 <li>📈 Proven development for U9-U15 players</li>
               </ul>
 
               <p className='font-Segoe font-normal text-md text-primary opacity-80 text-center mt-10 mb-2'>
-                <em>Plans for the 2026 season are currently in development. Join our mailing list to be the first to know about future training opportunities and Pleyr platform updates.</em>
+                <em>Fall 2026 tryouts are currently underway. Reach out now for schedule details and roster availability.</em>
               </p>
 
               <div className='flex justify-center items-center mt-6'>
                 <Link href='/sign-up'>
-                  <BlueButton text='Join the Waitlist' />
+                  <BlueButton text='Request Tryout Information' />
                 </Link>
               </div>
             </div>

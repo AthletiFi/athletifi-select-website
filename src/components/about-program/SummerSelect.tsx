@@ -56,26 +56,25 @@ const SummerSelectDescription = () => {
 
             <p className='font-Segoe font-normal text-md leading-7 text-start pb-0.5 text-[#FDFEFF] opacity-80 m-0 sm:pt-4 lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1200px] mx-auto sm:px-6 px-3 xl:px-0 relative z-20'>
               <span className='block pb-4'>
-                Over the 2024 and 2025 seasons, we brought together over 100 families and elite coaches to create a unique development environment. Our program combines intensive training with the Spanish methodology—emphasizing technical skills, short passing, positional play, and game intelligence.
+                Over the 2024 and 2025 seasons, we brought together over 100 families and elite coaches to create a unique development environment. Our program combines intensive training with the Spanish methodology–emphasizing technical skills, short passing, positional play, and game intelligence.
               </span>
               <span className='block pb-4'>
                 <strong>A Proven Track Record:</strong> The results speak for themselves. Our teams secured victories at the prestigious Hershey Summer Classic and the EDP Summer Sizzler, demonstrating that our development model translates directly to on-field success.
               </span>
               <span className='block pb-4'>
-                <strong>Technology Integration:</strong> Every player in our program is a pioneer. They are the first to use the <strong>AthletiFi Player Cards</strong> and the <strong>Pleyr</strong> video platform, allowing them to track their journey and own their highlights like pros.
+                <strong>Dedicated Training Facility:</strong> Sessions are held at the club's home facility on Arcadia University's campus in Glenside, where players train with access to structured sessions, video review, and development resources outside of the traditional season.
               </span>
             </p>
 
             <div className="flex flex-col items-center justify-center mt-10 gap-4">
               <h3 className="text-xl font-HelveticaNeueMedium text-skyblue text-center">
-                Interested in Future Seasons?
+                Interested in Fall 2026 Tryouts?
               </h3>
               <p className="text-white opacity-80 text-center max-w-[600px]">
-                We are currently planning for the 2026 season and year-round clinic opportunities. 
-                Join our waitlist to be notified as soon as registration opens.
+                Tryouts are currently underway for the Fall 2026 season. Reach out for schedule details and roster availability.
               </p>
               <Link href='/sign-up'>
-                <BlueButton text='Join the Waitlist' />
+                <BlueButton text='Request Tryout Information' />
               </Link>
             </div>
           </div>

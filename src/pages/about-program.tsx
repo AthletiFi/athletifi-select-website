@@ -6,6 +6,7 @@
 import BeyondSummer from '@/components/about-program/BeyondSummer';
 import SummerSelectDescription from '@/components/about-program/SummerSelect';
 import GoalkeepingSection from '@/components/about-program/Goalkeeping';
+import TrainingFacility from '@/components/about-program/TrainingFacility';
 import Backtotop from '@/components/common/Backtotop';
 import CommonHero from '@/components/common/CommonHero';
 import Footer from '@/components/common/Footer';
@@ -31,6 +32,7 @@ const AboutProgram = () => {
         </div>
         <SummerSelectDescription />
         <GoalkeepingSection />
+        <TrainingFacility />
         <BeyondSummer />
         <Footer />
         <Backtotop />

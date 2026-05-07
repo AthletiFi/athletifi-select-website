@@ -41,16 +41,6 @@ const AboutCoaches = () => {
             two championship seasons. Their expertise in player development and 
             the La Liga methodology created an environment where athletes thrived.
           </p>
-          
-          <div className='bg-darkgray p-8 rounded-[20px] mt-8 border border-[#ffffff10] max-w-[900px]'>
-            <p className='text-skyblue font-HelveticaNeueMedium text-lg'>
-              Our coaches continue to support youth athlete development through 
-              the Pleyr platform and private training opportunities.
-            </p>
-            <p className='mt-4 text-[#FDFEFF] opacity-80 font-Segoe'>
-              For training inquiries, contact: <a href="mailto:welcome@athletifiselect.com" className="hover:text-skyblue transition-colors">welcome@athletifiselect.com</a>
-            </p>
-          </div>
         </div>
 
         <Coach1 />
